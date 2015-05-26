@@ -18,7 +18,9 @@
   "homepage": "https://github.com/dallaskoncir/Hotel-WordPress-Theme-2015#readme",
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
     "gulp-concat": "^2.5.2",
+    "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.1"
   }
 }
