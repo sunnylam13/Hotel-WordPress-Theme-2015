@@ -113,10 +113,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Flickity
 --------------------------------------------------------------*/
 @import "modules/flickity";
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/header";
+@import "layout/footer";
 
 /*--------------------------------------------------------------
 # Custom Styles
@@ -125,4 +132,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .container {
   max-width: 980px;
   margin: 0 auto;
+  padding: 0 1rem;
 }

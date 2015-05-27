@@ -1,0 +1,15 @@
+header {
+  background: $color__header-bg;
+  padding: 25px 0;
+  .container {
+    @include clearfix;
+  }
+}
+
+.site-branding {
+  float: left;
+  h1 {
+    line-height: 1.75;
+    letter-spacing: 1px;
+  }
+}
