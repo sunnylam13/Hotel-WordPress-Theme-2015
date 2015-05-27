@@ -1,2 +1,4 @@
 _Archived Items
 node_modules
+*.sublime-project
+*.sublime-workspace
