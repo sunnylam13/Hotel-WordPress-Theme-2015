@@ -19,40 +19,40 @@
 // 		SITE CONTENT IN GENERAL
 ////////////////////////////////////////////
 
-#content.site-content {
-	border: 5px solid blue;
-	@include sectionPadding041515(5%,5%);
+// #content.site-content {
+// 	border: 5px solid blue;
+// 	@include sectionPadding041515(5%,5%);
 
-	// currently can't get the .wrapper around #content.site-content ... so ignoring the use of it and setting the max-width here
-	max-width: 1200px;
-	margin: 0 auto;
-	// background: blue;
-	// flexbox parent
-	@include flexboxRow1;
-	align-items: flex-start;
-}
+// 	// currently can't get the .wrapper around #content.site-content ... so ignoring the use of it and setting the max-width here
+// 	max-width: 1200px;
+// 	margin: 0 auto;
+// 	// background: blue;
+// 	// flexbox parent
+// 	@include flexboxRow1;
+// 	align-items: flex-start;
+// }
 
-#content.site-content #primary {
-	border: 5px solid orange;
-	// float: left;
-	// float: left;
-	//flex child
-	flex: 1 74%;
-	// @include column(9);
-}
+// #content.site-content #primary {
+// 	border: 5px solid orange;
+// 	// float: left;
+// 	// float: left;
+// 	//flex child
+// 	flex: 1 74%;
+// 	// @include column(9);
+// }
 
-#content.site-content #secondary {
-	border: 5px solid red;
-	// float: right;
-	// float: right;
-	//flex child
-	flex: 1 25%;
-	// @include column(3);
-}
+// #content.site-content #secondary {
+// 	border: 5px solid red;
+// 	// float: right;
+// 	// float: right;
+// 	//flex child
+// 	flex: 1 25%;
+// 	// @include column(3);
+// }
 
-footer.site-footer {
-	clear:both;
-}
+// footer.site-footer {
+// 	clear:both;
+// }
 
 ////////////////////////////////////////////
 // 		END SITE CONTENT IN GENERAL
