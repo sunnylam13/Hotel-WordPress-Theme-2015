@@ -12,32 +12,37 @@
 
 get_header(); ?>
 
-
-<div id="primary" class="content-area">
-	<!-- <p>This is the page.php</p> -->
-
+<!-- create a separate div instead of using the other WordPress parent to avoid crazy conflicts -->
+<div class="flexbox">
 	
+	<div id="primary" class="content-area">
+		<!-- <p>This is the page.php</p> -->
 
-	<main id="main" class="site-main" role="main">
-
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-		<?php endwhile; // end of the loop. ?>
 		
-		<!-- ====================================
-		ABOUT VIDEO/IMAGES 
-		==================================== -->
-		
-		<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
-		<!-- ====================================== -->
+		<main id="main" class="site-main" role="main">
 
-	</main><!-- #main -->
-</div><!-- #primary -->
 
-<?php get_template_part( 'template-parts/sidebar', 'about' ); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // end of the loop. ?>
+			
+			<!-- ====================================
+			ABOUT VIDEO/IMAGES 
+			==================================== -->
+			
+			<?php get_template_part( 'template-parts/content', 'about' ); ?>
+
+			<!-- ====================================== -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<?php get_template_part( 'template-parts/sidebar', 'about' ); ?>
+
+</div>
+
 
 <?php get_footer(); ?>
