@@ -7,9 +7,6 @@
  */
 ?>
 
-<!-- EXAMPLE -->
-<!-- <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>></section> -->
-
 <section class="suitesPromo">
 	
 	<!-- Images should be 198x150px -->

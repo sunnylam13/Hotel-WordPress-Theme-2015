@@ -16,7 +16,10 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<!-- <p>This is the page.php</p> -->
 
+	
+
 	<main id="main" class="site-main" role="main">
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -25,17 +28,16 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 		
 		<!-- ====================================
-		ROOMS & SUITES PROMO VIDEO/IMAGES 
+		ABOUT VIDEO/IMAGES 
 		==================================== -->
 		
-		<?php get_template_part( 'template-parts/content', 'suites' ); ?>
+		<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
 		<!-- ====================================== -->
-		<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_template_part( 'template-parts/sidebar', 'suites' ); ?>
+<?php get_template_part( 'template-parts/sidebar', 'about' ); ?>
 
 <?php get_footer(); ?>
