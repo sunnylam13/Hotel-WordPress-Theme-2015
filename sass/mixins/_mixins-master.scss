@@ -21,3 +21,43 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+@mixin flexboxRow1 {
+	// ROW
+	// this is used within a parent without the class .flexbox... the actual class name used will vary
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: center;
+}
+
+@mixin flexboxColumn1 {
+	// COLUMN
+	// this is used within a parent without the class .flexbox... the actual class name used will vary
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+@mixin sectionMargins041515($marginTop, $marginBottom) {
+	// TOP AND BOTTOM
+	// where arguments are a value in px, em or %
+	margin-top: $marginTop;
+	margin-bottom: $marginBottom;
+}
+
+@mixin sectionPadding041515($padTop, $padBottom) {
+	// TOP AND BOTTOM
+	// where arguments are a value in px, em or %
+	padding-top: $padTop;
+	padding-bottom: $padBottom;
+}
+
+@mixin marginPaddingReset1 {
+	// reset margin, padding in case
+	margin: 0;
+	padding: 0;
+}

@@ -12,7 +12,12 @@
 
 get_header(); ?>
 
+
+
+<div class="wrapper clearfix">
+	
 	<div id="primary" class="content-area">
+		<p>This is the page.php</p>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -20,8 +25,15 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php get_sidebar(); ?>
+
+</div> <!-- end wrapper -->
+
+
+
+
 
 <?php get_footer(); ?>

@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Layout
 # Typography
 # Elements
 # Forms
@@ -220,6 +221,19 @@ table {
 td,
 th {
   padding: 0; }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before,
+  body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -552,8 +566,46 @@ a {
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-  content: "";
-  display: table; }
+  *zoom: 1; }
+  .clear:before:before,
+  .clear:before:after,
+  .clear:after:before,
+  .clear:after:after,
+  .entry-content:before:before,
+  .entry-content:before:after,
+  .entry-content:after:before,
+  .entry-content:after:after,
+  .comment-content:before:before,
+  .comment-content:before:after,
+  .comment-content:after:before,
+  .comment-content:after:after,
+  .site-header:before:before,
+  .site-header:before:after,
+  .site-header:after:before,
+  .site-header:after:after,
+  .site-content:before:before,
+  .site-content:before:after,
+  .site-content:after:before,
+  .site-content:after:after,
+  .site-footer:before:before,
+  .site-footer:before:after,
+  .site-footer:after:before,
+  .site-footer:after:after {
+    content: "";
+    display: table; }
+  .clear:before:after,
+  .clear:after:after,
+  .entry-content:before:after,
+  .entry-content:after:after,
+  .comment-content:before:after,
+  .comment-content:after:after,
+  .site-header:before:after,
+  .site-header:after:after,
+  .site-content:before:after,
+  .site-content:after:after,
+  .site-footer:before:after,
+  .site-footer:after:after {
+    clear: both; }
 
 .clear:after,
 .entry-content:after,
@@ -620,6 +672,12 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.wrapper {
+  max-width: 940px; }
+
+footer.site-footer {
+  clear: both; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
