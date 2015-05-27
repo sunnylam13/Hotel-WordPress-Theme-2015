@@ -7,27 +7,34 @@
  */
 ?>
 
-<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<!-- EXAMPLE -->
+<!-- <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>></section> -->
 
+<section class="suitesPromo">
+	
+	<!-- Images should be 198x150px -->
+	<!-- this should be a video with a hover state and play button; could use ::before/::after and position absolute -->
+	
+	<div class="promobox box1">
+		<div class="imgFrame">
+			<img src="http://lorempixel.com/198/150" alt="">
+		</div>
+		<h2>Rooms</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
+	</div>
+	<div class="promobox box2">
+		<div class="imgFrame">
+			<img src="http://lorempixel.com/198/150" alt="">
+		</div>
+		<h2>Suites</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
+	</div>
+	<div class="promobox box3">
+		<div class="imgFrame">
+			<img src="http://lorempixel.com/198/150" alt="">
+		</div>
+		<h2>Presidential Suites</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
+	</div>
 
 </section>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hospitality' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php edit_post_link( esc_html__( 'Edit', 'hospitality' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
