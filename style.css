@@ -321,13 +321,17 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  padding: 0;
+  margin: 0; }
 
 ul {
   list-style: disc; }
 
 ol {
   list-style: decimal; }
+
+li {
+  list-style-type: none; }
 
 li > ul,
 li > ol {
@@ -872,3 +876,10 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+.container {
+  max-width: 980px;
+  margin: 0 auto; }
