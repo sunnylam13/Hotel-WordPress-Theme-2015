@@ -243,14 +243,17 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #373535;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
 
 p {
   margin-bottom: 1.5em; }
@@ -304,7 +307,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #ebebeb;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -395,7 +398,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  color: #373535;
   border: 1px solid #ccc;
   border-radius: 3px; }
   input[type="text"]:focus,
@@ -404,7 +407,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #373535; }
 
 input[type="text"],
 input[type="email"],
@@ -424,13 +427,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: white; }
   a:visited {
-    color: purple; }
+    color: white; }
   a:hover,
   a:focus,
   a:active {
-    color: midnightblue; }
+    color: #52abdf; }
   a:focus {
     outline: thin dotted; }
   a:hover,
@@ -441,15 +444,20 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: right; }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    *zoom: 1; }
+    .main-navigation ul:before,
+    .main-navigation ul:after {
+      content: "";
+      display: table; }
+    .main-navigation ul:after {
+      clear: both; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -470,10 +478,22 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding: 20px 15px; }
+    .main-navigation li:after {
+      content: '|';
+      color: #444;
+      position: absolute;
+      top: 18px;
+      right: -5px; }
+    .main-navigation li:last-child {
+      padding-right: 0; }
+      .main-navigation li:last-child:after {
+        content: ''; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 300; }
 
 /* Small menu. */
 .menu-toggle,
@@ -878,8 +898,30 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+header {
+  background: #191919;
+  padding: 25px 0; }
+  header .container {
+    *zoom: 1; }
+    header .container:before,
+    header .container:after {
+      content: "";
+      display: table; }
+    header .container:after {
+      clear: both; }
+
+.site-branding {
+  float: left; }
+  .site-branding h1 {
+    line-height: 1.75;
+    letter-spacing: 1px; }
+
+/*--------------------------------------------------------------
 # Custom Styles
 --------------------------------------------------------------*/
 .container {
   max-width: 980px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 1rem; }
