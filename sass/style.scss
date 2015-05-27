@@ -117,3 +117,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
