@@ -19,10 +19,8 @@ get_header(); ?>
 
 
 <div id="primary" class="content-area">
-<<<<<<< HEAD
 	<!-- <p>This is the page.php</p> -->
-=======
->>>>>>> 7c2b5c1566a1d24411265cbc252080375496d91b
+
 	<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
