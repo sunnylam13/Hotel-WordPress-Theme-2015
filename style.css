@@ -235,6 +235,11 @@ body {
   body:after {
     clear: both; }
 
+.wrapper {
+  border: 5px dotted black;
+  max-width: 1200px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -673,8 +678,42 @@ a {
 .bypostauthor {
   display: block; }
 
-.wrapper {
-  max-width: 940px; }
+#content.site-content {
+  border: 5px solid blue;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+#content.site-content #primary {
+  border: 5px solid orange;
+  -webkit-flex: 1 74%;
+  -ms-flex: 1 74%;
+  flex: 1 74%; }
+
+#content.site-content #secondary {
+  border: 5px solid red;
+  -webkit-flex: 1 25%;
+  -ms-flex: 1 25%;
+  flex: 1 25%; }
 
 footer.site-footer {
   clear: both; }
