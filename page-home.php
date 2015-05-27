@@ -10,7 +10,13 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
 
-    <section class="masthead slider">
+    <section class="masthead gallery js-flickity" 
+      data-flickity-options='
+        { 
+          "imagesLoaded": true,
+          "cellSelector": "img"
+        }
+      '>
       <img src="https://placeimg.com/1920/1080/arch" alt="">
       <img src="https://placeimg.com/1920/1080/arch" alt="">
       <img src="https://placeimg.com/1920/1080/arch" alt="">
