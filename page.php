@@ -13,7 +13,13 @@
 get_header(); ?>
 
 
+<div id="primary" class="content-area">
+	<p>This is the page.php</p>
+	<main id="main" class="site-main" role="main">
 
+<<<<<<< HEAD
+		<?php while ( have_posts() ) : the_post(); ?>
+=======
 <div class="wrapper clearfix">
 	
 	<div id="primary" class="content-area">
@@ -30,9 +36,15 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 
 </div> <!-- end wrapper -->
+>>>>>>> eb466480c6b75e0c9336e8dc7dd280c2e3585f1a
 
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+		<?php endwhile; // end of the loop. ?>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 
 
 <?php get_footer(); ?>
