@@ -21,8 +21,10 @@ Reservations
 	<option value="presidential suite">Presidential Suite</option>
 </select>
 
-<input type="date">
+<input type="text" placeholder="From">
 
-<input type="date">
+<input type="text" placeholder="To">
+
+<input type="submit" value="Book now">
 
 <!-- ====================================== -->
