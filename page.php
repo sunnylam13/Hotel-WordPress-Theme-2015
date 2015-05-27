@@ -18,10 +18,8 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 
-
 		<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-		<?php endwhile; // end of the loop. ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
