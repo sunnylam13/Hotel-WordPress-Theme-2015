@@ -248,3 +248,87 @@ template-parts/sidebar-reservations.php
 }
 
 /*================================================ */
+
+/*================================================
+SIDEBAR - CONTACT US WIDGET
+this one is visible on sass/layout/_content-about.scss
+=================================================*/
+
+.sidebar.contactUs {
+	//flexbox parent
+	@include flexboxColumn1;
+	align-items: flex-start;
+
+	.row {
+		width: 100%;
+		//flexbox parent
+		@include flexboxRow1;
+
+		@include sectionPadding041515(5%,5%);
+		border-top: 1px solid $color__page-text;
+	}
+
+	.row div {
+		//flexbox parent
+		@include flexboxRow1;
+		align-items: flex-start;
+
+		p {
+			display: inline-block;
+			display: block;
+			width: 100%;
+			text-align: left;
+			@include marginPaddingReset1;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			text-align: left;
+			color: $color__page-text;
+		}
+
+	}
+
+	.row div:nth-child(1) {
+		//flex child
+		flex: 3 75%;
+
+		//flex parent
+		@include flexboxRow1;
+		align-items: flex-start;
+
+		text-align: left;
+	}
+
+	.row div:nth-child(2) {
+
+		//flex child
+		flex: 1 25%;
+
+		//flex parent
+		@include flexboxRow1;
+		justify-content: flex-end;
+		align-content: flex-end;
+
+		span {
+			@include font-size(1.3);
+			color: $color__page-text;
+		}
+	}
+
+	.row1 div:nth-child(2) {
+		span {
+			@include font-size(3);
+		}
+	}
+
+	.row1 {
+		@include sectionPadding041515(0,5%);
+		border-top: none;
+	}
+
+}
+
+/*================================================ */
+

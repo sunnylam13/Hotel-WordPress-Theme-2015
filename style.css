@@ -514,6 +514,141 @@ template-parts/sidebar-reservations.php
       outline: 1px solid #00A1E6; }
 
 /*================================================ */
+/*================================================
+SIDEBAR - CONTACT US WIDGET
+this one is visible on sass/layout/_content-about.scss
+=================================================*/
+.sidebar.contactUs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .sidebar.contactUs .row {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid #8F8E8E; }
+  .sidebar.contactUs .row div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .sidebar.contactUs .row div p {
+      display: inline-block;
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin: 0;
+      padding: 0; }
+    .sidebar.contactUs .row div a {
+      display: block;
+      width: 100%;
+      text-align: left;
+      color: #8F8E8E; }
+  .sidebar.contactUs .row div:nth-child(1) {
+    -webkit-flex: 3 75%;
+    -ms-flex: 3 75%;
+    flex: 3 75%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left; }
+  .sidebar.contactUs .row div:nth-child(2) {
+    -webkit-flex: 1 25%;
+    -ms-flex: 1 25%;
+    flex: 1 25%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end; }
+    .sidebar.contactUs .row div:nth-child(2) span {
+      font-size: 20.8px;
+      font-size: 1.3rem;
+      color: #8F8E8E; }
+  .sidebar.contactUs .row1 div:nth-child(2) span {
+    font-size: 48px;
+    font-size: 3rem; }
+  .sidebar.contactUs .row1 {
+    padding-top: 0;
+    padding-bottom: 5%;
+    border-top: none; }
+
+/*================================================ */
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -531,6 +666,16 @@ textarea {
 p {
   color: #8F8E8E; }
 
+/*================================================
+WIDGET STYLING CHANGES
+=================================================*/
+/* Search Widget, Standard */
+#search-3.widget_search h1 {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: 2.5%; }
+
+/*================================================ */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   margin: 0;

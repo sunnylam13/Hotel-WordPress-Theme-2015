@@ -12,7 +12,7 @@ Reservations
 
 <section class="reservationBooking">
 
-	<h2>Reservations</h2>
+	<h3>Reservations</h3>
 
 	<p>Request a reservation.  We will get back to you shortly.</p>
 

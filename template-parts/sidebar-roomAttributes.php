@@ -13,7 +13,7 @@
 
 	<section class="roomSummary">
 		
-		<h2>Room Attributes</h2>
+		<h3>Room Attributes</h3>
 
 		<!-- on hover the span image changes colour, suggest trying colour change on the `li` -->
 		<!-- import Font-Awesome -->
