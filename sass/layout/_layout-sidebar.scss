@@ -81,6 +81,10 @@ template-parts/sidebar-reservations.php
 .reservationBooking {
 	margin-bottom: 10%;
 
+	h5 {
+		font-weight: bold;
+	}
+
 	p {
 		@include marginPaddingReset1;
 		@include sectionMargins041515(0,2.5%);
@@ -179,6 +183,10 @@ this one is visible on sass/layout/_content-about.scss
 	//flexbox parent
 	@include flexboxColumn1;
 	align-items: flex-start;
+
+	h5 {
+		font-weight: bold;
+	}
 
 	.row {
 		width: 100%;
