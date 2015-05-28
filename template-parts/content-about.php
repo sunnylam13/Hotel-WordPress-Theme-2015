@@ -11,7 +11,7 @@
 
 <section class="about promo">
 
-	<h3>Lorem ipsum dolor sit amet.</h3>
+	<h5>Lorem ipsum dolor sit amet.</h5>
 	
 	<!-- Images should be 198x150px -->
 	<!-- this should be a video with a hover state and play button; could use ::before/::after and position absolute -->
