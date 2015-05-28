@@ -29,12 +29,19 @@
         </aside>
 
         <nav>
-          <ul>
+          <!-- if you try to enter links manually they won't work, use WordPress built in function to call the menu if it exists/is in use -->
+          <!-- <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Room &amp; Suites</a></li>
             <li><a href="#">Reservation</a></li>
             <li><a href="#">Contact</a></li>
-          </ul>
+          </ul> -->
+
+          <?php 
+            if ( has_nav_menu( 'footer_menu' ) ) { /* if menu location 'primary-menu' exists then use custom menu */
+                  wp_nav_menu( array( 'theme_location' => 'footer_menu') ); 
+            }
+          ?>
         </nav>
 
   		</div><!-- .site-info -->
