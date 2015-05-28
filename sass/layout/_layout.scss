@@ -336,6 +336,13 @@ this one is visible on sass/layout/_content-about.scss
 WIDGET STYLING CHANGES
 =================================================*/
 
+/* change the styling of the h1 for any widget in the Sidebar
+all h1's that are widgets will be changed */
+.widget-area h1 {
+	@include font-size(1.2);
+	margin-bottom: 2.5%;
+}
+
 /* Search Widget, Standard */
 /* this overrides WordPress default styling... this works well only if the sidebar is actually on the side */
 #search-3.widget_search h1 {
@@ -361,6 +368,15 @@ form.search-form {
 	
 }
 
+.widget li a {
+	color: $color__page-text;
+	text-decoration: none;
+	@include transitionEffectAllEaseIn(0.3s);
+	&:hover {
+		color: $color__link-hover;
+	}
+}
+
 /*================================================ */
 
 /*================================================
@@ -369,6 +385,9 @@ for index.php
 =================================================*/
 
 #primary.content-area article {
+
+	border-top: 1px solid $color__page-text;
+	@include sectionPadding041515(5%,5%);
 
 	span.posted-on {
 		color: darken($color__page-text,10%);
@@ -384,6 +403,12 @@ for index.php
 		}
 	}
 
+	.entry-content img {
+		max-width: 100%;
+		border-radius: 3px;
+		border: 1px solid $color__page-text;
+	}
+
 	time {
 		color: darken($color__page-text,10%);
 		@include transitionEffectAllEaseIn(0.3s);
@@ -394,20 +419,31 @@ for index.php
 	}
 
 	footer.entry-footer {
+		// flexbox parent
+		@include flexboxRow1;
+		align-items: flex-start;
+
 		span {
+			// flex child
+			flex: 1 45%;
 			margin-right: 5%;
+			margin-bottom: 2.5%;
 		}
 
 		span a {
 			color: $color__page-text;
 			font-style: italic;
+
+			&:hover {
+				color: $color__link-hover;
+			}
 		}
 
-		// span::after {
-		// 	@include beforeAfterIconPlace042215a("|");
-		// 	margin: 0px 0px 0px 35px;
-		// }
 	}
+}
+
+#primary.content-area article:first-child {
+	border-top: none;
 }
 
 /*================================================ */

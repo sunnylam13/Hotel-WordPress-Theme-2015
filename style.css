@@ -653,6 +653,13 @@ this one is visible on sass/layout/_content-about.scss
 /*================================================
 WIDGET STYLING CHANGES
 =================================================*/
+/* change the styling of the h1 for any widget in the Sidebar
+all h1's that are widgets will be changed */
+.widget-area h1 {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: 2.5%; }
+
 /* Search Widget, Standard */
 /* this overrides WordPress default styling... this works well only if the sidebar is actually on the side */
 #search-3.widget_search h1 {
@@ -679,39 +686,81 @@ form.search-form {
     right: -5px;
     color: #8F8E8E; }
 
+.widget li a {
+  color: #8F8E8E;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  .widget li a:hover {
+    color: #52abdf; }
+
 /*================================================ */
 /*================================================
 CONTENT - NEWS/BLOG PAGE
 for index.php
 =================================================*/
-#primary.content-area article span.posted-on {
-  color: #767474; }
+#primary.content-area article {
+  border-top: 1px solid #8F8E8E;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  #primary.content-area article span.posted-on {
+    color: #767474; }
+  #primary.content-area article a {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in; }
+    #primary.content-area article a:hover {
+      color: #52abdf; }
+  #primary.content-area article .entry-content img {
+    max-width: 100%;
+    border-radius: 3px;
+    border: 1px solid #8F8E8E; }
+  #primary.content-area article time {
+    color: #767474;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in; }
+    #primary.content-area article time:hover {
+      color: #52abdf; }
+  #primary.content-area article footer.entry-footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    #primary.content-area article footer.entry-footer span {
+      -webkit-flex: 1 45%;
+      -ms-flex: 1 45%;
+      flex: 1 45%;
+      margin-right: 5%;
+      margin-bottom: 2.5%; }
+    #primary.content-area article footer.entry-footer span a {
+      color: #8F8E8E;
+      font-style: italic; }
+      #primary.content-area article footer.entry-footer span a:hover {
+        color: #52abdf; }
 
-#primary.content-area article a {
-  text-decoration: none;
-  color: black;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in; }
-  #primary.content-area article a:hover {
-    color: #52abdf; }
-
-#primary.content-area article time {
-  color: #767474;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in; }
-  #primary.content-area article time:hover {
-    color: #52abdf; }
-
-#primary.content-area article footer.entry-footer span {
-  margin-right: 5%; }
-
-#primary.content-area article footer.entry-footer span a {
-  color: #8F8E8E;
-  font-style: italic; }
+#primary.content-area article:first-child {
+  border-top: none; }
 
 /*================================================ */
 /*--------------------------------------------------------------
@@ -1594,6 +1643,16 @@ header.site-header {
   .site-branding h1 {
     line-height: 1.75;
     letter-spacing: 1px; }
+
+footer.site-footer a {
+  color: #8F8E8E;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  footer.site-footer a:hover {
+    color: #52abdf; }
 
 .masthead {
   position: relative;
