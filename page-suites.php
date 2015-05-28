@@ -14,7 +14,7 @@ get_header(); ?>
 
 
 <!-- create a separate div instead of using the other WordPress parent to avoid crazy conflicts -->
-<div class="flexbox">
+<div class="flexbox suites">
 	
 <div id="primary" class="content-area">
 	<!-- <p>This is the page.php</p> -->

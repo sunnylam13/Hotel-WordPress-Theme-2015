@@ -1,9 +1,21 @@
-// .wrapper {
-// 	border: 5px dotted black;
-// 	max-width: 1200px;
-// 	margin: 0 auto;
+/*================================================
+DIV FLEXBOX
+this contains both the content and the sidebar
+=================================================*/
 
-// 	// // flexbox parent
-// 	// @include flexboxRow1;
-// 	// align-items: flex-start;
-// }
+.flexbox {
+	@include flexboxRow1;
+	align-items: flex-start;
+
+	#primary {
+		flex: 2 75%;
+	}
+
+	#secondary {
+		flex: 1 25%;
+	}
+}
+
+
+
+/*================================================ */
