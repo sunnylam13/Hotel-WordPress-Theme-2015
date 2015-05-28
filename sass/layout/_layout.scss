@@ -337,7 +337,7 @@ WIDGET STYLING CHANGES
 =================================================*/
 
 /* Search Widget, Standard */
-/* this overrides WordPress default styling */
+/* this overrides WordPress default styling... this works well only if the sidebar is actually on the side */
 #search-3.widget_search h1 {
 	@include font-size(1.2);
 	margin-bottom: 2.5%;
@@ -359,6 +359,55 @@ form.search-form {
 		color: $color__page-text;
 	}
 	
+}
+
+/*================================================ */
+
+/*================================================
+CONTENT - NEWS/BLOG PAGE
+for index.php
+=================================================*/
+
+#primary.content-area article {
+
+	span.posted-on {
+		color: darken($color__page-text,10%);
+	}
+
+	a {
+		text-decoration: none;
+		color: $color__link_alt1;
+		@include transitionEffectAllEaseIn(0.3s);
+
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+
+	time {
+		color: darken($color__page-text,10%);
+		@include transitionEffectAllEaseIn(0.3s);
+
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+
+	footer.entry-footer {
+		span {
+			margin-right: 5%;
+		}
+
+		span a {
+			color: $color__page-text;
+			font-style: italic;
+		}
+
+		// span::after {
+		// 	@include beforeAfterIconPlace042215a("|");
+		// 	margin: 0px 0px 0px 35px;
+		// }
+	}
 }
 
 /*================================================ */
