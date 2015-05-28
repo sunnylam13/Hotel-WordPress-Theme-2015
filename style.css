@@ -650,6 +650,70 @@ this one is visible on sass/layout/_content-about.scss
     border-top: none; }
 
 /*================================================ */
+/*================================================
+WIDGET STYLING CHANGES
+=================================================*/
+/* Search Widget, Standard */
+/* this overrides WordPress default styling... this works well only if the sidebar is actually on the side */
+#search-3.widget_search h1 {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: 2.5%; }
+
+input[type="search"].search-field {
+  width: 94%;
+  margin: 0;
+  padding: 2% 4% 2% 4%; }
+
+form.search-form {
+  position: relative; }
+  form.search-form::after {
+    content: "";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+    position: absolute;
+    top: 6px;
+    right: -5px;
+    color: #8F8E8E; }
+
+/*================================================ */
+/*================================================
+CONTENT - NEWS/BLOG PAGE
+for index.php
+=================================================*/
+#primary.content-area article span.posted-on {
+  color: #767474; }
+
+#primary.content-area article a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  #primary.content-area article a:hover {
+    color: #52abdf; }
+
+#primary.content-area article time {
+  color: #767474;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  #primary.content-area article time:hover {
+    color: #52abdf; }
+
+#primary.content-area article footer.entry-footer span {
+  margin-right: 5%; }
+
+#primary.content-area article footer.entry-footer span a {
+  color: #8F8E8E;
+  font-style: italic; }
+
+/*================================================ */
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -667,16 +731,6 @@ textarea {
 p {
   color: #8F8E8E; }
 
-/*================================================
-WIDGET STYLING CHANGES
-=================================================*/
-/* Search Widget, Standard */
-#search-3.widget_search h1 {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  margin-bottom: 2.5%; }
-
-/*================================================ */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   margin: 0;
