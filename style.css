@@ -259,10 +259,22 @@ this contains both the content and the sidebar
   -ms-flex-align: start;
   align-items: flex-start; }
   .flexbox #primary {
+    /*================================================
+		BACKUP IE SUPPORT
+		=================================================*/
+    float: left;
+    width: 75%;
+    /*================================================ */
     -webkit-flex: 2 75%;
     -ms-flex: 2 75%;
     flex: 2 75%; }
   .flexbox #secondary {
+    /*================================================
+		BACKUP IE SUPPORT
+		=================================================*/
+    float: right;
+    width: 25%;
+    /*================================================ */
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
     flex: 1 25%; }
@@ -741,6 +753,18 @@ This styles page-about.php
 DIV FLEXBOX
 this contains both the content and the sidebar
 =================================================*/
+/*================================================ */
+/*================================================
+CONTENT ABOUT
+This styles page-about.php
+=================================================*/
+/*================================================
+SUITES PROMO
+=================================================*/
+section.suitesPromo {
+  border-top: 1px dashed darkgrey;
+  padding-top: 3%; }
+
 /*================================================ */
 /*--------------------------------------------------------------
 # Infinite scroll
