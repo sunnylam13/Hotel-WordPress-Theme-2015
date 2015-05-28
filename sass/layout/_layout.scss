@@ -286,6 +286,12 @@ this one is visible on sass/layout/_content-about.scss
 			width: 100%;
 			text-align: left;
 			color: $color__page-text;
+			text-decoration: none;
+			@include transitionEffectAllEaseIn(0.3s);
+
+			&:hover {
+				color: $color__link-hover;
+			}
 		}
 
 	}
@@ -368,6 +374,10 @@ form.search-form {
 	
 }
 
+.widget li {
+	@include sectionPadding041515(2%,2%);
+}
+
 .widget li a {
 	color: $color__page-text;
 	text-decoration: none;
@@ -387,7 +397,7 @@ for index.php
 #primary.content-area article {
 
 	border-top: 1px solid $color__page-text;
-	@include sectionPadding041515(5%,5%);
+	@include sectionPadding041515(5%,0);
 
 	span.posted-on {
 		color: darken($color__page-text,10%);

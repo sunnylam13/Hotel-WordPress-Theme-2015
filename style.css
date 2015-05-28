@@ -588,7 +588,14 @@ this one is visible on sass/layout/_content-about.scss
       display: block;
       width: 100%;
       text-align: left;
-      color: #8F8E8E; }
+      color: #8F8E8E;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in; }
+      .sidebar.contactUs .row div a:hover {
+        color: #52abdf; }
   .sidebar.contactUs .row div:nth-child(1) {
     -webkit-flex: 3 75%;
     -ms-flex: 3 75%;
@@ -686,6 +693,10 @@ form.search-form {
     right: -5px;
     color: #8F8E8E; }
 
+.widget li {
+  padding-top: 2%;
+  padding-bottom: 2%; }
+
 .widget li a {
   color: #8F8E8E;
   text-decoration: none;
@@ -704,7 +715,7 @@ for index.php
 #primary.content-area article {
   border-top: 1px solid #8F8E8E;
   padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 0; }
   #primary.content-area article span.posted-on {
     color: #767474; }
   #primary.content-area article a {

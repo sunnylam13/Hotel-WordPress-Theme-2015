@@ -15,7 +15,7 @@
 		<div><span class="fa fa-mobile-phone"></span></div>
 	</div>
 	<div class="row row2">
-		<div><p>Live Chat</p></div>
+		<div><a href="#">Live Chat</a></div>
 		<div><span class="fa fa-wechat"></span></div>
 	</div>
 	<div class="row row3">
