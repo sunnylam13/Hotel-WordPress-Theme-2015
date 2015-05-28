@@ -1,0 +1,260 @@
+/*================================================
+SIDEBARS
+here we style the sidebars generally
+template-parts/*.php
+sidebar.php
+=================================================*/
+
+#secondary {
+	//
+}
+
+/*================================================ */
+
+/*================================================
+SIDEBAR - ROOM ATTRIBUTES WIDGET
+template-parts/sidebar-roomAttributes.php
+=================================================*/
+
+.roomAttributes {
+
+	margin-bottom: 10%;
+
+	li {
+		// flexbox parent
+		@include flexboxRow1;
+
+		border-top: 1px solid $color__page-text;
+		@include sectionPadding041515(5%,5%);
+
+		cursor: pointer;
+	}
+
+	// whenver the user hovers over the li, they cause the span icon to change colour
+	li:hover > div > span {
+		color: $roomAttributeIcon;
+	}
+
+	li:first-child {
+		border-top: none;
+	}
+
+	li:nth-child(3) div span {
+		margin-right: 7%;
+	}
+
+	li div:nth-child(1) {
+		// flex child
+		flex: 3 75%;
+	}
+
+	li div:nth-child(2) {
+		// flex child
+		flex: 1 25%;
+
+		//flexbox parent
+		@include flexboxRow1;
+		justify-content: flex-end;
+		align-content: flex-end;
+	}
+
+	
+
+	p {
+		@include marginPaddingReset1;
+	}
+
+	span.fa {
+		color: $color__page-text;
+		@include font-size(1.2);
+		@include transitionEffectAllEaseIn(0.4s);
+	}
+}
+
+/*================================================ */
+
+/*================================================
+SIDEBAR - RESERVATIONS WIDGET
+template-parts/sidebar-reservations.php
+=================================================*/
+
+.reservationBooking {
+	margin-bottom: 10%;
+
+	p {
+		@include marginPaddingReset1;
+		@include sectionMargins041515(0,2.5%);
+	}
+
+	input[type='text'] {
+		border-radius: 5px;
+		border: 1px solid lightgrey;
+		padding: 3% 4% 3% 4%;
+		@include sectionMargins041515(2.5%,2.5%);
+	}
+
+	div.selectMenuPH {
+		position: relative;
+		&::after {
+			@include beforeAfterIconPlace042215a("\f0dd");
+			position: absolute;
+			top: 11px;
+			right: 0;
+			color: $color__page-text;
+		}
+	}
+
+	input.selectMenuPH {
+		width: 100%;
+	}
+
+	div.fromToDate {
+		// flexbox parent
+		@include flexboxRow1;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+
+	div.fromToDate div {
+		// flex child
+		flex: 1 45%;
+
+		position: relative;
+
+		input {
+			max-width: 100%;
+			padding: 3% 4% 3% 8%;
+		}
+
+		&::after {
+			@include beforeAfterIconPlace042215a("\f073");
+			position: absolute;
+			color: $color__page-text;
+			top: 7px;
+			right: 0;
+		}
+	}
+
+	div.fromToDate div:first-child {
+		margin-right: 5%;
+
+		&::after {
+			// @include beforeAfterIconPlace042215a("\f0dd");
+		}
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		border: 0;
+		border-radius: 0px;
+		box-shadow: none;
+		text-shadow: none;
+		background: $roomAttributeIcon;
+		color: white;
+		font-weight: bold;
+		@include font-size(1);
+		line-height: $baselineheight*1.5;
+		padding: 2% 0 2% 0;
+		@include sectionMargins041515(2.5%,2.5%);
+		@include transitionEffectAllEaseIn(0.5s);
+
+		&:hover {
+			box-shadow: none;
+			text-shadow: none;
+			background: white;
+			color: $roomAttributeIcon;
+			outline: 1px solid $roomAttributeIcon;
+		}
+	}
+}
+
+/*================================================ */
+
+/*================================================
+SIDEBAR - CONTACT US WIDGET
+this one is visible on sass/layout/_content-about.scss
+=================================================*/
+
+.sidebar.contactUs {
+	//flexbox parent
+	@include flexboxColumn1;
+	align-items: flex-start;
+
+	.row {
+		width: 100%;
+		//flexbox parent
+		@include flexboxRow1;
+
+		@include sectionPadding041515(5%,5%);
+		border-top: 1px solid $color__page-text;
+	}
+
+	.row div {
+		//flexbox parent
+		@include flexboxRow1;
+		align-items: flex-start;
+
+		p {
+			display: inline-block;
+			display: block;
+			width: 100%;
+			text-align: left;
+			@include marginPaddingReset1;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			text-align: left;
+			color: $color__page-text;
+			text-decoration: none;
+			@include transitionEffectAllEaseIn(0.3s);
+
+			&:hover {
+				color: $color__link-hover;
+			}
+		}
+
+	}
+
+	.row div:nth-child(1) {
+		//flex child
+		flex: 3 75%;
+
+		//flex parent
+		@include flexboxRow1;
+		align-items: flex-start;
+
+		text-align: left;
+	}
+
+	.row div:nth-child(2) {
+
+		//flex child
+		flex: 1 25%;
+
+		//flex parent
+		@include flexboxRow1;
+		justify-content: flex-end;
+		align-content: flex-end;
+
+		span {
+			@include font-size(1.3);
+			color: $color__page-text;
+		}
+	}
+
+	.row1 div:nth-child(2) {
+		span {
+			@include font-size(3);
+		}
+	}
+
+	.row1 {
+		@include sectionPadding041515(0,5%);
+		border-top: none;
+	}
+
+}
+
+/*================================================ */

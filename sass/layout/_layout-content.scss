@@ -1,0 +1,170 @@
+/*================================================
+CONTENT STYLING, GENERAL
+for changes that are not specific to any one page or section of content
+=================================================*/
+
+/*================================================
+PROMOBOX
+this is mainly found on specific content-pages.php
+such as 
+content-suites.php
+content-about.php
+
+more specific styling
+layout/_content-suites.scss
+layout/_content-about.scss
+=================================================*/
+
+.promo {
+
+	// flexbox parent
+	@include flexboxRow1;
+	align-items: flex-start;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 3px;
+		border: 1px solid grey;
+	}
+
+	.promobox h2 {
+		@include sectionMargins041515(5%,0);
+	}
+
+	.promobox p {
+		@include sectionMargins041515(0,0);
+	}
+}
+
+/*================================================ */
+
+
+
+
+
+/*================================================
+CONTENT - NEWS/BLOG PAGE
+for index.php
+=================================================*/
+
+#primary.content-area article {
+
+	// border-top: 1px solid $color__page-text;
+	// border-bottom: 1px solid $color__page-text;
+	// border-bottom: 1px dashed darkgrey;
+	border-bottom: 1px dashed $color__page-text;
+	// @include sectionPadding041515(5%,0);
+	padding-bottom: 5%;
+
+	span.posted-on {
+		color: darken($color__page-text,10%);
+		@include font-size(0.75);
+
+		time {
+			color: darken($color__page-text,10%);
+			@include transitionEffectAllEaseIn(0.3s);
+			
+
+			&:hover {
+				color: $color__link-hover;
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $color__link_alt1;
+		@include transitionEffectAllEaseIn(0.3s);
+
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+
+	.entry-content img {
+		max-width: 100%;
+		border-radius: 3px;
+		border: 1px solid $color__page-text;
+	}
+
+
+
+	footer.entry-footer {
+		// flexbox parent
+		@include flexboxRow1;
+		align-items: flex-start;
+
+		span {
+			// flex child
+			flex: 1 45%;
+			margin-right: 5%;
+			margin-bottom: 1%;
+
+			@include font-size(0.75);
+		}
+
+		span a {
+			color: $color__page-text;
+			font-style: italic;
+			@include font-size(0.75);
+
+			&:hover {
+				color: $color__link-hover;
+			}
+		}
+
+	}
+}
+
+// #primary.content-area article:first-child {
+// 	border-top: none;
+// }
+
+/*================================================ */
+
+
+/*================================================
+CONTENT - SECTION PROMO
+layout/_content-suites.scss
+layout/_content-about.scss
+=================================================*/
+
+section.promo {
+	padding-top: 5%;
+}
+
+/*================================================ */
+
+/*================================================
+MAST HEAD FOR INTERIOR PAGES
+=================================================*/
+
+// Masthead Area for interior pages
+
+.masthead {
+	position: relative;
+	img {
+		display: block;
+	}
+	h3 {
+		max-width: 500px;
+		color: white;
+		position: absolute;
+		bottom: 0;
+		&:after {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  right: -24px;
+		  border-right: 24px solid transparent;
+		  border-top: 48px solid #52abdf;
+		}
+	}
+
+}
+
+
+/*================================================ */
+
+

@@ -1,0 +1,53 @@
+/*================================================
+WIDGET STYLING CHANGES
+=================================================*/
+
+/* change the styling of the standard WordPress widgets here */
+
+/* change the styling of the h1 for any widget in the Sidebar
+all h1's that are widgets will be changed */
+.widget-area h1 {
+	@include font-size(1.2);
+	margin-bottom: 2.5%;
+}
+
+/* Search Widget, Standard */
+/* this overrides WordPress default styling... this works well only if the sidebar is actually on the side */
+#search-3.widget_search h1 {
+	@include font-size(1.2);
+	margin-bottom: 2.5%;
+	// @include sectionMargins041515(2.5%,2.5%);
+}
+
+input[type="search"].search-field {
+	width: 94%;
+	margin: 0;
+	padding: 2% 4% 2% 4%;
+}
+
+form.search-form {
+	position: relative;
+	&::after {
+		@include beforeAfterIconPlace042215a("\f002");
+		position: absolute;
+		top: 6px;
+		right: -5px;
+		color: $color__page-text;
+	}
+	
+}
+
+.widget li {
+	@include sectionPadding041515(2%,2%);
+}
+
+.widget li a {
+	color: $color__page-text;
+	text-decoration: none;
+	@include transitionEffectAllEaseIn(0.3s);
+	&:hover {
+		color: $color__link-hover;
+	}
+}
+
+/*================================================ */

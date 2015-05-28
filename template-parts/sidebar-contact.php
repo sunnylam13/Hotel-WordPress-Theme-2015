@@ -8,7 +8,7 @@
 
 <aside class="sidebar contactUs">
 	
-	<h3>Contact us</h3>
+	<h5>Contact us</h5>
 
 	<div class="row row1">
 		<div><p>555-555-5555</p></div>
