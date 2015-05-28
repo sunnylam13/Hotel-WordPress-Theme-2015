@@ -776,7 +776,6 @@ for index.php
         color: #52abdf; }
 
 /*================================================ */
-<<<<<<< HEAD
 /*================================================
 CONTENT - SECTION PROMO
 layout/_content-suites.scss
@@ -791,7 +790,6 @@ SEARCH RESULTS
 search.php
 =================================================*/
 /*================================================ */
-=======
 .masthead {
   position: relative; }
   .masthead img {
@@ -809,7 +807,6 @@ search.php
       border-right: 24px solid transparent;
       border-top: 48px solid #52abdf; }
 
->>>>>>> 6331baec78bf1fc20d3a8a4ad91de704a3fde1f8
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
