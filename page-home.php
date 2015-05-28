@@ -82,7 +82,28 @@ get_header(); ?>
       <div class="container">
         
         <ul class="roomTypes">
-          <li>
+          <?php //Arguments for query ?>
+          <?php $args = array(
+            'category_name' => 'room-type',
+            'posts_per_page' => 3
+          ); ?>
+          <?php // The Query ?>
+          <?php $the_query = new WP_Query( $args ); ?>
+
+          <?php if ( $the_query->have_posts() ) : ?>
+
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+              <li>
+                <?php the_post_thumbnail('full'); ?>
+                <h5><?php the_title(); ?></h5>
+                <p><?php the_content(); ?></p>
+              </li>
+
+            <?php endwhile; ?>
+
+          <?php endif; ?>
+          <!-- <li>
             <img src="https://placeimg.com/300/150/arch" alt="">
             <h5>Single Room <span class="price">$110</span></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ullam quam quas corporis! Voluptas mollitia molestias necessitatibus dolores, temporibus minus earum magnam, dicta, commodi veritatis non odit repudiandae cum dolore.</p>
@@ -96,7 +117,7 @@ get_header(); ?>
             <img src="https://placeimg.com/300/150/arch" alt="">
             <h5>Executive Suite <span class="price">$210</span></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum adipisci atque, molestias nemo totam optio dolores blanditiis eaque vero tenetur, modi sequi doloremque nisi! Atque nam, quia recusandae temporibus.</p>
-          </li>
+          </li> -->
         </ul>
 
       </div>
