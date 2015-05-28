@@ -1,0 +1,85 @@
+/*================================================
+CONTENT ABOUT
+This styles page-about.php
+this is imported at site/_site.scss
+overall layout is found in layout/_layout.scss
+=================================================*/
+
+/*================================================
+SUITES PROMO
+=================================================*/
+
+section.suites.promo {
+	border-top: 1px dashed darkgrey;
+	padding-top: 5%;
+
+	.promobox {
+		// flex child
+		flex: 1 28%;
+	}
+
+	.promobox .imgFrame {
+		position: relative;
+		height: auto;
+		//flexbox parent
+		@include flexboxColumn1;
+
+		@include transitionEffectAllEaseIn(1s);
+	}
+
+	.promobox .imgFrame:hover > .playFrame {
+		display: flex;
+	}
+
+	.promobox .playFrame {
+		// this is an `a` element
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-decoration: none;
+
+		background: $videoOverlay;
+		border-radius: 5px;
+
+		&:visited {color: black;}
+		&:link {color: black;}
+		&:hover {color: black;}
+
+		@include transitionEffectAllEaseIn(1s);
+
+		//flexbox parent
+		@include flexboxColumn1;
+
+		// DEFAULT DISPLAY STATUS
+		// when the user hovers over the image frame this should appear
+		display: none;
+	}
+
+	.promobox .playFrame span {
+		//flexbox parent
+		@include flexboxColumn1;
+	}
+
+	.promobox .playFrame span::before {
+		@include beforeAfterIconPlace042215a('\f04b');
+		background: $videoButtons;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		//flexbox parent
+		@include flexboxColumn1;
+		margin: 0 0 0 2.5px;
+		padding-left: 2.5px;
+	}
+
+	.box2 {
+		margin: 0 5% 0 5%;
+	}
+}
+
+
+
+/*================================================ */
+

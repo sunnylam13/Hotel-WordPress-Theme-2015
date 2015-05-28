@@ -12,6 +12,8 @@ $color__link: white;
 $color__link-visited: $color__link;
 $color__link-hover: #52abdf;
 $color__text-main: #373535;
+// $color__text-main: #8F8E8E;
+$color__page-text: #8F8E8E;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
@@ -21,3 +23,6 @@ $color__border-abbr: #666;
 
 $color__header-bg: #191919;
 $color__nav-divider: #444;
+
+$videoButtons: #00A1E6;
+$videoOverlay: rgba(0, 0, 0,0.6);

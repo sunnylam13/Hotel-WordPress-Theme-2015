@@ -9,7 +9,7 @@
 
 
 
-<section class="aboutPromo">
+<section class="about promo">
 	
 	<h3>Lorem ipsum dolor sit amet.</h3>
 	
@@ -18,7 +18,8 @@
 	
 	<div class="promobox box1">
 		<div class="imgFrame">
-			<img src="http://lorempixel.com/198/150" alt="">
+			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
+			<img src="http://lorempixel.com/396/300" alt="">
 		</div>
 		<div class="copy">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
@@ -26,7 +27,8 @@
 	</div>
 	<div class="promobox box2">
 		<div class="imgFrame">
-			<img src="http://lorempixel.com/198/150" alt="">
+			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
+			<img src="http://lorempixel.com/396/300" alt="">
 		</div>
 		<div class="copy">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>

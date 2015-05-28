@@ -1,9 +1,75 @@
-// .wrapper {
-// 	border: 5px dotted black;
-// 	max-width: 1200px;
-// 	margin: 0 auto;
+/*================================================
+DIV FLEXBOX
+this contains both the content and the sidebar
+=================================================*/
 
-// 	// // flexbox parent
-// 	// @include flexboxRow1;
-// 	// align-items: flex-start;
-// }
+.flexbox {
+	@include flexboxRow1;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: flex-start;
+
+	#primary {
+		/*================================================
+		BACKUP IE SUPPORT
+		=================================================*/
+		float: left;
+		width: 75%;
+		/*================================================ */
+		
+		flex: 2 75%;
+
+		padding-right: 5%;
+	}
+
+	#secondary {
+		/*================================================
+		BACKUP IE SUPPORT
+		=================================================*/
+		float: right;
+		width: 25%;
+		/*================================================ */
+		
+		flex: 1 25%;
+	}
+}
+
+
+
+/*================================================ */
+
+/*================================================
+PROMOBOX
+this is mainly found on specific content-pages.php
+such as 
+content-suites.php
+content-about.php
+
+more specific styling
+layout/_content-suites.scss
+layout/_content-about.scss
+=================================================*/
+
+.promo {
+
+	// flexbox parent
+	@include flexboxRow1;
+	align-items: flex-start;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 5px;
+		border: 1px solid grey;
+	}
+
+	.promobox h2 {
+		@include sectionMargins041515(5%,0);
+	}
+
+	.promobox p {
+		@include sectionMargins041515(0,0);
+	}
+}
+
+/*================================================ */
