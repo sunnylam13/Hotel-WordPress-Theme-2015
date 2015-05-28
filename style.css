@@ -776,6 +776,7 @@ for index.php
         color: #52abdf; }
 
 /*================================================ */
+<<<<<<< HEAD
 /*================================================
 CONTENT - SECTION PROMO
 layout/_content-suites.scss
@@ -790,6 +791,25 @@ SEARCH RESULTS
 search.php
 =================================================*/
 /*================================================ */
+=======
+.masthead {
+  position: relative; }
+  .masthead img {
+    display: block; }
+  .masthead h3 {
+    max-width: 500px;
+    color: white;
+    position: absolute;
+    bottom: 0; }
+    .masthead h3:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -24px;
+      border-right: 24px solid transparent;
+      border-top: 48px solid #52abdf; }
+
+>>>>>>> 6331baec78bf1fc20d3a8a4ad91de704a3fde1f8
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -816,6 +836,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
+
+h2 {
+  padding: 15px 20px;
+  background: #2a2a2a;
+  font-weight: 700; }
+  h2:after {
+    border-right: 33px solid transparent;
+    border-top: 66px solid #2a2a2a;
+    right: -33px; }
+
+h3 {
+  padding: 10px 20px;
+  background: #52abdf;
+  font-weight: 300; }
+  h3:after {
+    border-right: 24px solid transparent;
+    border-top: 48px solid #52abdf;
+    right: -24px; }
 
 h5 {
   font-family: 'Open Sans', sans-serif;
@@ -1577,7 +1615,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: 25px;
+  bottom: 65px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -2473,39 +2511,23 @@ footer.site-footer .site-info nav ul {
   -ms-flex-line-pack: justify;
   align-content: space-between; }
 
-.masthead {
+.home .masthead {
   position: relative;
   padding-top: 35px; }
-  .masthead .overlay {
+  .home .masthead .overlay {
     position: absolute;
     top: 42%;
     z-index: 10;
     width: 100%; }
-    .masthead .overlay h2, .masthead .overlay h3 {
+    .home .masthead .overlay h2, .home .masthead .overlay h3 {
       color: white;
       float: left;
       position: relative;
       text-transform: uppercase; }
-      .masthead .overlay h2:after, .masthead .overlay h3:after {
+      .home .masthead .overlay h2:after, .home .masthead .overlay h3:after {
         content: '';
         position: absolute;
         top: 0; }
-    .masthead .overlay h2 {
-      padding: 15px 20px;
-      background: #2a2a2a;
-      font-weight: 700; }
-      .masthead .overlay h2:after {
-        border-right: 33px solid transparent;
-        border-top: 66px solid #2a2a2a;
-        right: -33px; }
-    .masthead .overlay h3 {
-      padding: 10px 20px;
-      background: #52abdf;
-      font-weight: 300; }
-      .masthead .overlay h3:after {
-        border-right: 24px solid transparent;
-        border-top: 48px solid #52abdf;
-        right: -24px; }
 
 .booking-console {
   background: white;
@@ -2654,9 +2676,12 @@ footer.site-footer .site-info nav ul {
   padding: 0 1rem; }
 
 #content.site-content {
-  padding-top: 10%;
+  padding-top: 5.8%;
   padding-bottom: 10%; }
 
 body.home #content.site-content {
   padding-top: 0;
   padding-bottom: 10%; }
+
+a {
+  transition: all 0.3s; }

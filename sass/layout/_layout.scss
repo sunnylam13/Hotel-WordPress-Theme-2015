@@ -470,6 +470,7 @@ for index.php
 
 /*================================================ */
 
+<<<<<<< HEAD
 /*================================================
 CONTENT - SECTION PROMO
 layout/_content-suites.scss
@@ -491,3 +492,27 @@ search.php
 
 /*================================================ */
 
+=======
+// Masthead Area for interior pages
+
+.masthead {
+	position: relative;
+	img {
+		display: block;
+	}
+	h3 {
+		max-width: 500px;
+		color: white;
+		position: absolute;
+		bottom: 0;
+		&:after {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  right: -24px;
+		  border-right: 24px solid transparent;
+		  border-top: 48px solid #52abdf;
+		}
+	}
+}
+>>>>>>> 6331baec78bf1fc20d3a8a4ad91de704a3fde1f8
