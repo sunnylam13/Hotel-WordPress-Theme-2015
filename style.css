@@ -231,8 +231,9 @@ body {
   *zoom: 1; }
   body:before,
   body:after {
-    content: "";
-    display: table; }
+    display: table;
+    content: '';
+    line-height: 0; }
   body:after {
     clear: both; }
 
@@ -935,8 +936,9 @@ a {
     *zoom: 1; }
     .main-navigation ul:before,
     .main-navigation ul:after {
-      content: "";
-      display: table; }
+      display: table;
+      content: '';
+      line-height: 0; }
     .main-navigation ul:after {
       clear: both; }
     .main-navigation ul ul {
@@ -1096,8 +1098,9 @@ a {
   .site-footer:before:after,
   .site-footer:after:before,
   .site-footer:after:after {
-    content: "";
-    display: table; }
+    display: table;
+    content: '';
+    line-height: 0; }
   .clear:before:after,
   .clear:after:after,
   .entry-content:before:after,
@@ -1542,9 +1545,6 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em; }
-
 .gallery-item {
   display: inline-block;
   text-align: center;
@@ -1583,8 +1583,9 @@ header.site-header {
     *zoom: 1; }
     header.site-header .container:before,
     header.site-header .container:after {
-      content: "";
-      display: table; }
+      display: table;
+      content: '';
+      line-height: 0; }
     header.site-header .container:after {
       clear: both; }
 
@@ -1627,6 +1628,104 @@ header.site-header {
         border-right: 24px solid transparent;
         border-top: 48px solid #52abdf;
         right: -24px; }
+
+.booking-console {
+  background: white;
+  border: 2px solid #d3d3d3;
+  position: relative;
+  top: -50px;
+  border-radius: 5px;
+  *zoom: 1; }
+  .booking-console:before,
+  .booking-console:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  .booking-console:after {
+    clear: both; }
+  .booking-console header {
+    background: #f3f3f3;
+    float: left;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    .booking-console header h4 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem; }
+    .booking-console header p {
+      font-size: 0.8125rem;
+      margin: 0; }
+  .booking-console form.book {
+    *zoom: 1;
+    display: inline-block;
+    float: left;
+    width: 75%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+    padding-top: 22px; }
+    .booking-console form.book:before,
+    .booking-console form.book:after {
+      display: table;
+      content: '';
+      line-height: 0; }
+    .booking-console form.book:after {
+      clear: both; }
+    .booking-console form.book .field {
+      float: left;
+      display: inline-block;
+      float: left;
+      width: 22.91667%;
+      padding-left: 1.04167%;
+      padding-right: 1.04167%; }
+      .booking-console form.book .field.small {
+        display: inline-block;
+        float: left;
+        width: 8.33333%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%; }
+      .booking-console form.book .field.btn {
+        display: inline-block;
+        float: left;
+        width: 14.58333%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%;
+        padding-right: 0;
+        padding-top: 26px; }
+        .booking-console form.book .field.btn button {
+          display: block;
+          width: 100%;
+          padding: 8px 2px;
+          background: #00A1E6;
+          border: 0;
+          box-shadow: none;
+          border-radius: 0;
+          color: white;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in; }
+          .booking-console form.book .field.btn button:hover {
+            text-shadow: none;
+            background: white;
+            color: #00A1E6;
+            outline: 1px solid #00A1E6; }
+    .booking-console form.book label, .booking-console form.book input {
+      display: block; }
+    .booking-console form.book label {
+      font-size: 0.8125rem;
+      color: #373535;
+      padding-bottom: 8px; }
+    .booking-console form.book input {
+      width: 100%;
+      padding: 2px 8px; }
 
 /*--------------------------------------------------------------
 # Custom Styles
