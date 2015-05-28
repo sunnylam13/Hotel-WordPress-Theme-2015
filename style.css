@@ -786,6 +786,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
 
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin: 20px 0 10px; }
+  h5 .price {
+    font-weight: 700; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -2029,7 +2037,8 @@ http://flickity.metafizzy.co
   border: 1px solid #DDD;
   border-radius: 3px;
   position: relative;
-  height: 30px; }
+  height: 30px;
+  background: white; }
 
 .selectric .label {
   display: block;
@@ -2435,6 +2444,35 @@ footer.site-footer a {
     .booking-console form.book input {
       width: 100%;
       padding: 2px 8px; }
+
+.roomTypes {
+  *zoom: 1; }
+  .roomTypes:before,
+  .roomTypes:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  .roomTypes:after {
+    clear: both; }
+  .roomTypes li {
+    display: inline-block;
+    float: left;
+    width: 33.33333%;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; }
+    .roomTypes li:first-child {
+      padding-left: 0; }
+    .roomTypes li:last-child {
+      padding-right: 0; }
+    .roomTypes li img {
+      display: block;
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.57);
+      width: 300px;
+      height: 150px; }
+    .roomTypes li p {
+      font-size: 0.8125rem;
+      margin-top: 0; }
 
 /*--------------------------------------------------------------
 # Custom Styles

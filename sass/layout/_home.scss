@@ -1,0 +1,23 @@
+.roomTypes {
+  @include clearfix;
+  li {
+    @include column(4);
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    img {
+      display: block;
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.57);
+      width: 300px;
+      height: 150px;
+    }
+    p {
+      font-size: 0.8125rem;
+      margin-top: 0;
+    }
+  }
+}

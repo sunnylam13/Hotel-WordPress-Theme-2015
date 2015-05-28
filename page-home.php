@@ -17,9 +17,9 @@ get_header(); ?>
           "cellSelector": "img"
         }
       '>
-      <img src="https://placeimg.com/1430/590/arch" alt="">
-      <img src="https://placeimg.com/1430/590/arch" alt="">
-      <img src="https://placeimg.com/1430/590/arch" alt="">
+      <img src="https://placeimg.com/2000/825/arch" alt="">
+      <img src="https://placeimg.com/2000/825/arch" alt="">
+      <img src="https://placeimg.com/2000/825/arch" alt="">
       <div class="overlay">
         <div class="container">
           <h2>Collaboratively administrate empowered markets</h2>
