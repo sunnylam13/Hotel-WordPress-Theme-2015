@@ -103,21 +103,6 @@ get_header(); ?>
             <?php endwhile; ?>
 
           <?php endif; ?>
-          <!-- <li>
-            <img src="https://placeimg.com/300/150/arch" alt="">
-            <h5>Single Room <span class="price">$110</span></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ullam quam quas corporis! Voluptas mollitia molestias necessitatibus dolores, temporibus minus earum magnam, dicta, commodi veritatis non odit repudiandae cum dolore.</p>
-          </li>
-          <li>
-            <img src="https://placeimg.com/300/150/arch" alt="">
-            <h5>Double Room <span class="price">$180</span></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum distinctio nemo odio temporibus delectus, ex asperiores? Velit voluptate, repudiandae aut, aperiam incidunt autem obcaecati doloremque magnam impedit sint id animi.</p>
-          </li>
-          <li>
-            <img src="https://placeimg.com/300/150/arch" alt="">
-            <h5>Executive Suite <span class="price">$210</span></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum adipisci atque, molestias nemo totam optio dolores blanditiis eaque vero tenetur, modi sequi doloremque nisi! Atque nam, quia recusandae temporibus.</p>
-          </li> -->
         </ul>
 
       </div>
