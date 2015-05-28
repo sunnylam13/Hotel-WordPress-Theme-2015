@@ -397,7 +397,8 @@ for index.php
 
 #primary.content-area article {
 
-	border-top: 1px solid $color__page-text;
+	// border-top: 1px solid $color__page-text;
+	border-bottom: 1px solid $color__page-text;
 	// @include sectionPadding041515(5%,0);
 
 	span.posted-on {
@@ -453,8 +454,8 @@ for index.php
 	}
 }
 
-#primary.content-area article:first-child {
-	border-top: none;
-}
+// #primary.content-area article:first-child {
+// 	border-top: none;
+// }
 
 /*================================================ */

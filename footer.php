@@ -17,19 +17,24 @@
         <!-- changes to be made within here -->
 
   			<aside class="copyright">
-          <p>&copy; 2012 Paradise Hotel.  All Rights Reserved</p>   
+          <p>&copy; 2005 - <?php echo date('Y'); ?> Paradise Hotel.  All Rights Reserved</p>   
         </aside>
 
         <aside class="socialIcons">
-          <span class="fa fa-twitter"></span>
-          <span class="fa fa-facebook"></span>
-          <span class="fa fa-youtube"></span>
-          <span class="fa fa-wordpress"></span>
-          <span class="fa fa-pinterest"></span>
+          <a href="#"><span class="fa fa-twitter"></span></a>
+          <a href="#"><span class="fa fa-facebook"></span></a>
+          <a href="#"><span class="fa fa-youtube"></span></a>
+          <a href="#"><span class="fa fa-wordpress"></span></a>
+          <a href="#"><span class="fa fa-pinterest"></span></a>
         </aside>
 
         <nav>
-          
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Room &amp; Suites</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
 
   		</div><!-- .site-info -->

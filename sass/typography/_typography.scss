@@ -24,11 +24,6 @@ p {
 	@include font-size(0.9);
 }
 
-// focus on #footer to avoid affecting the styling for the header
-#footer.site-footer p, #footer.site-footer a, #footer.site-footer input, #footer.site-footer button {
-	@include font-size(0.9);
-}
-
 @import "headings";
 
 @import "copy";

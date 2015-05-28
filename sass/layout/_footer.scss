@@ -1,4 +1,14 @@
+
+// focus on #footer to avoid affecting the styling for the header
+// #footer.site-footer p, #footer.site-footer a, #footer.site-footer li a, #footer.site-footer input, #footer.site-footer button, #footer.site-footer span {
+// 	@include font-size(0.7);
+// }
+
 footer.site-footer {
+	@include sectionPadding041515(2%,2%);
+	@include font-size(0.75);
+	background: white;
+
 	a {
 		color: $color__page-text;
 		text-decoration: none;
@@ -8,4 +18,69 @@ footer.site-footer {
 			color: $color__link-hover;
 		}
 	}
+}
+
+footer.site-footer .site-info {
+	// flexbox parent
+	@include flexboxRow1;
+	justify-content: space-between;
+	align-content: space-between;
+
+	aside.copyright p {
+		@include marginPaddingReset1;
+	}
+
+	aside.copyright,aside.socialIcons,nav {
+		// flex child
+		flex: 1 33%;
+	}
+
+	aside.socialIcons {
+		// flexbox parent
+		@include flexboxRow1;
+		justify-content: center;
+		align-content: center;
+		
+		a {
+			color: $color__link;
+			background: $color__page-text;
+			border-radius: 50%;
+			width: 25px;
+			height: 25px;
+
+			margin: 0 1% 0 1%;
+
+			// flexbox
+			@include flexboxColumn1;
+			align-items: center;
+
+			@include transitionEffectAllEaseIn(0.3s);
+
+			&:hover {
+				color: $color__link-hover;
+				background: $color__link;
+				// box-shadow: 0 0 3px $color__page-text;
+				// border: 1px solid $color__link-hover;
+			}
+		}
+
+		span {
+			@include font-size(1);
+			// flexbox
+			@include flexboxColumn1;
+			align-items: center;
+		}
+	}
+
+}
+
+footer.site-footer .site-info nav {
+	//
+}
+
+footer.site-footer .site-info nav ul {
+	// flexbox parent
+	@include flexboxRow1;
+	justify-content: space-between;
+	align-content: space-between;
 }

@@ -713,7 +713,7 @@ CONTENT - NEWS/BLOG PAGE
 for index.php
 =================================================*/
 #primary.content-area article {
-  border-top: 1px solid #8F8E8E; }
+  border-bottom: 1px solid #8F8E8E; }
   #primary.content-area article span.posted-on {
     color: #767474; }
   #primary.content-area article a {
@@ -768,9 +768,6 @@ for index.php
       #primary.content-area article footer.entry-footer span a:hover {
         color: #52abdf; }
 
-#primary.content-area article:first-child {
-  border-top: none; }
-
 /*================================================ */
 /*--------------------------------------------------------------
 # Typography
@@ -790,10 +787,6 @@ p {
   color: #8F8E8E; }
 
 #content p, #content li a, #content input, #content button {
-  font-size: 14.4px;
-  font-size: 0.9rem; }
-
-#footer.site-footer p, #footer.site-footer a, #footer.site-footer input, #footer.site-footer button {
   font-size: 14.4px;
   font-size: 0.9rem; }
 
@@ -1337,6 +1330,9 @@ section.suites.promo {
     -webkit-flex: 1 28%;
     -ms-flex: 1 28%;
     flex: 1 28%; }
+  section.suites.promo .promobox h2 {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
   section.suites.promo .promobox .imgFrame {
     position: relative;
     height: auto;
@@ -2310,15 +2306,149 @@ header.site-header {
     line-height: 1.75;
     letter-spacing: 1px; }
 
-footer.site-footer a {
-  color: #8F8E8E;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in; }
-  footer.site-footer a:hover {
-    color: #52abdf; }
+footer.site-footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 12px;
+  font-size: 0.75rem;
+  background: white; }
+  footer.site-footer a {
+    color: #8F8E8E;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in; }
+    footer.site-footer a:hover {
+      color: #52abdf; }
+
+footer.site-footer .site-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
+  footer.site-footer .site-info aside.copyright p {
+    margin: 0;
+    padding: 0; }
+  footer.site-footer .site-info aside.copyright, footer.site-footer .site-info aside.socialIcons, footer.site-footer .site-info nav {
+    -webkit-flex: 1 33%;
+    -ms-flex: 1 33%;
+    flex: 1 33%; }
+  footer.site-footer .site-info aside.socialIcons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    footer.site-footer .site-info aside.socialIcons a {
+      color: white;
+      background: #8F8E8E;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin: 0 1% 0 1%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in; }
+      footer.site-footer .site-info aside.socialIcons a:hover {
+        color: #52abdf;
+        background: white; }
+    footer.site-footer .site-info aside.socialIcons span {
+      font-size: 16px;
+      font-size: 1rem;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+
+footer.site-footer .site-info nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
 
 .masthead {
   position: relative;

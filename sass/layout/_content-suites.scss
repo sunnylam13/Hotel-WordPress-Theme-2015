@@ -18,6 +18,10 @@ section.suites.promo {
 		flex: 1 28%;
 	}
 
+	.promobox h2 {
+		@include font-size(1.2);
+	}
+
 	.promobox .imgFrame {
 		position: relative;
 		height: auto;
