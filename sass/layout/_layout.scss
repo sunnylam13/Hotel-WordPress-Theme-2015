@@ -20,6 +20,9 @@ this contains both the content and the sidebar
 		flex: 2 75%;
 
 		padding-right: 5%;
+
+		// push the section down from the top
+		margin-top: 5%;
 	}
 
 	#secondary {
@@ -31,6 +34,9 @@ this contains both the content and the sidebar
 		/*================================================ */
 		
 		flex: 1 25%;
+
+		// push the section down from the top
+		margin-top: 5%;
 	}
 }
 
