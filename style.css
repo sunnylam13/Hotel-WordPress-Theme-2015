@@ -713,9 +713,7 @@ CONTENT - NEWS/BLOG PAGE
 for index.php
 =================================================*/
 #primary.content-area article {
-  border-top: 1px solid #8F8E8E;
-  padding-top: 5%;
-  padding-bottom: 0; }
+  border-top: 1px solid #8F8E8E; }
   #primary.content-area article span.posted-on {
     color: #767474; }
   #primary.content-area article a {
@@ -790,6 +788,14 @@ textarea {
 
 p {
   color: #8F8E8E; }
+
+#content p, #content li a, #content input, #content button {
+  font-size: 14.4px;
+  font-size: 0.9rem; }
+
+#footer.site-footer p, #footer.site-footer a, #footer.site-footer input, #footer.site-footer button {
+  font-size: 14.4px;
+  font-size: 0.9rem; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;

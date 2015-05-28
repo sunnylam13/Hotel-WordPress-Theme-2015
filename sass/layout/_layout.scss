@@ -354,6 +354,7 @@ all h1's that are widgets will be changed */
 #search-3.widget_search h1 {
 	@include font-size(1.2);
 	margin-bottom: 2.5%;
+	// @include sectionMargins041515(2.5%,2.5%);
 }
 
 input[type="search"].search-field {
@@ -397,7 +398,7 @@ for index.php
 #primary.content-area article {
 
 	border-top: 1px solid $color__page-text;
-	@include sectionPadding041515(5%,0);
+	// @include sectionPadding041515(5%,0);
 
 	span.posted-on {
 		color: darken($color__page-text,10%);
