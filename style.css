@@ -1545,27 +1545,30 @@ header.site-header {
   padding-top: 35px; }
   .masthead .overlay {
     position: absolute;
-    top: 240px;
+    top: 42%;
     z-index: 10;
     width: 100%; }
     .masthead .overlay h2, .masthead .overlay h3 {
       color: white;
       float: left;
-      position: relative; }
+      position: relative;
+      text-transform: uppercase; }
       .masthead .overlay h2:after, .masthead .overlay h3:after {
         content: '';
         position: absolute;
         top: 0; }
     .masthead .overlay h2 {
       padding: 15px 20px;
-      background: #2a2a2a; }
+      background: #2a2a2a;
+      font-weight: 700; }
       .masthead .overlay h2:after {
         border-right: 33px solid transparent;
         border-top: 66px solid #2a2a2a;
         right: -33px; }
     .masthead .overlay h3 {
       padding: 10px 20px;
-      background: #52abdf; }
+      background: #52abdf;
+      font-weight: 300; }
       .masthead .overlay h3:after {
         border-right: 24px solid transparent;
         border-top: 48px solid #52abdf;
