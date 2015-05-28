@@ -45,11 +45,13 @@ get_header(); ?>
           </div>
           <div class="field">
             <label for="checkIn">Check In:</label>
-            <input type="text" name="checkIn" id="checkIn" class="checkIn">
+            <input type="text" name="checkIn" id="checkIn" class="checkIn datepicker">
+            <i class="fa fa-calendar"></i>
           </div>
           <div class="field">
             <label for="checkOut">Check Out:</label>
-            <input type="text" name="checkOut" id="checkOut" class="checkIn">
+            <input type="text" name="checkOut" id="checkOut" class="checkIn datepicker">
+            <i class="fa fa-calendar"></i>
           </div>
           <div class="field small">
             <label for="adults">Adults:</label>
