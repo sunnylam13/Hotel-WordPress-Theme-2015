@@ -342,79 +342,176 @@ sidebar.php
 SIDEBAR - ROOM ATTRIBUTES WIDGET
 template-parts/sidebar-roomAttributes.php
 =================================================*/
-.roomAttributes li {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: distribute;
-  align-content: space-around;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-top: 1px solid #8F8E8E;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  cursor: pointer; }
+.roomAttributes {
+  margin-bottom: 10%; }
+  .roomAttributes li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #8F8E8E;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    cursor: pointer; }
+  .roomAttributes li:hover > div > span {
+    color: #00A1E6; }
+  .roomAttributes li:first-child {
+    border-top: none; }
+  .roomAttributes li:nth-child(3) div span {
+    margin-right: 7%; }
+  .roomAttributes li div:nth-child(1) {
+    -webkit-flex: 3 75%;
+    -ms-flex: 3 75%;
+    flex: 3 75%; }
+  .roomAttributes li div:nth-child(2) {
+    -webkit-flex: 1 25%;
+    -ms-flex: 1 25%;
+    flex: 1 25%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end; }
+  .roomAttributes p {
+    margin: 0;
+    padding: 0; }
+  .roomAttributes span.fa {
+    color: #8F8E8E;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in; }
 
-.roomAttributes li:hover > div > span {
-  color: #00A1E6; }
-
-.roomAttributes li:first-child {
-  border-top: none; }
-
-.roomAttributes li:nth-child(3) div span {
-  margin-right: 7%; }
-
-.roomAttributes li div:nth-child(1) {
-  -webkit-flex: 3 75%;
-  -ms-flex: 3 75%;
-  flex: 3 75%; }
-
-.roomAttributes li div:nth-child(2) {
-  -webkit-flex: 1 25%;
-  -ms-flex: 1 25%;
-  flex: 1 25%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: distribute;
-  align-content: space-around;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-content: flex-end;
-  -ms-flex-line-pack: end;
-  align-content: flex-end; }
-
-.roomAttributes p {
-  margin: 0;
-  padding: 0; }
-
-.roomAttributes span.fa {
-  color: #8F8E8E;
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  -webkit-transition: all 0.4s ease-in;
-  -moz-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
-  -ms-transition: all 0.4s ease-in; }
+/*================================================ */
+/*================================================
+SIDEBAR - RESERVATIONS WIDGET
+template-parts/sidebar-reservations.php
+=================================================*/
+.reservationBooking {
+  margin-bottom: 10%; }
+  .reservationBooking p {
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2.5%; }
+  .reservationBooking input[type='text'] {
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 3% 4% 3% 4%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%; }
+  .reservationBooking div.selectMenuPH {
+    position: relative; }
+    .reservationBooking div.selectMenuPH::after {
+      content: "";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      margin: 0px 10px 0px 0px;
+      text-decoration: none;
+      position: absolute;
+      top: 11px;
+      right: 0;
+      color: #8F8E8E; }
+  .reservationBooking input.selectMenuPH {
+    width: 100%; }
+  .reservationBooking div.fromToDate {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between; }
+  .reservationBooking div.fromToDate div {
+    -webkit-flex: 1 45%;
+    -ms-flex: 1 45%;
+    flex: 1 45%;
+    position: relative; }
+    .reservationBooking div.fromToDate div input {
+      max-width: 100%;
+      padding: 3% 4% 3% 8%; }
+    .reservationBooking div.fromToDate div::after {
+      content: "";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      margin: 0px 10px 0px 0px;
+      text-decoration: none;
+      position: absolute;
+      color: #8F8E8E;
+      top: 7px;
+      right: 0; }
+  .reservationBooking div.fromToDate div:first-child {
+    margin-right: 5%; }
+  .reservationBooking input[type="submit"] {
+    width: 100%;
+    border: 0;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    background: #00A1E6;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 2% 0 2% 0;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in; }
+    .reservationBooking input[type="submit"]:hover {
+      box-shadow: none;
+      text-shadow: none;
+      background: white;
+      color: #00A1E6;
+      outline: 1px solid #00A1E6; }
 
 /*================================================ */
 /*--------------------------------------------------------------
