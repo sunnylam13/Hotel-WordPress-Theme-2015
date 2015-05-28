@@ -8,16 +8,30 @@
 
 get_header(); ?>
 
+  <section class="masthead">
+    <h3>Contact Information</h3>
+    <?php if ( have_posts() ) : ?>
+
+      <?php while ( have_posts() ) : the_post(); ?>
+
+          <?php the_post_thumbnail('full'); ?>
+
+      <?php endwhile; ?>
+
+    <?php endif; ?>
+  </section>
+
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <div class="container">
         
         <section class="map">
-          <h4>Our Location</h4>
+          <h5>Our Location</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9943928927514!2d-79.39789899999998!3d43.648284999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dc87fa67bd%3A0xe172d8fcbe1c5997!2sHackerYou!5e0!3m2!1sen!2sca!4v1432845402581" width="960" height="310" frameborder="0" style="border:0"></iframe>
         </section>
 
         <form action="" class="contactUs">
-          <h4>Contact Us</h4>
+          <h5>Contact Us</h5>
           <div class="field third">
             <label for="name">Name</label>
             <input type="text" name="name" id="name">
