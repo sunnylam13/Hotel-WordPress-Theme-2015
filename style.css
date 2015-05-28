@@ -713,9 +713,20 @@ CONTENT - NEWS/BLOG PAGE
 for index.php
 =================================================*/
 #primary.content-area article {
-  border-bottom: 1px solid #8F8E8E; }
+  border-bottom: 1px dashed #8F8E8E;
+  padding-bottom: 5%; }
   #primary.content-area article span.posted-on {
-    color: #767474; }
+    color: #767474;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    #primary.content-area article span.posted-on time {
+      color: #767474;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in; }
+      #primary.content-area article span.posted-on time:hover {
+        color: #52abdf; }
   #primary.content-area article a {
     text-decoration: none;
     color: black;
@@ -729,14 +740,6 @@ for index.php
     max-width: 100%;
     border-radius: 3px;
     border: 1px solid #8F8E8E; }
-  #primary.content-area article time {
-    color: #767474;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in; }
-    #primary.content-area article time:hover {
-      color: #52abdf; }
   #primary.content-area article footer.entry-footer {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -761,13 +764,31 @@ for index.php
       -ms-flex: 1 45%;
       flex: 1 45%;
       margin-right: 5%;
-      margin-bottom: 2.5%; }
+      margin-bottom: 1%;
+      font-size: 12px;
+      font-size: 0.75rem; }
     #primary.content-area article footer.entry-footer span a {
       color: #8F8E8E;
-      font-style: italic; }
+      font-style: italic;
+      font-size: 12px;
+      font-size: 0.75rem; }
       #primary.content-area article footer.entry-footer span a:hover {
         color: #52abdf; }
 
+/*================================================ */
+/*================================================
+CONTENT - SECTION PROMO
+layout/_content-suites.scss
+layout/_content-about.scss
+=================================================*/
+section.promo {
+  padding-top: 5%; }
+
+/*================================================ */
+/*================================================
+SEARCH RESULTS
+search.php
+=================================================*/
 /*================================================ */
 .masthead {
   position: relative; }
@@ -1293,8 +1314,6 @@ this is imported at site/_site.scss
 overall layout is found in layout/_layout.scss
 =================================================*/
 section.about.promo {
-  border-top: 1px dashed darkgrey;
-  padding-top: 5%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1358,123 +1377,127 @@ overall layout is found in layout/_layout.scss
 /*================================================
 SUITES PROMO
 =================================================*/
-section.suites.promo {
-  border-top: 1px dashed darkgrey;
-  padding-top: 5%; }
-  section.suites.promo .promobox {
-    -webkit-flex: 1 28%;
-    -ms-flex: 1 28%;
-    flex: 1 28%; }
-  section.suites.promo .promobox h2 {
-    font-size: 19.2px;
-    font-size: 1.2rem; }
-  section.suites.promo .promobox .imgFrame {
-    position: relative;
-    height: auto;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in; }
-  section.suites.promo .promobox .imgFrame:hover > .playFrame {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  section.suites.promo .promobox .playFrame {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: none; }
-    section.suites.promo .promobox .playFrame:visited {
-      color: black; }
-    section.suites.promo .promobox .playFrame:link {
-      color: black; }
-    section.suites.promo .promobox .playFrame:hover {
-      color: black; }
-  section.suites.promo .promobox .playFrame span {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  section.suites.promo .promobox .playFrame span::before {
-    content: "";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    margin: 0px 10px 0px 0px;
-    text-decoration: none;
-    background: #00A1E6;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0 0 0 2.5px;
-    padding-left: 2.5px; }
-  section.suites.promo .box2 {
-    margin: 0 5% 0 5%; }
+section.suites.promo .promobox {
+  -webkit-flex: 1 28%;
+  -ms-flex: 1 28%;
+  flex: 1 28%; }
+
+section.suites.promo .promobox h2 {
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
+section.suites.promo .promobox .imgFrame {
+  position: relative;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in; }
+
+section.suites.promo .promobox .imgFrame:hover > .playFrame {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+section.suites.promo .promobox .playFrame {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none; }
+  section.suites.promo .promobox .playFrame:visited {
+    color: black; }
+  section.suites.promo .promobox .playFrame:link {
+    color: black; }
+  section.suites.promo .promobox .playFrame:hover {
+    color: black; }
+
+section.suites.promo .promobox .playFrame span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+section.suites.promo .promobox .playFrame span::before {
+  content: "";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 10px 0px 0px;
+  text-decoration: none;
+  background: #00A1E6;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 0 2.5px;
+  padding-left: 2.5px; }
+
+section.suites.promo .box2 {
+  margin: 0 5% 0 5%; }
 
 /*================================================ */
 /*--------------------------------------------------------------

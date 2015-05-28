@@ -398,11 +398,25 @@ for index.php
 #primary.content-area article {
 
 	// border-top: 1px solid $color__page-text;
-	border-bottom: 1px solid $color__page-text;
+	// border-bottom: 1px solid $color__page-text;
+	// border-bottom: 1px dashed darkgrey;
+	border-bottom: 1px dashed $color__page-text;
 	// @include sectionPadding041515(5%,0);
+	padding-bottom: 5%;
 
 	span.posted-on {
 		color: darken($color__page-text,10%);
+		@include font-size(0.75);
+
+		time {
+			color: darken($color__page-text,10%);
+			@include transitionEffectAllEaseIn(0.3s);
+			
+
+			&:hover {
+				color: $color__link-hover;
+			}
+		}
 	}
 
 	a {
@@ -421,14 +435,7 @@ for index.php
 		border: 1px solid $color__page-text;
 	}
 
-	time {
-		color: darken($color__page-text,10%);
-		@include transitionEffectAllEaseIn(0.3s);
 
-		&:hover {
-			color: $color__link-hover;
-		}
-	}
 
 	footer.entry-footer {
 		// flexbox parent
@@ -439,12 +446,15 @@ for index.php
 			// flex child
 			flex: 1 45%;
 			margin-right: 5%;
-			margin-bottom: 2.5%;
+			margin-bottom: 1%;
+
+			@include font-size(0.75);
 		}
 
 		span a {
 			color: $color__page-text;
 			font-style: italic;
+			@include font-size(0.75);
 
 			&:hover {
 				color: $color__link-hover;
@@ -459,6 +469,29 @@ for index.php
 // }
 
 /*================================================ */
+
+
+/*================================================
+CONTENT - SECTION PROMO
+layout/_content-suites.scss
+layout/_content-about.scss
+=================================================*/
+
+section.promo {
+	padding-top: 5%;
+}
+
+/*================================================ */
+
+/*================================================
+SEARCH RESULTS
+search.php
+=================================================*/
+
+
+
+/*================================================ */
+
 
 // Masthead Area for interior pages
 
@@ -481,4 +514,6 @@ for index.php
 		  border-top: 48px solid #52abdf;
 		}
 	}
+
 }
+
