@@ -19,6 +19,18 @@ p {
 	color: $color__page-text;
 }
 
+/*================================================
+WIDGET STYLING CHANGES
+=================================================*/
+
+/* Search Widget, Standard */
+#search-3.widget_search h1 {
+	@include font-size(1.2);
+	margin-bottom: 2.5%;
+}
+
+/*================================================ */
+
 @import "headings";
 
 @import "copy";

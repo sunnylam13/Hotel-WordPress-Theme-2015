@@ -8,6 +8,8 @@
 
 <aside class="sidebar contactUs">
 	
+	<h3>Contact us</h3>
+
 	<div class="row row1">
 		<div><p>555-555-5555</p></div>
 		<div><span class="fa fa-mobile-phone"></span></div>

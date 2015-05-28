@@ -5,3 +5,35 @@ this is imported at site/_site.scss
 overall layout is found in layout/_layout.scss
 =================================================*/
 
+section.about.promo {
+	border-top: 1px dashed darkgrey;
+	padding-top: 5%;
+
+	h3 {
+		display: block;
+		margin-bottom: 5%;
+	}
+
+	// flexbox parent
+	@include flexboxColumn1;
+	align-items: flex-start;
+
+	.promobox {
+		@include flexboxRow1;
+		align-items: flex-start;
+		margin-bottom: 4%;
+	}
+
+	.promobox .imgFrame {
+		//flex child
+		flex: 1 25%;
+	}
+
+	.promobox .copy {
+		//flex child
+		flex: 3 75%;
+		flex: 3 70%;
+		margin-left: 4%;
+	}
+
+}
