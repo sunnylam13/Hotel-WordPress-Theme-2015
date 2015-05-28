@@ -1166,6 +1166,7 @@ http://flickity.metafizzy.co
 
 .flickity-prev-next-button {
   position: absolute;
+  z-index: 20;
   top: 50%;
   width: 44px;
   height: 44px;
@@ -1224,7 +1225,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 25px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1239,7 +1240,7 @@ http://flickity.metafizzy.co
   width: 10px;
   height: 10px;
   margin: 0 8px;
-  background: #333;
+  background: white;
   border-radius: 50%;
   filter: alpha(opacity=25);
   opacity: .25;
@@ -1318,7 +1319,10 @@ object {
 --------------------------------------------------------------*/
 header.site-header {
   background: #191919;
-  padding: 25px 0; }
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
   header.site-header .container {
     *zoom: 1; }
     header.site-header .container:before,
@@ -1333,6 +1337,37 @@ header.site-header {
   .site-branding h1 {
     line-height: 1.75;
     letter-spacing: 1px; }
+
+.masthead {
+  position: relative;
+  padding-top: 37px; }
+  .masthead .overlay {
+    position: absolute;
+    top: 240px;
+    z-index: 10;
+    width: 100%; }
+    .masthead .overlay h2, .masthead .overlay h3 {
+      color: white;
+      float: left;
+      position: relative; }
+      .masthead .overlay h2:after, .masthead .overlay h3:after {
+        content: '';
+        position: absolute;
+        top: 0; }
+    .masthead .overlay h2 {
+      padding: 15px 20px;
+      background: #2a2a2a; }
+      .masthead .overlay h2:after {
+        border-right: 33px solid transparent;
+        border-top: 66px solid #2a2a2a;
+        right: -33px; }
+    .masthead .overlay h3 {
+      padding: 10px 20px;
+      background: #52abdf; }
+      .masthead .overlay h3:after {
+        border-right: 24px solid transparent;
+        border-top: 48px solid #52abdf;
+        right: -24px; }
 
 /*--------------------------------------------------------------
 # Custom Styles

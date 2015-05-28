@@ -17,12 +17,14 @@ get_header(); ?>
           "cellSelector": "img"
         }
       '>
-      <img src="https://placeimg.com/1920/1080/arch" alt="">
-      <img src="https://placeimg.com/1920/1080/arch" alt="">
-      <img src="https://placeimg.com/1920/1080/arch" alt="">
+      <img src="https://placeimg.com/1430/590/arch" alt="">
+      <img src="https://placeimg.com/1430/590/arch" alt="">
+      <img src="https://placeimg.com/1430/590/arch" alt="">
       <div class="overlay">
-        <h2>Collaboratively administrate empowered markets</h2>
-        <h3>via plug-and-play</h3>
+        <div class="container">
+          <h2>Collaboratively administrate empowered markets</h2>
+          <h3>via plug-and-play</h3>
+        </div>
       </div>
     </section><!--#masthead -->
     
