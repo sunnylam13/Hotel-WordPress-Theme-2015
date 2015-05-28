@@ -10,21 +10,38 @@
 Reservations 
 ==================================== -->
 
-<h2>Reservations</h2>
+<section class="reservationBooking">
 
-<p>Request a reservation.  We will get back to you shortly.</p>
+	<h2>Reservations</h2>
 
-<select name="reservations-sidebar" id="reservations-sidebar">
-	<option value="" selected="selected">Select A Room...</option>
-	<option value="rooms">Rooms</option>
-	<option value="suites">Suites</option>
-	<option value="presidential suite">Presidential Suite</option>
-</select>
+	<p>Request a reservation.  We will get back to you shortly.</p>
 
-<input type="text" placeholder="From">
+	<!-- we will use Javascript to create a more functional form... this is a stand in -->
 
-<input type="text" placeholder="To">
+	<!-- <select name="reservations-sidebar" id="reservations-sidebar">
+		<option value="" selected="selected">Select A Room...</option>
+		<option value="rooms">Rooms</option>
+		<option value="suites">Suites</option>
+		<option value="presidential suite">Presidential Suite</option>
+	</select> -->
 
-<input type="submit" value="Book now">
+	<!-- where PH = placeholder -->
+	<div class="selectMenuPH">
+		<input type="text" placeholder="Select A Room..." class="selectMenuPH">
+	</div>
+
+	<div class="fromToDate">
+		<div>
+			<input type="text" placeholder="From">
+		</div>
+		<div>
+			<input type="text" placeholder="To">
+		</div>
+	</div>
+
+	<input type="submit" value="Book now">
+
+</section>
+
 
 <!-- ====================================== -->
