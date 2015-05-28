@@ -9,6 +9,11 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+// this is more in line with the original template's colour for `p` text
+p {
+	color: $color__page-text;
+}
+
 @import "headings";
 
 @import "copy";
