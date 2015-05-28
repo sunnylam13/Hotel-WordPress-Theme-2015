@@ -134,3 +134,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+#main.site-main {
+	@include sectionPadding041515(3%,10%);
+}
+
+// this was required for certain pages
+// like...
+// content-suites.php
+// content-about.php
+// refer to layout/_layout.scss
+#content.site-content {
+	@include sectionPadding041515(3%,10%);
+}

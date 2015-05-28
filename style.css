@@ -1341,3 +1341,11 @@ header.site-header {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 1rem; }
+
+#main.site-main {
+  padding-top: 3%;
+  padding-bottom: 10%; }
+
+#content.site-content {
+  padding-top: 3%;
+  padding-bottom: 10%; }
