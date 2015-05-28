@@ -255,6 +255,12 @@ this contains both the content and the sidebar
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
@@ -267,7 +273,8 @@ this contains both the content and the sidebar
     /*================================================ */
     -webkit-flex: 2 75%;
     -ms-flex: 2 75%;
-    flex: 2 75%; }
+    flex: 2 75%;
+    padding-right: 5%; }
   .flexbox #secondary {
     /*================================================
 		BACKUP IE SUPPORT
@@ -278,6 +285,42 @@ this contains both the content and the sidebar
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
     flex: 1 25%; }
+
+/*================================================ */
+/*================================================
+PROMOBOX
+this is mainly found on specific content-pages.php
+such as 
+content-suites.php
+content-about.php
+=================================================*/
+.promo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .promo .promobox {
+    -webkit-flex: 1 28%;
+    -ms-flex: 1 28%;
+    flex: 1 28%; }
+  .promo .box2 {
+    margin: 0 5% 0 5%; }
+  .promo img {
+    max-width: 100%; }
 
 /*================================================ */
 /*--------------------------------------------------------------
@@ -748,22 +791,21 @@ a {
 /*================================================
 CONTENT ABOUT
 This styles page-about.php
+this is imported at site/_site.scss
+overall layout is found in layout/_layout.scss
 =================================================*/
-/*================================================
-DIV FLEXBOX
-this contains both the content and the sidebar
-=================================================*/
-/*================================================ */
 /*================================================
 CONTENT ABOUT
 This styles page-about.php
+this is imported at site/_site.scss
+overall layout is found in layout/_layout.scss
 =================================================*/
 /*================================================
 SUITES PROMO
 =================================================*/
-section.suitesPromo {
+section.suites.promo {
   border-top: 1px dashed darkgrey;
-  padding-top: 3%; }
+  padding-top: 5%; }
 
 /*================================================ */
 /*--------------------------------------------------------------

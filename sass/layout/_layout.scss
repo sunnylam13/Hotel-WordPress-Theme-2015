@@ -5,6 +5,8 @@ this contains both the content and the sidebar
 
 .flexbox {
 	@include flexboxRow1;
+	justify-content: space-between;
+	align-content: space-between;
 	align-items: flex-start;
 
 	#primary {
@@ -16,6 +18,8 @@ this contains both the content and the sidebar
 		/*================================================ */
 		
 		flex: 2 75%;
+
+		padding-right: 5%;
 	}
 
 	#secondary {
@@ -31,5 +35,34 @@ this contains both the content and the sidebar
 }
 
 
+
+/*================================================ */
+
+/*================================================
+PROMOBOX
+this is mainly found on specific content-pages.php
+such as 
+content-suites.php
+content-about.php
+=================================================*/
+
+.promo {
+
+	// flexbox parent
+	@include flexboxRow1;
+	align-items: flex-start;
+
+	.promobox {
+		// flex child
+		flex: 1 28%;
+	}
+
+	.box2 {
+		margin: 0 5% 0 5%;
+	}
+	img {
+		max-width: 100%;
+	}
+}
 
 /*================================================ */
