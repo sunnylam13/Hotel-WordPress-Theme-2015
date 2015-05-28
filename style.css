@@ -1579,10 +1579,10 @@ header.site-header {
   margin: 0 auto;
   padding: 0 1rem; }
 
-#main.site-main {
-  padding-top: 3%;
+#content.site-content {
+  padding-top: 10%;
   padding-bottom: 10%; }
 
-#content.site-content {
-  padding-top: 3%;
+body.home #content.site-content {
+  padding-top: 0;
   padding-bottom: 10%; }
