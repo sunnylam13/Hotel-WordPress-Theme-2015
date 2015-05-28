@@ -30,10 +30,13 @@ get_header(); ?>
     
     <div class="container">
       <section class="booking-console">
-        <h4>Book a Room Online</h4>
+        <header>
+          <h4>Book a Room Online</h4>
+          <p>Lorem ispum solor sid ahmed loresin vane.</p>
+        </header>
         <form action="" class="book">
           <div class="field">
-            <label for="roomType">Type of Room</label>
+            <label for="roomType">Type of Room:</label>
             <select name="roomType" id="roomType">
               <option value="room">Room</option>
               <option value="suite">Suite</option>
@@ -41,15 +44,15 @@ get_header(); ?>
             </select>
           </div>
           <div class="field">
-            <label for="checkIn">Check In</label>
+            <label for="checkIn">Check In:</label>
             <input type="text" name="checkIn" id="checkIn" class="checkIn">
           </div>
           <div class="field">
-            <label for="checkOut">Check Out</label>
+            <label for="checkOut">Check Out:</label>
             <input type="text" name="checkOut" id="checkOut" class="checkIn">
           </div>
-          <div class="field">
-            <label for="adults">Adults</label>
+          <div class="field small">
+            <label for="adults">Adults:</label>
             <select name="adults" id="adults">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -57,8 +60,8 @@ get_header(); ?>
               <option value="4">4</option>
             </select>
           </div>
-          <div class="field">
-            <label for="children">Children</label>
+          <div class="field small">
+            <label for="children">Children:</label>
             <select name="children" id="children">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -66,7 +69,7 @@ get_header(); ?>
               <option value="4">4</option>
             </select>
           </div>
-          <div class="field">
+          <div class="field btn">
             <button class="submit" type="submit">Book Now</button>
           </div>
         </form>
