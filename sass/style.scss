@@ -158,9 +158,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 // content-about.php
 // refer to layout/_layout.scss
 #content.site-content {
-	@include sectionPadding041515(10%,10%);
+	@include sectionPadding041515(5.8%,10%);
 }
 
 body.home #content.site-content {
 	@include sectionPadding041515(0,10%);
+}
+
+// Set transition for all links
+a {
+  transition: all 0.3s;
 }
