@@ -344,13 +344,21 @@ WIDGET STYLING CHANGES
 }
 
 input[type="search"].search-field {
-	width: 100%;
+	width: 94%;
 	margin: 0;
 	padding: 2% 4% 2% 4%;
 }
 
 form.search-form {
-	@include beforeAfterIconPlace042215a("\f002");
+	position: relative;
+	&::after {
+		@include beforeAfterIconPlace042215a("\f002");
+		position: absolute;
+		top: 6px;
+		right: -5px;
+		color: $color__page-text;
+	}
+	
 }
 
 /*================================================ */
