@@ -331,6 +331,92 @@ layout/_content-about.scss
     margin-bottom: 0; }
 
 /*================================================ */
+/*================================================
+SIDEBARS
+here we style the sidebars generally
+template-parts/*.php
+sidebar.php
+=================================================*/
+/*================================================ */
+/*================================================
+SIDEBAR - ROOM ATTRIBUTES WIDGET
+template-parts/sidebar-roomAttributes.php
+=================================================*/
+.roomAttributes li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #8F8E8E;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  cursor: pointer; }
+
+.roomAttributes li:hover > div > span {
+  color: #00A1E6; }
+
+.roomAttributes li:first-child {
+  border-top: none; }
+
+.roomAttributes li:nth-child(3) div span {
+  margin-right: 7%; }
+
+.roomAttributes li div:nth-child(1) {
+  -webkit-flex: 3 75%;
+  -ms-flex: 3 75%;
+  flex: 3 75%; }
+
+.roomAttributes li div:nth-child(2) {
+  -webkit-flex: 1 25%;
+  -ms-flex: 1 25%;
+  flex: 1 25%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end; }
+
+.roomAttributes p {
+  margin: 0;
+  padding: 0; }
+
+.roomAttributes span.fa {
+  color: #8F8E8E;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in; }
+
+/*================================================ */
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
