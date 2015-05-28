@@ -377,7 +377,9 @@ template-parts/sidebar-reservations.php
 .reservationBooking {
   margin-bottom: 10%; }
   .reservationBooking h5 {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 19.2px;
+    font-size: 1.2rem; }
   .reservationBooking p {
     margin: 0;
     padding: 0;
@@ -498,7 +500,9 @@ this one is visible on sass/layout/_content-about.scss
   -ms-flex-align: start;
   align-items: flex-start; }
   .sidebar.contactUs h5 {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 19.2px;
+    font-size: 1.2rem; }
   .sidebar.contactUs .row {
     width: 100%;
     display: -webkit-flex;

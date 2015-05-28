@@ -83,6 +83,7 @@ template-parts/sidebar-reservations.php
 
 	h5 {
 		font-weight: bold;
+		@include font-size(1.2);
 	}
 
 	p {
@@ -186,6 +187,7 @@ this one is visible on sass/layout/_content-about.scss
 
 	h5 {
 		font-weight: bold;
+		@include font-size(1.2);
 	}
 
 	.row {
