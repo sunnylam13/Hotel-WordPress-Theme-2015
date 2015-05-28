@@ -2579,7 +2579,7 @@ footer.site-footer .site-info nav ul {
             outline: 1px solid #00A1E6; }
       .booking-console form.book .field i {
         position: absolute;
-        top: 32px;
+        top: 30px;
         right: 12px;
         font-size: 1.25rem; }
     .booking-console form.book label, .booking-console form.book input {
@@ -2610,7 +2610,8 @@ footer.site-footer .site-info nav ul {
     .roomTypes li:first-child {
       padding-left: 0; }
     .roomTypes li:last-child {
-      padding-right: 0; }
+      padding-right: 0;
+      padding-left: 2%; }
     .roomTypes li img {
       display: block;
       border-radius: 2px;
