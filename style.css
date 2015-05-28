@@ -716,7 +716,17 @@ for index.php
   border-bottom: 1px dashed #8F8E8E;
   padding-bottom: 5%; }
   #primary.content-area article span.posted-on {
-    color: #767474; }
+    color: #767474;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    #primary.content-area article span.posted-on time {
+      color: #767474;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in; }
+      #primary.content-area article span.posted-on time:hover {
+        color: #52abdf; }
   #primary.content-area article a {
     text-decoration: none;
     color: black;
@@ -730,14 +740,6 @@ for index.php
     max-width: 100%;
     border-radius: 3px;
     border: 1px solid #8F8E8E; }
-  #primary.content-area article time {
-    color: #767474;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in; }
-    #primary.content-area article time:hover {
-      color: #52abdf; }
   #primary.content-area article footer.entry-footer {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -762,10 +764,14 @@ for index.php
       -ms-flex: 1 45%;
       flex: 1 45%;
       margin-right: 5%;
-      margin-bottom: 2.5%; }
+      margin-bottom: 1%;
+      font-size: 12px;
+      font-size: 0.75rem; }
     #primary.content-area article footer.entry-footer span a {
       color: #8F8E8E;
-      font-style: italic; }
+      font-style: italic;
+      font-size: 12px;
+      font-size: 0.75rem; }
       #primary.content-area article footer.entry-footer span a:hover {
         color: #52abdf; }
 
@@ -778,6 +784,11 @@ layout/_content-about.scss
 section.promo {
   padding-top: 5%; }
 
+/*================================================ */
+/*================================================
+SEARCH RESULTS
+search.php
+=================================================*/
 /*================================================ */
 /*--------------------------------------------------------------
 # Typography
