@@ -398,8 +398,11 @@ for index.php
 #primary.content-area article {
 
 	// border-top: 1px solid $color__page-text;
-	border-bottom: 1px solid $color__page-text;
+	// border-bottom: 1px solid $color__page-text;
+	// border-bottom: 1px dashed darkgrey;
+	border-bottom: 1px dashed $color__page-text;
 	// @include sectionPadding041515(5%,0);
+	padding-bottom: 5%;
 
 	span.posted-on {
 		color: darken($color__page-text,10%);
@@ -457,5 +460,15 @@ for index.php
 // #primary.content-area article:first-child {
 // 	border-top: none;
 // }
+
+/*================================================ */
+
+/*================================================
+HEADING
+=================================================*/
+
+section.promo {
+	padding-top: 5%;
+}
 
 /*================================================ */
