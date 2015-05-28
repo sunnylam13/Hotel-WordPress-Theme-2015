@@ -1,0 +1,11 @@
+footer.site-footer {
+	a {
+		color: $color__page-text;
+		text-decoration: none;
+		@include transitionEffectAllEaseIn(0.3s);
+
+		&:hover {
+			color: $color__link-hover;
+		}
+	}
+}

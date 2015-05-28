@@ -47,8 +47,7 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 
-		<!-- this was the #secondary -->
-		<?php get_sidebar(); ?>
+		<?php get_template_part( 'template-parts/sidebar', 'news' ); ?>
 
 	</div>
 
