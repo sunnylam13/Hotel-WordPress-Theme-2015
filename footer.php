@@ -14,9 +14,24 @@
     <div class="container">
 
   		<div class="site-info">
-  			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'hospitality' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'hospitality' ), 'WordPress' ); ?></a>
-  			<span class="sep"> | </span>
-  			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'hospitality' ), 'hospitality', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+        <!-- changes to be made within here -->
+
+  			<aside class="copyright">
+          <p>&copy; 2012 Paradise Hotel.  All Rights Reserved</p>   
+        </aside>
+
+        <aside class="socialIcons">
+          <span class="fa fa-twitter"></span>
+          <span class="fa fa-facebook"></span>
+          <span class="fa fa-youtube"></span>
+          <span class="fa fa-wordpress"></span>
+          <span class="fa fa-pinterest"></span>
+        </aside>
+
+        <nav>
+          
+        </nav>
+
   		</div><!-- .site-info -->
 
     </div> <!-- .container -->
