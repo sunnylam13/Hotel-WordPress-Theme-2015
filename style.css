@@ -945,16 +945,16 @@ object {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-header {
+header.site-header {
   background: #191919;
   padding: 25px 0; }
-  header .container {
+  header.site-header .container {
     *zoom: 1; }
-    header .container:before,
-    header .container:after {
+    header.site-header .container:before,
+    header.site-header .container:after {
       content: "";
       display: table; }
-    header .container:after {
+    header.site-header .container:after {
       clear: both; }
 
 .site-branding {
