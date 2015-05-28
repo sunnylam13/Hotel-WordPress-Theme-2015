@@ -10,7 +10,7 @@
 
 
 <section class="about promo">
-	
+
 	<h3>Lorem ipsum dolor sit amet.</h3>
 	
 	<!-- Images should be 198x150px -->

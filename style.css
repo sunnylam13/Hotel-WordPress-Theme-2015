@@ -321,7 +321,7 @@ layout/_content-about.scss
   .promo img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid grey; }
   .promo .promobox h2 {
     margin-top: 5%;
@@ -1133,6 +1133,63 @@ This styles page-about.php
 this is imported at site/_site.scss
 overall layout is found in layout/_layout.scss
 =================================================*/
+section.about.promo {
+  border-top: 1px dashed darkgrey;
+  padding-top: 5%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  section.about.promo h3 {
+    display: block;
+    margin-bottom: 5%; }
+  section.about.promo .promobox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: space-around;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 4%; }
+  section.about.promo .promobox .imgFrame {
+    -webkit-flex: 1 25%;
+    -ms-flex: 1 25%;
+    flex: 1 25%; }
+  section.about.promo .promobox .copy {
+    -webkit-flex: 3 75%;
+    -ms-flex: 3 75%;
+    flex: 3 75%;
+    -webkit-flex: 3 70%;
+    -ms-flex: 3 70%;
+    flex: 3 70%;
+    margin-left: 4%; }
+
 /*================================================
 CONTENT ABOUT
 This styles page-about.php
