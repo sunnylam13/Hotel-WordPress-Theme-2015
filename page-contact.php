@@ -9,11 +9,11 @@
 get_header(); ?>
 
   <section class="masthead">
-    <h3>Contact Information</h3>
     <?php if ( have_posts() ) : ?>
 
       <?php while ( have_posts() ) : the_post(); ?>
 
+          <h3><?php the_title(); ?></h3>
           <?php the_post_thumbnail('full'); ?>
 
       <?php endwhile; ?>
@@ -49,9 +49,12 @@ get_header(); ?>
               <option value="3">General Inquiry</option>
             </select>
           </div>
-          <div class="field">
+          <div class="field full">
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="field btn">
+            <button type="submit">Send Message</button>
           </div>
         </form>
 
