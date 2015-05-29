@@ -89,6 +89,9 @@ template-parts/sidebar-reservations.php
 
 .reservationBooking {
 	margin-bottom: 10%;
+	@include desktopR {
+		margin-bottom: 0;
+	}
 
 	h5 {
 		font-weight: bold;
@@ -132,16 +135,26 @@ template-parts/sidebar-reservations.php
 		input {
 			max-width: 100%;
 			padding: 3% 4% 3% 8%;
+			@include desktopR {
+				width: 100%;
+			}
 		}
 		i {
 			position: absolute;
 			top: 8px;
 			right: 5px;
+			@include desktopR {
+				top: 13px;
+				right: 7px;
+			}
 		}
 	}
 
 	div.fromToDate div:first-child {
 		margin-right: 5%;
+		@include desktopR {
+			margin-right: 2%;
+		}
 
 		&::after {
 			// @include beforeAfterIconPlace042215a("\f0dd");

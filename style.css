@@ -266,6 +266,11 @@ this contains both the content and the sidebar
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
+  @media (max-width: 940px) {
+    .flexbox {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .flexbox #primary {
     /*================================================
 		BACKUP IE SUPPORT
@@ -278,6 +283,9 @@ this contains both the content and the sidebar
     flex: 2 75%;
     padding-right: 5%;
     margin-top: 5%; }
+    @media (max-width: 940px) {
+      .flexbox #primary {
+        width: 100%; } }
   .flexbox #secondary {
     /*================================================
 		BACKUP IE SUPPORT
@@ -289,6 +297,9 @@ this contains both the content and the sidebar
     -ms-flex: 1 25%;
     flex: 1 25%;
     margin-top: 5%; }
+    @media (max-width: 940px) {
+      .flexbox #secondary {
+        width: 100%; } }
 
 /*================================================ */
 /*================================================
@@ -383,6 +394,9 @@ template-parts/sidebar-reservations.php
 =================================================*/
 .reservationBooking {
   margin-bottom: 10%; }
+  @media (max-width: 940px) {
+    .reservationBooking {
+      margin-bottom: 0; } }
   .reservationBooking h5 {
     font-weight: bold;
     font-size: 19.2px;
@@ -433,12 +447,22 @@ template-parts/sidebar-reservations.php
     .reservationBooking div.fromToDate div.field input {
       max-width: 100%;
       padding: 3% 4% 3% 8%; }
+      @media (max-width: 940px) {
+        .reservationBooking div.fromToDate div.field input {
+          width: 100%; } }
     .reservationBooking div.fromToDate div.field i {
       position: absolute;
       top: 8px;
       right: 5px; }
+      @media (max-width: 940px) {
+        .reservationBooking div.fromToDate div.field i {
+          top: 13px;
+          right: 7px; } }
   .reservationBooking div.fromToDate div:first-child {
     margin-right: 5%; }
+    @media (max-width: 940px) {
+      .reservationBooking div.fromToDate div:first-child {
+        margin-right: 2%; } }
   .reservationBooking input[type="submit"] {
     width: 100%;
     border: 0;
@@ -2729,13 +2753,24 @@ footer.site-footer .site-info {
   -webkit-align-content: space-between;
   -ms-flex-line-pack: justify;
   align-content: space-between; }
+  @media (max-width: 480px) {
+    footer.site-footer .site-info {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   footer.site-footer .site-info aside.copyright p {
     margin: 0;
     padding: 0; }
+    @media (max-width: 480px) {
+      footer.site-footer .site-info aside.copyright p {
+        text-align: center; } }
   footer.site-footer .site-info aside.copyright, footer.site-footer .site-info aside.socialIcons, footer.site-footer .site-info nav {
     -webkit-flex: 1 33%;
     -ms-flex: 1 33%;
     flex: 1 33%; }
+    @media (max-width: 480px) {
+      footer.site-footer .site-info aside.copyright, footer.site-footer .site-info aside.socialIcons, footer.site-footer .site-info nav {
+        width: 100%; } }
   footer.site-footer .site-info aside.socialIcons {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2758,6 +2793,9 @@ footer.site-footer .site-info {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center; }
+    @media (max-width: 480px) {
+      footer.site-footer .site-info aside.socialIcons {
+        padding: 1rem 0; } }
     footer.site-footer .site-info aside.socialIcons a {
       color: white;
       background: #8F8E8E;
@@ -2852,6 +2890,16 @@ footer.site-footer .site-info nav ul {
         content: '';
         position: absolute;
         top: 0; }
+    .home .masthead .overlay h3 {
+      padding-left: 20px; }
+    @media (max-width: 768px) {
+      .home .masthead .overlay {
+        width: 80%;
+        left: 8%; }
+        .home .masthead .overlay h2 {
+          font-size: 1.125rem; }
+        .home .masthead .overlay h3 {
+          font-size: 1rem; } }
 
 .booking-console {
   background: white;
@@ -2889,6 +2937,17 @@ footer.site-footer .site-info nav ul {
     .booking-console header p {
       font-size: 0.8125rem;
       margin: 0; }
+    @media (max-width: 768px) {
+      .booking-console header {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; } }
   .booking-console form.book {
     *zoom: 1;
     display: inline-block;
@@ -2946,20 +3005,65 @@ footer.site-footer .site-info nav ul {
             background: white;
             color: #00A1E6;
             outline: 1px solid #00A1E6; }
+          @media (max-width: 768px) {
+            .booking-console form.book .field.btn button {
+              font-size: 0.7rem !important; } }
+        @media (max-width: 768px) {
+          .booking-console form.book .field.btn {
+            display: inline-block;
+            float: left;
+            width: 33.33333%;
+            padding-left: 1.04167%;
+            padding-right: 1.04167%;
+            padding-top: 32px; } }
       .booking-console form.book .field i {
         position: absolute;
         top: 30px;
         right: 12px;
         font-size: 1.25rem; }
+      @media (max-width: 768px) {
+        .booking-console form.book .field {
+          display: inline-block;
+          float: left;
+          width: 26.66667%;
+          padding-left: 1.04167%;
+          padding-right: 1.04167%; } }
+      @media (max-width: 768px) {
+        .booking-console form.book .field {
+          display: inline-block;
+          float: left;
+          width: 33.33333%;
+          padding-left: 1.04167%;
+          padding-right: 1.04167%; }
+          .booking-console form.book .field.small {
+            padding-top: 10px;
+            display: inline-block;
+            float: left;
+            width: 33.33333%;
+            padding-left: 1.04167%;
+            padding-right: 1.04167%; } }
     .booking-console form.book label, .booking-console form.book input {
       display: block; }
     .booking-console form.book label {
       font-size: 0.8125rem;
       color: #373535;
       padding-bottom: 8px; }
+      @media (max-width: 768px) {
+        .booking-console form.book label {
+          padding-bottom: 4px; } }
     .booking-console form.book input {
       width: 100%;
-      padding: 2px 8px; }
+      padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .booking-console form.book {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px; } }
+  @media (max-width: 768px) {
+    .booking-console {
+      height: auto;
+      top: 20px;
+      margin-bottom: 40px; } }
 
 .roomTypes {
   *zoom: 1; }
@@ -2990,6 +3094,9 @@ footer.site-footer .site-info nav ul {
     .roomTypes li p {
       font-size: 0.8125rem;
       margin-top: 0; }
+    @media (max-width: 720px) {
+      .roomTypes li {
+        width: 100%; } }
 
 h5 {
   font-size: 1.5625rem; }
@@ -3010,6 +3117,13 @@ h5 {
     padding-left: 1.04167%;
     padding-right: 1.04167%;
     padding: 0; }
+    @media (max-width: 480px) {
+      .contactUs .field.third {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%; } }
   .contactUs .field.full, .contactUs .field.btn {
     padding-top: 15px; }
   .contactUs .field.full {
@@ -3019,6 +3133,9 @@ h5 {
   .contactUs input {
     width: 90%;
     padding: 5px; }
+    @media (max-width: 480px) {
+      .contactUs input {
+        width: 100%; } }
   .contactUs textarea {
     padding: 5px; }
   .contactUs .btn button {
@@ -3039,6 +3156,9 @@ h5 {
       background: white;
       color: #00A1E6;
       outline: 1px solid #00A1E6; }
+    @media (max-width: 480px) {
+      .contactUs .btn button {
+        width: 100%; } }
 
 /*--------------------------------------------------------------
 # Custom Styles

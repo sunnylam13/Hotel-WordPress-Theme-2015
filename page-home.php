@@ -31,8 +31,8 @@ get_header(); ?>
     <div class="container">
       <section class="booking-console">
         <header>
-          <h4>Book a Room Online</h4>
-          <p>Lorem ispum solor sid ahmed loresin vane.</p>
+          <h4>Reservations</h4>
+          <p>Book online with us.</p>
         </header>
         <form action="" class="book">
           <div class="field">
