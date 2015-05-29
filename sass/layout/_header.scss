@@ -5,19 +5,29 @@ header.site-header {
   position: fixed;
   width: 100%;
   z-index: 100;
+
+  @include iphone6Plus414R {
+    // unknown reason... the site-header 
+    max-width: 414px;
+  }
+
   .container {
     @include clearfix;
 
     // flexbox parent
     @include flexboxRow1;
   }
+
 }
 
 // this also wraps everything in the site-header
 header.site-header .container {
+
   @include iphone6Plus414R {
+    // unknown reason... the site-header 
     @include flexboxRow1;
   }
+
 }
 
 .site-branding {
@@ -36,7 +46,10 @@ header.site-header .container {
   //fall back
   float: left;
   
-  
+  @include iphone6Plus414R {
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 nav#site-navigation.main-navigation {
@@ -65,6 +78,12 @@ nav#site-navigation.main-navigation {
       flex: 1 auto;
       @include iphone6Plus414R {
         // flex: 1 180px;
+      }
+    }
+
+    li a {
+      @include iphone6Plus414R {
+        @include font-size(0.75);
       }
     }
   }
