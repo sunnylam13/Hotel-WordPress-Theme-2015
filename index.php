@@ -12,6 +12,17 @@
  */
 
 get_header(); ?>
+	<section class="masthead">
+	<?php if( is_home() && get_option('page_for_posts') ) : ?>
+		<h3 class="entry-title"><?php echo apply_filters('the_title',get_page( get_option('page_for_posts') )->post_title); ?></h3>
+	<?php endif; ?>
+	<?php if(is_home()) { ?>
+	    <?php
+	        $page_for_posts = get_option( 'page_for_posts' );
+	        echo get_the_post_thumbnail($page_for_posts, 'full');
+	    ?>
+	<?php } ?>
+	</section>
 
 	<div class="flexbox container">
 		
