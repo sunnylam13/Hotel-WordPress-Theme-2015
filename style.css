@@ -811,6 +811,12 @@ MAST HEAD FOR INTERIOR PAGES
       border-right: 24px solid transparent;
       border-top: 48px solid #52abdf; }
 
+.entry-title {
+  display: none; }
+
+body.blog .entry-title {
+  display: block; }
+
 /*================================================ */
 /*================================================
 CONTENT - SINGLE.PHP
