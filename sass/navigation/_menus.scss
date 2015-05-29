@@ -57,9 +57,23 @@
 			position: absolute;
 			top: 18px;
 			right: -5px;
+			// with flexbox use this
+			right: 5px;
+			@include tabletR {
+				right: 0px;
+			}
+			@include iphone6Plus736R {
+				right: -2px;
+			}
+			@include iphone6Plus414R {
+				display: none;
+			}
 		}
 		&:last-child {
 			padding-right: 0;
+			@include tabletR {
+				//
+			}
 			&:after {
 				content: '';
 			}

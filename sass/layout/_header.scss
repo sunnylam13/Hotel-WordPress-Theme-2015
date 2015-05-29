@@ -39,5 +39,10 @@ nav#site-navigation.main-navigation {
     @include flexboxRow1;
     justify-content: space-between;
     align-content: space-between;
+
+    li {
+      // setting this fixes the last li item's weird aligning issue at any media resolution
+      flex: 1 auto;
+    }
   }
 }
