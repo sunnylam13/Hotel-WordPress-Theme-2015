@@ -2872,6 +2872,13 @@ h5 {
     padding-left: 1.04167%;
     padding-right: 1.04167%;
     padding: 0; }
+    @media (max-width: 480px) {
+      .contactUs .field.third {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%; } }
   .contactUs .field.full, .contactUs .field.btn {
     padding-top: 15px; }
   .contactUs .field.full {
@@ -2881,6 +2888,9 @@ h5 {
   .contactUs input {
     width: 90%;
     padding: 5px; }
+    @media (max-width: 480px) {
+      .contactUs input {
+        width: 100%; } }
   .contactUs textarea {
     padding: 5px; }
   .contactUs .btn button {
@@ -2901,6 +2911,9 @@ h5 {
       background: white;
       color: #00A1E6;
       outline: 1px solid #00A1E6; }
+    @media (max-width: 480px) {
+      .contactUs .btn button {
+        width: 100%; } }
 
 /*--------------------------------------------------------------
 # Custom Styles
