@@ -15,7 +15,9 @@ hsdA1.bodyFadeInAnim1 = function () {
 hsdA1.mastHeadAnim1 = function () {
 	hsdA1.mastheadTM1 = new TimelineMax();
 
-	this.mastheadTM1.from($("section.masthead"),hsdA1.animTimeAll,{opacity:0});	
+	this.mastheadTM1.set($("section.masthead"),{opacity:0});
+	this.mastheadTM1.delay(hsdA1.pageLoadDelay);
+	this.mastheadTM1.to($("section.masthead"),hsdA1.animTimeAll,{opacity:1});	
 }
 
 hsdA1.roomTypeAnim1 = function () {
