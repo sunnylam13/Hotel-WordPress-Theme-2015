@@ -107,17 +107,6 @@ template-parts/sidebar-reservations.php
 		@include sectionMargins041515(2.5%,2.5%);
 	}
 
-	div.selectMenuPH {
-		position: relative;
-		&::after {
-			@include beforeAfterIconPlace042215a("\f0dd");
-			position: absolute;
-			top: 11px;
-			right: 0;
-			color: $color__page-text;
-		}
-	}
-
 	input.selectMenuPH {
 		width: 100%;
 	}
@@ -129,23 +118,19 @@ template-parts/sidebar-reservations.php
 		align-content: space-between;
 	}
 
-	div.fromToDate div {
+	div.fromToDate div.field {
 		// flex child
 		flex: 1 45%;
-
 		position: relative;
 
 		input {
 			max-width: 100%;
 			padding: 3% 4% 3% 8%;
 		}
-
-		&::after {
-			@include beforeAfterIconPlace042215a("\f073");
+		i {
 			position: absolute;
-			color: $color__page-text;
-			top: 7px;
-			right: 0;
+			top: 8px;
+			right: 5px;
 		}
 	}
 
