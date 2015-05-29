@@ -53,7 +53,15 @@
 		padding: 20px 15px;
 
 		@include iphone6Plus414R {
-			//
+		  // @include font-size(0.75);
+		}
+
+		@include iphone6Plus375R {
+		  // @include font-size(0.6);
+		}
+
+		@include iphone6Minus320R {
+		  // @include font-size(0.6);
 		}
 
 		&:after {
@@ -71,7 +79,21 @@
 				right: -2px;
 			}
 			@include iphone6Plus414R {
-				// display: none;
+			  // @include font-size(0.75);
+			  top: 5px;
+			  right: 1px;
+			}
+
+			@include iphone6Plus375R {
+			  // @include font-size(0.6);
+			  top: 5px;
+			  right: 1px;
+			}
+
+			@include iphone6Minus320R {
+			  // @include font-size(0.6);
+			  top: 3px;
+			  right: -3px;
 			}
 		}
 		&:last-child {

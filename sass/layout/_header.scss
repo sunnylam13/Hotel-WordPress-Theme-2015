@@ -15,6 +15,10 @@ header.site-header {
     max-width: 375px;
   }
 
+  @include iphone6Minus320R {
+    max-width: 320px;
+  }
+  
   flex-flow: column;
 
   .container {
@@ -67,7 +71,7 @@ nav#site-navigation.main-navigation {
 
 
   button.menu-toggle {
-    @include iphone6Plus414R {
+    @include iphone6Minus568R {
       display: none;
     }
     
@@ -82,8 +86,21 @@ nav#site-navigation.main-navigation {
     li {
       // setting this fixes the last li item's weird aligning issue at any media resolution
       flex: 1 auto;
+
+      // changing the padding makes the nav menu less bloated vertically and allows us to see the mast head image
       @include iphone6Plus414R {
-        // flex: 1 180px;
+        // @include font-size(0.75);
+        padding: 3% 3%;
+      }
+
+      @include iphone6Plus375R {
+        // @include font-size(0.6);
+        padding: 3% 3%;
+      }
+
+      @include iphone6Minus320R {
+        // @include font-size(0.6);
+        padding: 3% 3%;
       }
     }
 
@@ -91,6 +108,15 @@ nav#site-navigation.main-navigation {
       @include iphone6Plus414R {
         @include font-size(0.75);
       }
+
+      @include iphone6Plus375R {
+        @include font-size(0.6);
+      }
+
+      @include iphone6Minus320R {
+        @include font-size(0.6);
+      }
+
     }
   }
 }
