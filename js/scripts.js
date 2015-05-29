@@ -4,12 +4,18 @@ var hsdA1 = {};
 hsdA1.animTimeAll = 1.5;
 hsdA1.pageLoadDelay = 1.5;
 
+hsdA1.bodyFadeInAnim1 = function () {
+	TweenMax.from($("body"),5,{opacity:0, overwrite: "all"});
+}
+
 ////////////////////////////////////////////
 // 		HOME PAGE
 ////////////////////////////////////////////
 
-hsdA1.bodyFadeInAnim1 = function () {
-	TweenMax.from($("body"),5,{opacity:0, overwrite: "all"});
+hsdA1.mastHeadAnim1 = function () {
+	hsdA1.mastheadTM1 = new TimelineMax();
+
+	this.mastheadTM1.from($("section.masthead"),hsdA1.animTimeAll,{opacity:0});	
 }
 
 hsdA1.roomTypeAnim1 = function () {
@@ -22,7 +28,7 @@ hsdA1.roomTypeAnim1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.tmRTA1.delay(hsdA1.pageLoadDelay+1);
+	this.tmRTA1.delay(hsdA1.pageLoadDelay);
 
 	// make each post appear
 	// 1st post
@@ -33,6 +39,14 @@ hsdA1.roomTypeAnim1 = function () {
 	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 }
 
+////////////////////////////////////////////
+// 		END HOME PAGE
+////////////////////////////////////////////
+
+////////////////////////////////////////////
+// 		ROOMS & SUITES
+////////////////////////////////////////////
+
 hsdA1.suitesAnim1 = function () {
 	this.suiteAM1 = new TimelineMax();
 
@@ -42,7 +56,7 @@ hsdA1.suitesAnim1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.suiteAM1.delay(hsdA1.pageLoadDelay+1);
+	this.suiteAM1.delay(hsdA1.pageLoadDelay);
 
 	// make each post appear
 	// 1st post
@@ -53,6 +67,15 @@ hsdA1.suitesAnim1 = function () {
 	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 
 }
+
+////////////////////////////////////////////
+// 		END ROOMS & SUITES
+////////////////////////////////////////////
+
+
+////////////////////////////////////////////
+// 		NEWS PAGE
+////////////////////////////////////////////
 
 hsdA1.newsAnim1 = function () {
 	this.newsAM1 = new TimelineMax();
@@ -78,6 +101,15 @@ hsdA1.newsAnim1 = function () {
 	this.newsAM1.staggerTo($("#main.site-main article:nth-child(5)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 }
 
+////////////////////////////////////////////
+// 		END NEWS PAGE
+////////////////////////////////////////////
+
+
+////////////////////////////////////////////
+// 		ABOUT
+////////////////////////////////////////////
+
 hsdA1.aboutAnimSet1 = function () {
 	this.aboutAMS1 = new TimelineMax();
 
@@ -87,7 +119,7 @@ hsdA1.aboutAnimSet1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.aboutAMS1.delay(hsdA1.pageLoadDelay+1);
+	this.aboutAMS1.delay(hsdA1.pageLoadDelay);
 
 	// appears to be additional animation sequences occurring from the news animations
 	// you have to add a 3rd to the sequence to get the 2nd div
@@ -102,8 +134,9 @@ hsdA1.aboutAnimSet1 = function () {
 }
 
 ////////////////////////////////////////////
-// 		END HOME PAGE
+// 		END ABOUT
 ////////////////////////////////////////////
+
 
 hsdA1.init = function () {
 	// the init function for animations in the animation namespace hsdA1
@@ -115,6 +148,7 @@ hsdA1.init = function () {
 	
 
 	// home page animations
+	hsdA1.mastHeadAnim1();
 	hsdA1.roomTypeAnim1();
 
 	// suites page animations
