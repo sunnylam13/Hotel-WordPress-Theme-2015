@@ -1,6 +1,9 @@
 // create a namespace for animations
 var hsdA1 = {};
 
+hsdA1.animTimeAll = 1.5;
+hsdA1.pageLoadDelay = 1.5;
+
 ////////////////////////////////////////////
 // 		HOME PAGE
 ////////////////////////////////////////////
@@ -19,15 +22,15 @@ hsdA1.roomTypeAnim1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.tmRTA1.delay(2.5);
+	this.tmRTA1.delay(hsdA1.pageLoadDelay+1);
 
 	// make each post appear
 	// 1st post
-	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(1)"),3,{opacity:1, overwrite: "all"},3);
+	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(1)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 2nd post
-	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(2)"),3,{opacity:1, overwrite: "all"},3);
+	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(2)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 3rd post
-	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(3)"),3,{opacity:1, overwrite: "all"},3);
+	this.tmRTA1.staggerTo($("ul.roomTypes li:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 }
 
 hsdA1.suitesAnim1 = function () {
@@ -39,15 +42,15 @@ hsdA1.suitesAnim1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.suiteAM1.delay(2.5);
+	this.suiteAM1.delay(hsdA1.pageLoadDelay+1);
 
 	// make each post appear
 	// 1st post
-	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(1)"),3,{opacity:1, overwrite: "all"},3);
+	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(1)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 2nd post
-	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(2)"),3,{opacity:1, overwrite: "all"},3);
+	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(2)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 3rd post
-	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(3)"),3,{opacity:1, overwrite: "all"},3);
+	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 
 }
 
@@ -60,19 +63,19 @@ hsdA1.newsAnim1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.newsAM1.delay(1.5);
+	this.newsAM1.delay(hsdA1.pageLoadDelay);
 
 	// make each post appear
 	// 1st post
-	this.newsAM1.staggerTo($("#main.site-main article:nth-child(1)"),3,{opacity:1, overwrite: "all"},3);
+	this.newsAM1.staggerTo($("#main.site-main article:nth-child(1)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 2nd post
-	this.newsAM1.staggerTo($("#main.site-main article:nth-child(2)"),3,{opacity:1, overwrite: "all"},3);
+	this.newsAM1.staggerTo($("#main.site-main article:nth-child(2)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 3rd post
-	this.newsAM1.staggerTo($("#main.site-main article:nth-child(3)"),3,{opacity:1, overwrite: "all"},3);
+	this.newsAM1.staggerTo($("#main.site-main article:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 4th post
-	this.newsAM1.staggerTo($("#main.site-main article:nth-child(4)"),3,{opacity:1, overwrite: "all"},3);
+	this.newsAM1.staggerTo($("#main.site-main article:nth-child(4)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 5th post
-	this.newsAM1.staggerTo($("#main.site-main article:nth-child(5)"),3,{opacity:1, overwrite: "all"},3);
+	this.newsAM1.staggerTo($("#main.site-main article:nth-child(5)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 }
 
 hsdA1.aboutAnimSet1 = function () {
@@ -84,18 +87,18 @@ hsdA1.aboutAnimSet1 = function () {
 	});
 
 	// delay the animation so that the page loading animation runs first
-	this.aboutAMS1.delay(2.5);
+	this.aboutAMS1.delay(hsdA1.pageLoadDelay+1);
 
 	// appears to be additional animation sequences occurring from the news animations
 	// you have to add a 3rd to the sequence to get the 2nd div
 
 	// make each post appear
 	// 1st post
-	this.aboutAMS1.staggerTo($("section.about .promobox:nth-child(1)"),3,{opacity:1, overwrite: "all"},3);
+	this.aboutAMS1.staggerTo($("section.about .promobox:nth-child(1)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 2nd post
-	this.aboutAMS1.staggerTo($("section.about .promobox:nth-child(2)"),3,{opacity:1, overwrite: "all"},3);
+	this.aboutAMS1.staggerTo($("section.about .promobox:nth-child(2)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 2nd post
-	this.aboutAMS1.staggerTo($("section.about .promobox:nth-child(3)"),3,{opacity:1, overwrite: "all"},3);
+	this.aboutAMS1.staggerTo($("section.about .promobox:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 }
 
 ////////////////////////////////////////////
