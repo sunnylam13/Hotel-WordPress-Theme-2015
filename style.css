@@ -832,6 +832,65 @@ MAST HEAD FOR INTERIOR PAGES
 
 /*================================================ */
 /*================================================
+CONTENT - SINGLE.PHP
+single.php
+template-parts/content-single.php
+reference:  sass/mixins/_mixins-project.scss
+=================================================*/
+.nav-previous a {
+  text-decoration: none;
+  color: #8F8E8E;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  font-style: italic; }
+  .nav-previous a:hover {
+    color: #52abdf; }
+
+p.logged-in-as a {
+  text-decoration: none;
+  color: #8F8E8E;
+  font-style: italic;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  p.logged-in-as a:hover {
+    color: #52abdf; }
+
+h3.comment-reply-title {
+  background: none;
+  padding: 0; }
+
+p.form-submit input[type="submit"] {
+  border: 0;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  background: #00A1E6;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 2% 0 2% 0;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  padding: 2% 8% 2% 8%; }
+  p.form-submit input[type="submit"]:hover {
+    box-shadow: none;
+    text-shadow: none;
+    background: white;
+    color: #00A1E6;
+    outline: 1px solid #00A1E6; }
+
+/*================================================ */
+/*================================================
 SEARCH RESULTS
 search.php
 =================================================*/
