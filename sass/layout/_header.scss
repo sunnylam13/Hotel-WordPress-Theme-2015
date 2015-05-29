@@ -1,18 +1,53 @@
 header.site-header {
   background: $color__header-bg;
+  // background: $color__background-logo;
   padding: 5px;
   position: fixed;
   width: 100%;
   z-index: 100;
   .container {
     @include clearfix;
+
+    // flexbox parent
+    @include flexboxRow1;
   }
 }
 
 .site-branding {
+  //flex child
+  flex: 1 32%;
+
+  // flexbox parent
+  @include flexboxRow1;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  //fall back
   float: left;
+  
   h1 {
-    line-height: 1.75;
-    letter-spacing: 1px;
+    // line-height: 1.75;
+    // letter-spacing: 1px;
+    // @include font-size(1.5);
+
+    // // taken from _headings.scss
+    // font-family: 'Open Sans', sans-serif;
+    // font-weight: 300;
+    // // font-size: 1.25rem;
+    // // margin: 20px 0 10px;
+
+    // border-top: 1px solid $color__page-text;
+    // border-bottom: 1px solid $color__page-text;
   }
+}
+
+// .site-branding .five-star-line {
+//   span.fa {
+
+//   }
+// }
+
+nav#site-navigation.main-navigation {
+  // flexbox child
+  flex: 1 50%;
 }
