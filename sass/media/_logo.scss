@@ -65,6 +65,10 @@ div.logoLine {
 		left: 31%;
 	}
 
+	@include phoneR {
+		left: 26%;
+	}
+
 	@include iphone6Plus414R {
 		bottom: -39%;
 	}
@@ -93,5 +97,9 @@ div.logoLine {
 
 	@include iphone6Minus568R {
 		left: 28.5%;
+	}
+
+	@include phoneR {
+		left: 23%;
 	}
 }

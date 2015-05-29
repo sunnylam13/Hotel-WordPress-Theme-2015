@@ -2528,6 +2528,9 @@ div.logoLine {
   @media (max-width: 568px) {
     .site-title .five-star-line {
       left: 31%; } }
+  @media (max-width: 480px) {
+    .site-title .five-star-line {
+      left: 26%; } }
   @media (max-width: 414px) {
     .site-title .five-star-line {
       bottom: -39%; } }
@@ -2550,6 +2553,9 @@ div.logoLine {
   @media (max-width: 568px) {
     .site-title .star-line-field {
       left: 28.5%; } }
+  @media (max-width: 480px) {
+    .site-title .star-line-field {
+      left: 23%; } }
 
 /*--------------------------------------------------------------
 # Layout
