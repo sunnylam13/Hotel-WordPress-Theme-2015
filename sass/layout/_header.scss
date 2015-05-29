@@ -13,6 +13,13 @@ header.site-header {
   }
 }
 
+header.site-header .container {
+  // this also wraps everything in the site-header
+  @include iphone6Plus414R {
+    @include flexboxRow1;
+  }
+}
+
 .site-branding {
   //flex child
   flex: 1 32%;
@@ -43,6 +50,9 @@ nav#site-navigation.main-navigation {
     li {
       // setting this fixes the last li item's weird aligning issue at any media resolution
       flex: 1 auto;
+      @include iphone6Plus414R {
+        // flex: 1 180px;
+      }
     }
   }
 }
