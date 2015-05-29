@@ -26,13 +26,23 @@ footer.site-footer .site-info {
 	justify-content: space-between;
 	align-content: space-between;
 
+	@include phoneR {
+  	flex-direction: column;
+  }
+
 	aside.copyright p {
 		@include marginPaddingReset1;
+		@include phoneR {
+		  text-align: center;
+		}
 	}
 
 	aside.copyright,aside.socialIcons,nav {
 		// flex child
 		flex: 1 33%;
+		@include phoneR {
+		  width: 100%;
+		}
 	}
 
 	aside.socialIcons {
@@ -40,6 +50,9 @@ footer.site-footer .site-info {
 		@include flexboxRow1;
 		justify-content: center;
 		align-content: center;
+		@include phoneR {
+		  padding: 1rem 0;
+		}
 		
 		a {
 			color: $color__link;

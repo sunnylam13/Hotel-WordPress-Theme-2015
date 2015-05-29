@@ -2591,13 +2591,24 @@ footer.site-footer .site-info {
   -webkit-align-content: space-between;
   -ms-flex-line-pack: justify;
   align-content: space-between; }
+  @media (max-width: 480px) {
+    footer.site-footer .site-info {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   footer.site-footer .site-info aside.copyright p {
     margin: 0;
     padding: 0; }
+    @media (max-width: 480px) {
+      footer.site-footer .site-info aside.copyright p {
+        text-align: center; } }
   footer.site-footer .site-info aside.copyright, footer.site-footer .site-info aside.socialIcons, footer.site-footer .site-info nav {
     -webkit-flex: 1 33%;
     -ms-flex: 1 33%;
     flex: 1 33%; }
+    @media (max-width: 480px) {
+      footer.site-footer .site-info aside.copyright, footer.site-footer .site-info aside.socialIcons, footer.site-footer .site-info nav {
+        width: 100%; } }
   footer.site-footer .site-info aside.socialIcons {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2620,6 +2631,9 @@ footer.site-footer .site-info {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center; }
+    @media (max-width: 480px) {
+      footer.site-footer .site-info aside.socialIcons {
+        padding: 1rem 0; } }
     footer.site-footer .site-info aside.socialIcons a {
       color: white;
       background: #8F8E8E;
@@ -2872,6 +2886,13 @@ h5 {
     padding-left: 1.04167%;
     padding-right: 1.04167%;
     padding: 0; }
+    @media (max-width: 480px) {
+      .contactUs .field.third {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%; } }
   .contactUs .field.full, .contactUs .field.btn {
     padding-top: 15px; }
   .contactUs .field.full {
@@ -2881,6 +2902,9 @@ h5 {
   .contactUs input {
     width: 90%;
     padding: 5px; }
+    @media (max-width: 480px) {
+      .contactUs input {
+        width: 100%; } }
   .contactUs textarea {
     padding: 5px; }
   .contactUs .btn button {
@@ -2901,6 +2925,9 @@ h5 {
       background: white;
       color: #00A1E6;
       outline: 1px solid #00A1E6; }
+    @media (max-width: 480px) {
+      .contactUs .btn button {
+        width: 100%; } }
 
 /*--------------------------------------------------------------
 # Custom Styles
