@@ -25,29 +25,10 @@ h1.site-title {
 	// taken from _headings.scss
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	// font-size: 1.25rem;
-	// margin: 20px 0 10px;
-
-	// border-top: 1px solid $color__page-text;
-	// border-bottom: 1px solid $color__page-text;
 	
 	@include font-size(1.5);
 
 	position: relative;
-
-	// a {
-	// 	text-decoration: none;
-	// 	text-transform: uppercase;
-	// 	&:visited {
-	// 		color: $color__link-visited;
-	// 	}
-	// 	&:visited {
-	// 		color: $color__link;
-	// 	}
-	// 	&:hover {
-	// 		color: $color__link;
-	// 	}
-	// }
 }
 
 div.logoLine {

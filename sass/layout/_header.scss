@@ -26,28 +26,18 @@ header.site-header {
   float: left;
   
   h1 {
-    // line-height: 1.75;
-    // letter-spacing: 1px;
-    // @include font-size(1.5);
-
-    // // taken from _headings.scss
-    // font-family: 'Open Sans', sans-serif;
-    // font-weight: 300;
-    // // font-size: 1.25rem;
-    // // margin: 20px 0 10px;
-
-    // border-top: 1px solid $color__page-text;
-    // border-bottom: 1px solid $color__page-text;
+    // this was moved to _logo.scss
   }
 }
-
-// .site-branding .five-star-line {
-//   span.fa {
-
-//   }
-// }
 
 nav#site-navigation.main-navigation {
   // flexbox child
   flex: 1 50%;
+
+  ul#primary-menu {
+    //flexbox parent
+    @include flexboxRow1;
+    justify-content: space-between;
+    align-content: space-between;
+  }
 }
