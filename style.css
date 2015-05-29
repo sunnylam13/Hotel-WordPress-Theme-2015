@@ -833,19 +833,31 @@ MAST HEAD FOR INTERIOR PAGES
 /*================================================ */
 /*================================================
 CONTENT - SINGLE.PHP
+for individual "blog" posts
 single.php
 template-parts/content-single.php
 reference:  sass/mixins/_mixins-project.scss
 =================================================*/
-.nav-previous a {
+.nav-links .nav-previous a {
   text-decoration: none;
   color: #8F8E8E;
+  font-style: italic;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  font-style: italic; }
-  .nav-previous a:hover {
+  -ms-transition: all 0.3s ease-in; }
+  .nav-links .nav-previous a:hover {
+    color: #52abdf; }
+
+.nav-links .nav-next a {
+  text-decoration: none;
+  color: #8F8E8E;
+  font-style: italic;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  .nav-links .nav-next a:hover {
     color: #52abdf; }
 
 p.logged-in-as a {
@@ -888,6 +900,12 @@ p.form-submit input[type="submit"] {
     background: white;
     color: #00A1E6;
     outline: 1px solid #00A1E6; }
+
+span.byline {
+  color: #8F8E8E;
+  font-style: italic;
+  font-size: 12px;
+  font-size: 0.75rem; }
 
 /*================================================ */
 /*================================================

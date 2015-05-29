@@ -174,15 +174,21 @@ MAST HEAD FOR INTERIOR PAGES
 
 /*================================================
 CONTENT - SINGLE.PHP
+for individual "blog" posts
 single.php
 template-parts/content-single.php
 reference:  sass/mixins/_mixins-project.scss
 =================================================*/
 
-.nav-previous {
+.nav-links .nav-previous {
 	a {
-		@include contentLinks2;
-		font-style: italic;
+		@include contentLinks3;
+	}
+}
+
+.nav-links .nav-next {
+	a {
+		@include contentLinks3;
 	}
 }
 
@@ -198,6 +204,12 @@ h3.comment-reply-title {
 p.form-submit input[type="submit"] {
 	@include buttonStyle1;
 	padding: 2% 8% 2% 8%;
+}
+
+span.byline {
+	color: $color__page-text;
+	font-style: italic;
+	@include font-size(0.75);
 }
 
 /*================================================ */
