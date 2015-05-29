@@ -2752,6 +2752,8 @@ footer.site-footer .site-info nav ul {
         content: '';
         position: absolute;
         top: 0; }
+    .home .masthead .overlay h3 {
+      padding-left: 20px; }
 
 .booking-console {
   background: white;
