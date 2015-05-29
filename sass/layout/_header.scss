@@ -6,6 +6,10 @@ header.site-header {
   width: 100%;
   z-index: 100;
 
+  // DEFAULT POSITION
+  // for use only with media queries...
+  top:-22%;
+
   @include iphone6Plus414R {
     // unknown reason... the site-header 
     max-width: 414px;
@@ -120,3 +124,49 @@ nav#site-navigation.main-navigation {
     }
   }
 }
+
+////////////////////////////////////////////
+//    SLIDE OUT HEADER
+////////////////////////////////////////////
+// for responsive coding
+
+// ----------------------------------------
+// INPUT LABEL CONTROL  ------------------
+// ----------------------------------------
+label[for="toggle"] {
+  position: fixed;
+  left: 1em;
+  top: 1.5em;
+  z-index: 101;
+  color: white;
+
+  // DEFAULT DISPLAY STATUS
+  // generally display: none unless changed by media queries or JS
+  // display: none;
+}
+// ----------------------------------------
+// END INPUT LABEL CONTROL  ------------------
+// ----------------------------------------
+
+// ----------------------------------------
+// INPUT CHECKBOX CONTROL  ------------------
+// ----------------------------------------
+// make the input checkbox invisible
+input#toggle {
+  display: none;
+
+  &:checked + header#site-header {
+    // when the input is checked
+    // we slide the menu back onto the screen
+    // NOTE:  A media query will have to be written to also change .home .masthead padding or positioning
+    top: 0;
+  }
+}
+// ----------------------------------------
+// END INPUT CHECKBOX CONTROL  ------------------
+// ----------------------------------------
+
+
+////////////////////////////////////////////
+//    END SLIDE OUT HEADER
+////////////////////////////////////////////

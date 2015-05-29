@@ -2581,6 +2581,7 @@ header.site-header {
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: -22%;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column; }
@@ -2735,6 +2736,18 @@ nav#site-navigation.main-navigation {
       nav#site-navigation.main-navigation ul#primary-menu li a {
         font-size: 9.6px;
         font-size: 0.6rem; } }
+
+label[for="toggle"] {
+  position: fixed;
+  left: 1em;
+  top: 1.5em;
+  z-index: 101;
+  color: white; }
+
+input#toggle {
+  display: none; }
+  input#toggle:checked + header#site-header {
+    top: 0; }
 
 footer.site-footer {
   padding-top: 2%;
