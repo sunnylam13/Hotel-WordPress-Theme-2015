@@ -2754,6 +2754,14 @@ footer.site-footer .site-info nav ul {
         top: 0; }
     .home .masthead .overlay h3 {
       padding-left: 20px; }
+    @media (max-width: 768px) {
+      .home .masthead .overlay {
+        width: 80%;
+        left: 8%; }
+        .home .masthead .overlay h2 {
+          font-size: 1.125rem; }
+        .home .masthead .overlay h3 {
+          font-size: 1rem; } }
 
 .booking-console {
   background: white;
@@ -2791,6 +2799,17 @@ footer.site-footer .site-info nav ul {
     .booking-console header p {
       font-size: 0.8125rem;
       margin: 0; }
+    @media (max-width: 768px) {
+      .booking-console header {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        padding-left: 1.04167%;
+        padding-right: 1.04167%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; } }
   .booking-console form.book {
     *zoom: 1;
     display: inline-block;
@@ -2848,20 +2867,65 @@ footer.site-footer .site-info nav ul {
             background: white;
             color: #00A1E6;
             outline: 1px solid #00A1E6; }
+          @media (max-width: 768px) {
+            .booking-console form.book .field.btn button {
+              font-size: 0.7rem !important; } }
+        @media (max-width: 768px) {
+          .booking-console form.book .field.btn {
+            display: inline-block;
+            float: left;
+            width: 33.33333%;
+            padding-left: 1.04167%;
+            padding-right: 1.04167%;
+            padding-top: 32px; } }
       .booking-console form.book .field i {
         position: absolute;
         top: 30px;
         right: 12px;
         font-size: 1.25rem; }
+      @media (max-width: 768px) {
+        .booking-console form.book .field {
+          display: inline-block;
+          float: left;
+          width: 26.66667%;
+          padding-left: 1.04167%;
+          padding-right: 1.04167%; } }
+      @media (max-width: 768px) {
+        .booking-console form.book .field {
+          display: inline-block;
+          float: left;
+          width: 33.33333%;
+          padding-left: 1.04167%;
+          padding-right: 1.04167%; }
+          .booking-console form.book .field.small {
+            padding-top: 10px;
+            display: inline-block;
+            float: left;
+            width: 33.33333%;
+            padding-left: 1.04167%;
+            padding-right: 1.04167%; } }
     .booking-console form.book label, .booking-console form.book input {
       display: block; }
     .booking-console form.book label {
       font-size: 0.8125rem;
       color: #373535;
       padding-bottom: 8px; }
+      @media (max-width: 768px) {
+        .booking-console form.book label {
+          padding-bottom: 4px; } }
     .booking-console form.book input {
       width: 100%;
-      padding: 2px 8px; }
+      padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .booking-console form.book {
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px; } }
+  @media (max-width: 768px) {
+    .booking-console {
+      height: auto;
+      top: 20px;
+      margin-bottom: 40px; } }
 
 .roomTypes {
   *zoom: 1; }
@@ -2892,6 +2956,9 @@ footer.site-footer .site-info nav ul {
     .roomTypes li p {
       font-size: 0.8125rem;
       margin-top: 0; }
+    @media (max-width: 720px) {
+      .roomTypes li {
+        width: 100%; } }
 
 h5 {
   font-size: 1.5625rem; }

@@ -20,5 +20,8 @@
       font-size: 0.8125rem;
       margin-top: 0;
     }
+    @include phabletR {
+      width: 100%;
+    }
   }
 }
