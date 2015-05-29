@@ -27,15 +27,22 @@ Reservations
 
 	<!-- where PH = placeholder -->
 	<div class="selectMenuPH">
-		<input type="text" placeholder="Select A Room..." class="selectMenuPH">
+		<select name="roomType" id="roomType">
+			<option value="0">Select a room type...</option>
+      <option value="room">Room</option>
+      <option value="suite">Suite</option>
+      <option value="presSuite">Presidential Suite</option>
+    </select>
 	</div>
 
 	<div class="fromToDate">
-		<div>
-			<input type="text" placeholder="From">
+		<div class="field">
+			<input type="text" class="datepicker" placeholder="From">
+			<i class="fa fa-calendar"></i>
 		</div>
-		<div>
-			<input type="text" placeholder="To">
+		<div class="field">
+			<input type="text" class="datepicker" placeholder="To">
+			<i class="fa fa-calendar"></i>
 		</div>
 	</div>
 
