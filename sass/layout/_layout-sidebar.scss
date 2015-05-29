@@ -114,6 +114,12 @@ template-parts/sidebar-reservations.php
 		width: 100%;
 	}
 
+	select#roomType {
+		@include iphone6Plus414R {
+			max-width: 100%;
+		}
+	}
+
 	div.fromToDate {
 		// flexbox parent
 		@include flexboxRow1;

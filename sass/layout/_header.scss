@@ -5,17 +5,48 @@ header.site-header {
   position: fixed;
   width: 100%;
   z-index: 100;
+
+  @include iphone6Plus414R {
+    // unknown reason... the site-header 
+    max-width: 414px;
+  }
+
+  @include iphone6Plus375R {
+    max-width: 375px;
+  }
+
+  @include iphone6Minus320R {
+    max-width: 320px;
+  }
+  
+  flex-flow: column;
+
   .container {
     @include clearfix;
 
     // flexbox parent
     @include flexboxRow1;
   }
+
+}
+
+// this also wraps everything in the site-header
+header.site-header .container {
+
+  @include iphone6Plus414R {
+    // unknown reason... the site-header 
+    @include flexboxRow1;
+  }
+
 }
 
 .site-branding {
   //flex child
   flex: 1 32%;
+
+  @include iphone6Plus414R {
+    flex: 1 100%;
+  }
 
   // flexbox parent
   @include flexboxRow1;
@@ -25,29 +56,67 @@ header.site-header {
   //fall back
   float: left;
   
-  h1 {
-    // line-height: 1.75;
-    // letter-spacing: 1px;
-    // @include font-size(1.5);
-
-    // // taken from _headings.scss
-    // font-family: 'Open Sans', sans-serif;
-    // font-weight: 300;
-    // // font-size: 1.25rem;
-    // // margin: 20px 0 10px;
-
-    // border-top: 1px solid $color__page-text;
-    // border-bottom: 1px solid $color__page-text;
+  @include iphone6Plus414R {
+    justify-content: center;
+    align-content: center;
   }
 }
-
-// .site-branding .five-star-line {
-//   span.fa {
-
-//   }
-// }
 
 nav#site-navigation.main-navigation {
   // flexbox child
   flex: 1 50%;
+  @include iphone6Plus414R {
+    flex: 1 100%;
+  }
+
+
+  button.menu-toggle {
+    @include iphone6Minus568R {
+      display: none;
+    }
+    
+  }
+
+  ul#primary-menu {
+    //flexbox parent
+    @include flexboxRow1;
+    justify-content: space-between;
+    align-content: space-between;
+
+    li {
+      // setting this fixes the last li item's weird aligning issue at any media resolution
+      flex: 1 auto;
+
+      // changing the padding makes the nav menu less bloated vertically and allows us to see the mast head image
+      @include iphone6Plus414R {
+        // @include font-size(0.75);
+        padding: 3% 3%;
+      }
+
+      @include iphone6Plus375R {
+        // @include font-size(0.6);
+        padding: 3% 3%;
+      }
+
+      @include iphone6Minus320R {
+        // @include font-size(0.6);
+        padding: 3% 3%;
+      }
+    }
+
+    li a {
+      @include iphone6Plus414R {
+        @include font-size(0.75);
+      }
+
+      @include iphone6Plus375R {
+        @include font-size(0.6);
+      }
+
+      @include iphone6Minus320R {
+        @include font-size(0.6);
+      }
+
+    }
+  }
 }
