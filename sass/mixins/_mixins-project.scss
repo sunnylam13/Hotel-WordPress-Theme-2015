@@ -1,0 +1,60 @@
+@mixin contentLinks1 {
+	// this mixin should be called within in <a> tag to style it
+	text-decoration: none;
+	color: $color__link_alt1;
+	@include transitionEffectAllEaseIn(0.3s);
+
+	&:hover {
+		color: $color__link-hover;
+	}
+}
+
+@mixin contentLinks2 {
+	// this mixin should be called within in <a> tag to style it
+	text-decoration: none;
+	color: $color__page-text;
+	@include transitionEffectAllEaseIn(0.3s);
+
+	&:hover {
+		color: $color__link-hover;
+	}
+}
+
+@mixin contentLinks3 {
+	// this mixin should be called within in <a> tag to style it
+	text-decoration: none;
+	color: $color__page-text;
+	font-style: italic;
+	@include transitionEffectAllEaseIn(0.3s);
+
+	&:hover {
+		color: $color__link-hover;
+	}
+}
+
+@mixin buttonStyle1 {
+	// this button style can be applied to input[type="submit"], button, <a>
+	// suggested padding to add if not used in sidebar:  padding: 2% 8% 2% 8%;
+	// if used in sidebar:  width: 100% instead of padding
+	// the code below assumes use in sidebar
+	border: 0;
+	border-radius: 0px;
+	box-shadow: none;
+	text-shadow: none;
+	background: $roomAttributeIcon;
+	color: white;
+	font-weight: bold;
+	@include font-size(1);
+	line-height: $baselineheight*1.5;
+	padding: 2% 0 2% 0;
+	@include sectionMargins041515(2.5%,2.5%);
+	@include transitionEffectAllEaseIn(0.5s);
+
+	&:hover {
+		box-shadow: none;
+		text-shadow: none;
+		background: white;
+		color: $roomAttributeIcon;
+		outline: 1px solid $roomAttributeIcon;
+	}
+}

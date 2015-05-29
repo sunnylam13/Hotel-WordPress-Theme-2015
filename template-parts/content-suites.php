@@ -18,7 +18,7 @@
 			<img src="http://lorempixel.com/396/300" alt="">
 			<a href="#" class="playFrame"><span></span></a>
 		</div>
-		<h2>Rooms</h2>
+		<h5>Rooms</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
 	</div>
 	<div class="promobox box2">
@@ -27,7 +27,7 @@
 			<img src="http://lorempixel.com/396/300" alt="">
 			<a href="#" class="playFrame"><span></span></a>
 		</div>
-		<h2>Suites</h2>
+		<h5>Suites</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
 	</div>
 	<div class="promobox box3">
@@ -36,7 +36,7 @@
 			<img src="http://lorempixel.com/396/300" alt="">
 			<a href="#" class="playFrame"><span></span></a>
 		</div>
-		<h2>Presidential Suites</h2>
+		<h5>Presidential Suites</h5>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
 	</div>
 

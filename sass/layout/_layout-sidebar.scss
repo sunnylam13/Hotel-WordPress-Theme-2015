@@ -6,7 +6,7 @@ sidebar.php
 =================================================*/
 
 #secondary {
-	//
+	// margin-top: 5%;
 }
 
 /*================================================ */
@@ -16,9 +16,18 @@ SIDEBAR - ROOM ATTRIBUTES WIDGET
 template-parts/sidebar-roomAttributes.php
 =================================================*/
 
+.roomSummary {
+	h5 {
+		font-weight: bold;
+		@include font-size(1.2);
+	}	
+}
+
 .roomAttributes {
 
 	margin-bottom: 10%;
+
+	
 
 	li {
 		// flexbox parent
@@ -80,6 +89,11 @@ template-parts/sidebar-reservations.php
 
 .reservationBooking {
 	margin-bottom: 10%;
+
+	h5 {
+		font-weight: bold;
+		@include font-size(1.2);
+	}
 
 	p {
 		@include marginPaddingReset1;
@@ -179,6 +193,11 @@ this one is visible on sass/layout/_content-about.scss
 	//flexbox parent
 	@include flexboxColumn1;
 	align-items: flex-start;
+
+	h5 {
+		font-weight: bold;
+		@include font-size(1.2);
+	}
 
 	.row {
 		width: 100%;

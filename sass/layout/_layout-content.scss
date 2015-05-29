@@ -32,6 +32,11 @@ layout/_content-about.scss
 		@include sectionMargins041515(5%,0);
 	}
 
+	.promobox h5 {
+		@include sectionMargins041515(5%,0);
+		@include font-size(1.25);
+	}
+
 	.promobox p {
 		@include sectionMargins041515(0,0);
 	}
@@ -167,4 +172,45 @@ MAST HEAD FOR INTERIOR PAGES
 
 /*================================================ */
 
+/*================================================
+CONTENT - SINGLE.PHP
+for individual "blog" posts
+single.php
+template-parts/content-single.php
+reference:  sass/mixins/_mixins-project.scss
+=================================================*/
+
+.nav-links .nav-previous {
+	a {
+		@include contentLinks3;
+	}
+}
+
+.nav-links .nav-next {
+	a {
+		@include contentLinks3;
+	}
+}
+
+p.logged-in-as a {
+	@include contentLinks3;
+}
+
+h3.comment-reply-title {
+	background: none;
+	padding: 0;
+}
+
+p.form-submit input[type="submit"] {
+	@include buttonStyle1;
+	padding: 2% 8% 2% 8%;
+}
+
+span.byline {
+	color: $color__page-text;
+	font-style: italic;
+	@include font-size(0.75);
+}
+
+/*================================================ */
 

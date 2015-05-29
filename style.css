@@ -276,7 +276,8 @@ this contains both the content and the sidebar
     -webkit-flex: 2 75%;
     -ms-flex: 2 75%;
     flex: 2 75%;
-    padding-right: 5%; }
+    padding-right: 5%;
+    margin-top: 5%; }
   .flexbox #secondary {
     /*================================================
 		BACKUP IE SUPPORT
@@ -286,7 +287,8 @@ this contains both the content and the sidebar
     /*================================================ */
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
-    flex: 1 25%; }
+    flex: 1 25%;
+    margin-top: 5%; }
 
 /*================================================ */
 /*================================================
@@ -300,6 +302,11 @@ sidebar.php
 SIDEBAR - ROOM ATTRIBUTES WIDGET
 template-parts/sidebar-roomAttributes.php
 =================================================*/
+.roomSummary h5 {
+  font-weight: bold;
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
 .roomAttributes {
   margin-bottom: 10%; }
   .roomAttributes li {
@@ -376,6 +383,10 @@ template-parts/sidebar-reservations.php
 =================================================*/
 .reservationBooking {
   margin-bottom: 10%; }
+  .reservationBooking h5 {
+    font-weight: bold;
+    font-size: 19.2px;
+    font-size: 1.2rem; }
   .reservationBooking p {
     margin: 0;
     padding: 0;
@@ -495,6 +506,10 @@ this one is visible on sass/layout/_content-about.scss
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
+  .sidebar.contactUs h5 {
+    font-weight: bold;
+    font-size: 19.2px;
+    font-size: 1.2rem; }
   .sidebar.contactUs .row {
     width: 100%;
     display: -webkit-flex;
@@ -708,6 +723,11 @@ layout/_content-about.scss
   .promo .promobox h2 {
     margin-top: 5%;
     margin-bottom: 0; }
+  .promo .promobox h5 {
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-size: 1.25rem; }
   .promo .promobox p {
     margin-top: 0;
     margin-bottom: 0; }
@@ -809,6 +829,83 @@ MAST HEAD FOR INTERIOR PAGES
       right: -24px;
       border-right: 24px solid transparent;
       border-top: 48px solid #52abdf; }
+
+/*================================================ */
+/*================================================
+CONTENT - SINGLE.PHP
+for individual "blog" posts
+single.php
+template-parts/content-single.php
+reference:  sass/mixins/_mixins-project.scss
+=================================================*/
+.nav-links .nav-previous a {
+  text-decoration: none;
+  color: #8F8E8E;
+  font-style: italic;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  .nav-links .nav-previous a:hover {
+    color: #52abdf; }
+
+.nav-links .nav-next a {
+  text-decoration: none;
+  color: #8F8E8E;
+  font-style: italic;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  .nav-links .nav-next a:hover {
+    color: #52abdf; }
+
+p.logged-in-as a {
+  text-decoration: none;
+  color: #8F8E8E;
+  font-style: italic;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in; }
+  p.logged-in-as a:hover {
+    color: #52abdf; }
+
+h3.comment-reply-title {
+  background: none;
+  padding: 0; }
+
+p.form-submit input[type="submit"] {
+  border: 0;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  background: #00A1E6;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 2% 0 2% 0;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  padding: 2% 8% 2% 8%; }
+  p.form-submit input[type="submit"]:hover {
+    box-shadow: none;
+    text-shadow: none;
+    background: white;
+    color: #00A1E6;
+    outline: 1px solid #00A1E6; }
+
+span.byline {
+  color: #8F8E8E;
+  font-style: italic;
+  font-size: 12px;
+  font-size: 0.75rem; }
 
 /*================================================ */
 /*================================================
