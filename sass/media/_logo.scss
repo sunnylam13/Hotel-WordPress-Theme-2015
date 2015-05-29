@@ -70,11 +70,18 @@ div.logoLine {
 	}
 
 	@include iphone6Plus414R {
+		left: 32%;
 		bottom: -39%;
 	}
 
 	@include iphone6Plus375R {
+		left: 33%;
 		bottom: -39%;
+	}
+
+	@include iphone6Minus320R {
+		left: 32%;
+	  	bottom: -39%;
 	}
 
 	span.fa {
@@ -101,5 +108,17 @@ div.logoLine {
 
 	@include phoneR {
 		left: 23%;
+	}
+
+	@include iphone6Plus414R {
+	  left: 29.5%;
+	}
+
+	@include iphone6Plus375R {
+	  left: 30.5%;
+	}
+
+	@include iphone6Minus320R {
+	  left: 29.5%;
 	}
 }

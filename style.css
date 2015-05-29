@@ -2533,9 +2533,15 @@ div.logoLine {
       left: 26%; } }
   @media (max-width: 414px) {
     .site-title .five-star-line {
+      left: 32%;
       bottom: -39%; } }
   @media (max-width: 375px) {
     .site-title .five-star-line {
+      left: 33%;
+      bottom: -39%; } }
+  @media (max-width: 320px) {
+    .site-title .five-star-line {
+      left: 32%;
       bottom: -39%; } }
   .site-title .five-star-line span.fa {
     color: #00A1E6;
@@ -2556,6 +2562,15 @@ div.logoLine {
   @media (max-width: 480px) {
     .site-title .star-line-field {
       left: 23%; } }
+  @media (max-width: 414px) {
+    .site-title .star-line-field {
+      left: 29.5%; } }
+  @media (max-width: 375px) {
+    .site-title .star-line-field {
+      left: 30.5%; } }
+  @media (max-width: 320px) {
+    .site-title .star-line-field {
+      left: 29.5%; } }
 
 /*--------------------------------------------------------------
 # Layout
