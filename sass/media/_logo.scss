@@ -1,5 +1,19 @@
 .site-branding {
 	// position: relative;
+	
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		&:visited {
+			color: $color__link-visited;
+		}
+		&:visited {
+			color: $color__link;
+		}
+		&:hover {
+			color: $color__link;
+		}
+	}
 }
 
 h1.site-title {
@@ -21,19 +35,19 @@ h1.site-title {
 
 	position: relative;
 
-	a {
-		text-decoration: none;
-		text-transform: uppercase;
-		&:visited {
-			color: $color__link-visited;
-		}
-		&:visited {
-			color: $color__link;
-		}
-		&:hover {
-			color: $color__link;
-		}
-	}
+	// a {
+	// 	text-decoration: none;
+	// 	text-transform: uppercase;
+	// 	&:visited {
+	// 		color: $color__link-visited;
+	// 	}
+	// 	&:visited {
+	// 		color: $color__link;
+	// 	}
+	// 	&:hover {
+	// 		color: $color__link;
+	// 	}
+	// }
 }
 
 div.logoLine {
