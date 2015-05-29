@@ -2581,7 +2581,6 @@ header.site-header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  top: -22%;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column; }
@@ -2742,7 +2741,8 @@ label[for="toggle"] {
   left: 1em;
   top: 1.5em;
   z-index: 101;
-  color: white; }
+  color: white;
+  display: none; }
 
 input#toggle {
   display: none; }

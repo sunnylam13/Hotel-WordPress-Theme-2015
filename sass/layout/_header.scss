@@ -8,7 +8,8 @@ header.site-header {
 
   // DEFAULT POSITION
   // for use only with media queries...
-  top:-22%;
+  // this is a reference...
+  // top:-22%;
 
   @include iphone6Plus414R {
     // unknown reason... the site-header 
@@ -142,7 +143,7 @@ label[for="toggle"] {
 
   // DEFAULT DISPLAY STATUS
   // generally display: none unless changed by media queries or JS
-  // display: none;
+  display: none;
 }
 // ----------------------------------------
 // END INPUT LABEL CONTROL  ------------------
