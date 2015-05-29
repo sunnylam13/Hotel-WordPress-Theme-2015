@@ -9,6 +9,10 @@ this contains both the content and the sidebar
 	align-content: space-between;
 	align-items: flex-start;
 
+	@include desktopR {
+	  flex-direction: column;
+	}
+
 	#primary {
 		/*================================================
 		BACKUP IE SUPPORT
@@ -23,6 +27,10 @@ this contains both the content and the sidebar
 
 		// push the section down from the top
 		margin-top: 5%;
+
+		@include desktopR {
+			width: 100%;
+		}
 	}
 
 	#secondary {
@@ -37,6 +45,10 @@ this contains both the content and the sidebar
 
 		// push the section down from the top
 		margin-top: 5%;
+
+		@include desktopR {
+			width: 100%;
+		}
 	}
 }
 
