@@ -798,11 +798,11 @@ MAST HEAD FOR INTERIOR PAGES
   .masthead img {
     display: block; }
   .masthead h3 {
-    width: 18.5%;
+    min-width: 300px;
     color: white;
     position: absolute;
     bottom: 0;
-    text-align: right; }
+    padding-left: 165px; }
     .masthead h3:after {
       content: '';
       position: absolute;

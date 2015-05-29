@@ -153,11 +153,11 @@ MAST HEAD FOR INTERIOR PAGES
 		display: block;
 	}
 	h3 {
-		width: 18.5%;
+		min-width: 300px;
 		color: white;
 		position: absolute;
 		bottom: 0;
-		text-align: right;
+		padding-left: 165px;
 		&:after {
 		  content: '';
 		  position: absolute;
