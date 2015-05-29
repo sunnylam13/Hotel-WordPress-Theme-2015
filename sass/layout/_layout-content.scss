@@ -170,6 +170,17 @@ MAST HEAD FOR INTERIOR PAGES
 
 }
 
+// Hide Entry title for interior pages
+.entry-title {
+	display: none;
+}
+
+body.blog {
+	.entry-title {
+		display: block;
+	}
+}
+
 
 /*================================================ */
 
