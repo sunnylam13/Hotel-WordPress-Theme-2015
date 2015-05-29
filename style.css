@@ -2449,6 +2449,16 @@ object {
 ## LOGO
 =================================================*/
 /* for use with h1.site-title */
+.site-branding a {
+  text-decoration: none;
+  text-transform: uppercase; }
+  .site-branding a:visited {
+    color: white; }
+  .site-branding a:visited {
+    color: white; }
+  .site-branding a:hover {
+    color: white; }
+
 h1.site-title {
   line-height: 1.75;
   letter-spacing: 1px;
@@ -2459,15 +2469,6 @@ h1.site-title {
   font-size: 24px;
   font-size: 1.5rem;
   position: relative; }
-  h1.site-title a {
-    text-decoration: none;
-    text-transform: uppercase; }
-    h1.site-title a:visited {
-      color: white; }
-    h1.site-title a:visited {
-      color: white; }
-    h1.site-title a:hover {
-      color: white; }
 
 div.logoLine {
   border-top: 1px solid #8F8E8E;
