@@ -32,6 +32,11 @@ layout/_content-about.scss
 		@include sectionMargins041515(5%,0);
 	}
 
+	.promobox h5 {
+		@include sectionMargins041515(5%,0);
+		@include font-size(1.25);
+	}
+
 	.promobox p {
 		@include sectionMargins041515(0,0);
 	}

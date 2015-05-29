@@ -16,9 +16,18 @@ SIDEBAR - ROOM ATTRIBUTES WIDGET
 template-parts/sidebar-roomAttributes.php
 =================================================*/
 
+.roomSummary {
+	h5 {
+		font-weight: bold;
+		@include font-size(1.2);
+	}	
+}
+
 .roomAttributes {
 
 	margin-bottom: 10%;
+
+	
 
 	li {
 		// flexbox parent

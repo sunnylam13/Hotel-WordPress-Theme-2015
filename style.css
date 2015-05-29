@@ -302,6 +302,11 @@ sidebar.php
 SIDEBAR - ROOM ATTRIBUTES WIDGET
 template-parts/sidebar-roomAttributes.php
 =================================================*/
+.roomSummary h5 {
+  font-weight: bold;
+  font-size: 19.2px;
+  font-size: 1.2rem; }
+
 .roomAttributes {
   margin-bottom: 10%; }
   .roomAttributes li {
@@ -718,6 +723,11 @@ layout/_content-about.scss
   .promo .promobox h2 {
     margin-top: 5%;
     margin-bottom: 0; }
+  .promo .promobox h5 {
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-size: 1.25rem; }
   .promo .promobox p {
     margin-top: 0;
     margin-bottom: 0; }
