@@ -12,6 +12,18 @@
 
 get_header(); ?>
 
+	<section class="masthead">
+	  <?php if ( have_posts() ) : ?>
+
+	    <?php while ( have_posts() ) : the_post(); ?>
+
+	        <h3><?php the_title(); ?></h3>
+	        <?php the_post_thumbnail('full'); ?>
+
+	    <?php endwhile; ?>
+
+	  <?php endif; ?>
+	</section>
 <!-- create a separate div instead of using the other WordPress parent to avoid crazy conflicts -->
 <div class="flexbox about clearfix container">
 	

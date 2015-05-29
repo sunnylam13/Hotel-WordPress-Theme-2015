@@ -12,6 +12,19 @@
 
 get_header(); ?>
 
+<section class="masthead">
+  <?php if ( have_posts() ) : ?>
+
+    <?php while ( have_posts() ) : the_post(); ?>
+
+        <h3><?php the_title(); ?></h3>
+        <?php the_post_thumbnail('full'); ?>
+
+    <?php endwhile; ?>
+
+  <?php endif; ?>
+</section>
+
 
 <!-- create a separate div instead of using the other WordPress parent to avoid crazy conflicts -->
 <div class="flexbox suites clearfix container">
@@ -20,6 +33,7 @@ get_header(); ?>
 	<!-- <p>This is the page.php</p> -->
 
 	<main id="main" class="site-main" role="main">
+		<div class="container">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,7 +48,7 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/content', 'suites' ); ?>
 
 		<!-- ====================================== -->
-
+		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
