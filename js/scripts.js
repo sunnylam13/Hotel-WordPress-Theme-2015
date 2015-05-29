@@ -50,8 +50,13 @@ hsdA1.roomTypeAnim1 = function () {
 hsdA1.suitesAnim1 = function () {
 	this.suiteAM1 = new TimelineMax();
 
-	// make the posts disappear
+	// make the posts disappear on load
 	$.each($("section.suites .promobox"), function(index, liItem) {
+		TweenMax.set(liItem,{opacity:0, overwrite: "all"});
+	});
+
+	// make the room attributes disappear on load
+	$.each($("ul.roomAttributes li"), function(index, liItem) {
 		TweenMax.set(liItem,{opacity:0, overwrite: "all"});
 	});
 
@@ -65,6 +70,14 @@ hsdA1.suitesAnim1 = function () {
 	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(2)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 	// 3rd post
 	this.suiteAM1.staggerTo($("section.suites .promobox:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
+
+	// make each of the room attributes appear in sequence
+	this.suiteAM1.staggerTo($("ul.roomAttributes li:nth-child(1)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
+	this.suiteAM1.staggerTo($("ul.roomAttributes li:nth-child(2)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
+	this.suiteAM1.staggerTo($("ul.roomAttributes li:nth-child(3)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
+	this.suiteAM1.staggerTo($("ul.roomAttributes li:nth-child(4)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
+	this.suiteAM1.staggerTo($("ul.roomAttributes li:nth-child(5)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
+	this.suiteAM1.staggerTo($("ul.roomAttributes li:nth-child(6)"),hsdA1.animTimeAll,{opacity:1, overwrite: "all"},hsdA1.animTimeAll);
 
 }
 
