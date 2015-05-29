@@ -266,6 +266,11 @@ this contains both the content and the sidebar
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
+  @media (max-width: 940px) {
+    .flexbox {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .flexbox #primary {
     /*================================================
 		BACKUP IE SUPPORT
@@ -278,6 +283,9 @@ this contains both the content and the sidebar
     flex: 2 75%;
     padding-right: 5%;
     margin-top: 5%; }
+    @media (max-width: 940px) {
+      .flexbox #primary {
+        width: 100%; } }
   .flexbox #secondary {
     /*================================================
 		BACKUP IE SUPPORT
@@ -289,6 +297,9 @@ this contains both the content and the sidebar
     -ms-flex: 1 25%;
     flex: 1 25%;
     margin-top: 5%; }
+    @media (max-width: 940px) {
+      .flexbox #secondary {
+        width: 100%; } }
 
 /*================================================ */
 /*================================================
@@ -383,6 +394,9 @@ template-parts/sidebar-reservations.php
 =================================================*/
 .reservationBooking {
   margin-bottom: 10%; }
+  @media (max-width: 940px) {
+    .reservationBooking {
+      margin-bottom: 0; } }
   .reservationBooking h5 {
     font-weight: bold;
     font-size: 19.2px;
@@ -430,12 +444,22 @@ template-parts/sidebar-reservations.php
     .reservationBooking div.fromToDate div.field input {
       max-width: 100%;
       padding: 3% 4% 3% 8%; }
+      @media (max-width: 940px) {
+        .reservationBooking div.fromToDate div.field input {
+          width: 100%; } }
     .reservationBooking div.fromToDate div.field i {
       position: absolute;
       top: 8px;
       right: 5px; }
+      @media (max-width: 940px) {
+        .reservationBooking div.fromToDate div.field i {
+          top: 13px;
+          right: 7px; } }
   .reservationBooking div.fromToDate div:first-child {
     margin-right: 5%; }
+    @media (max-width: 940px) {
+      .reservationBooking div.fromToDate div:first-child {
+        margin-right: 2%; } }
   .reservationBooking input[type="submit"] {
     width: 100%;
     border: 0;
