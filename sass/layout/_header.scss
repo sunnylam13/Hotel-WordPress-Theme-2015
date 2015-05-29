@@ -11,6 +11,12 @@ header.site-header {
     max-width: 414px;
   }
 
+  @include iphone6Plus375R {
+    max-width: 375px;
+  }
+
+  flex-flow: column;
+
   .container {
     @include clearfix;
 

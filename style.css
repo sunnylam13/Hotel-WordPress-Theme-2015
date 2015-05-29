@@ -400,6 +400,9 @@ template-parts/sidebar-reservations.php
     margin-bottom: 2.5%; }
   .reservationBooking input.selectMenuPH {
     width: 100%; }
+  @media (max-width: 414px) {
+    .reservationBooking select#roomType {
+      max-width: 100%; } }
   .reservationBooking div.fromToDate {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2502,10 +2505,16 @@ header.site-header {
   padding: 5px;
   position: fixed;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
   @media (max-width: 414px) {
     header.site-header {
       max-width: 414px; } }
+  @media (max-width: 375px) {
+    header.site-header {
+      max-width: 375px; } }
   header.site-header .container {
     *zoom: 1;
     display: -webkit-flex;
