@@ -13,8 +13,8 @@ header.site-header {
   }
 }
 
+// this also wraps everything in the site-header
 header.site-header .container {
-  // this also wraps everything in the site-header
   @include iphone6Plus414R {
     @include flexboxRow1;
   }
@@ -24,6 +24,10 @@ header.site-header .container {
   //flex child
   flex: 1 32%;
 
+  @include iphone6Plus414R {
+    flex: 1 100%;
+  }
+
   // flexbox parent
   @include flexboxRow1;
   justify-content: flex-start;
@@ -32,14 +36,23 @@ header.site-header .container {
   //fall back
   float: left;
   
-  h1 {
-    // this was moved to _logo.scss
-  }
+  
 }
 
 nav#site-navigation.main-navigation {
   // flexbox child
   flex: 1 50%;
+  @include iphone6Plus414R {
+    flex: 1 100%;
+  }
+
+
+  button.menu-toggle {
+    @include iphone6Plus414R {
+      display: none;
+    }
+    
+  }
 
   ul#primary-menu {
     //flexbox parent

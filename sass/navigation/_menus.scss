@@ -51,6 +51,11 @@
 		float: left;
 		position: relative;
 		padding: 20px 15px;
+
+		@include iphone6Plus414R {
+			//
+		}
+
 		&:after {
 			content: '|';
 			color: $color__nav-divider;

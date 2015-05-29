@@ -2566,11 +2566,24 @@ header.site-header {
   -ms-flex-line-pack: start;
   align-content: flex-start;
   float: left; }
+  @media (max-width: 414px) {
+    .site-branding {
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%; } }
 
 nav#site-navigation.main-navigation {
   -webkit-flex: 1 50%;
   -ms-flex: 1 50%;
   flex: 1 50%; }
+  @media (max-width: 414px) {
+    nav#site-navigation.main-navigation {
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%; } }
+  @media (max-width: 414px) {
+    nav#site-navigation.main-navigation button.menu-toggle {
+      display: none; } }
   nav#site-navigation.main-navigation ul#primary-menu {
     display: -webkit-flex;
     display: -ms-flexbox;
