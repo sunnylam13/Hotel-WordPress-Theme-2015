@@ -2533,6 +2533,12 @@ div.logoLine {
   position: absolute;
   bottom: -39%;
   left: 33%; }
+  @media (max-width: 320px) {
+    .site-title .five-star-line {
+      left: 32%;
+      bottom: -39%;
+      left: 30%;
+      bottom: -41%; } }
   .site-title .five-star-line span.fa {
     color: #00A1E6;
     font-size: 11px;
