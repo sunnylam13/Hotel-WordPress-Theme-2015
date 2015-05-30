@@ -29,16 +29,6 @@ h1.site-title {
 	@include font-size(1.5);
 
 	position: relative;
-
-	// @include iphone6Plus667R {
-	// 	text-align: center;
-	// 	@include font-size(1.1);
-	// }
-
-	// @include iphone6Minus568R {
-	// 	text-align: center;
-	// 	@include font-size(0.9);
-	// }
 	
 	@include iphone6Minus320R {
 		@include font-size(1.1);
@@ -67,31 +57,6 @@ div.logoLine {
 
 	// background:  $color__background-logo;
 
-	// @include iphone6Plus667R {
-	// 	bottom: -19%;
-	// 	bottom: -38%;
-	// 	left: 32%;
-	// }
-
-	// @include iphone6Minus568R {
-	// 	left: 31%;
-	// }
-
-	// @include phoneR {
-	// 	left: 26%;
-	// }
-
-	// @include iphone6Plus414R {
-	// 	left: 32%;
-	// 	bottom: -39%;
-	// }
-
-	// @include iphone6Plus375R {
-	// 	left: 33%;
-	// 	left: 31%;
-	// 	bottom: -39%;
-	// }
-
 	@include iphone6Minus320R {
 		left: 32%;
 	  	bottom: -39%;
@@ -116,30 +81,4 @@ div.logoLine {
 	width: 4em;
 	height: 12px;
 	z-index: 11;
-
-	// @include iphone6Plus667R {
-	// 	width: 4.8em;
-	// 	left: 30%;
-	// }
-	
-	// @include iphone6Minus568R {
-	// 	left: 28.5%;
-	// }
-
-	// @include phoneR {
-	// 	left: 23%;
-	// }
-
-	// @include iphone6Plus414R {
-	//   left: 29.5%;
-	// }
-
-	// @include iphone6Plus375R {
-	//   left: 30.5%;
-	//   left: 29.5%;
-	// }
-
-	// @include iphone6Minus320R {
-	//   left: 29.5%;
-	// }
 }

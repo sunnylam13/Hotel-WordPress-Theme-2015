@@ -1226,21 +1226,6 @@ a {
         .main-navigation li:after {
           top: 7px;
           display: none; } }
-      @media (max-width: 568px) and (orientation: landscape) {
-        .main-navigation li:after {
-          display: none; } }
-      @media (max-width: 414px) {
-        .main-navigation li:after {
-          top: 5px;
-          right: 1px; } }
-      @media (max-width: 375px) {
-        .main-navigation li:after {
-          top: 5px;
-          right: 1px; } }
-      @media (max-width: 320px) {
-        .main-navigation li:after {
-          top: 3px;
-          right: -3px; } }
     .main-navigation li:last-child {
       padding-right: 0; }
       .main-navigation li:last-child:after {
