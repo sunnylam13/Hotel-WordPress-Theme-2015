@@ -3146,14 +3146,101 @@ footer.site-footer .site-info nav ul {
         top: 0; }
     .home .masthead .overlay h3 {
       padding-left: 20px; }
+    @media (max-width: 1024px) {
+      .home .masthead .overlay {
+        top: 45%; }
+        .home .masthead .overlay h2 {
+          margin-left: 9%; }
+          .home .masthead .overlay h2::after {
+            right: -32px; }
+        .home .masthead .overlay h3 {
+          margin-left: 9%; }
+          .home .masthead .overlay h3::after {
+            right: -23px; } }
     @media (max-width: 768px) {
       .home .masthead .overlay {
         width: 80%;
         left: 8%; }
         .home .masthead .overlay h2 {
-          font-size: 1.125rem; }
+          font-size: 1.125rem;
+          margin-left: 2%; }
         .home .masthead .overlay h3 {
-          font-size: 1rem; } }
+          font-size: 1rem;
+          margin-left: 2%; } }
+    @media (max-width: 736px) {
+      .home .masthead .overlay h2 {
+        margin-left: 0; }
+        .home .masthead .overlay h2::after {
+          border-top: 86px solid #2a2a2a; }
+      .home .masthead .overlay h3 {
+        margin-left: 0; }
+        .home .masthead .overlay h3::after {
+          border-top: 45px solid #52abdf; } }
+    @media (max-width: 667px) {
+      .home .masthead .overlay {
+        top: 27%; }
+        .home .masthead .overlay h2::after {
+          border-top: 86px solid #2a2a2a; }
+        .home .masthead .overlay h3::after {
+          border-top: 45px solid #52abdf; } }
+    @media (max-width: 568px) {
+      .home .masthead .overlay {
+        top: 23%; } }
+    @media (max-width: 480px) {
+      .home .masthead .overlay {
+        left: 9%;
+        top: 18%; } }
+    @media (max-width: 414px) {
+      .home .masthead .overlay {
+        top: 38%; }
+        .home .masthead .overlay h2 {
+          font-size: 14.4px;
+          font-size: 0.9rem;
+          padding: 7px 10px; }
+          .home .masthead .overlay h2::after {
+            border-top: 56px solid #2a2a2a;
+            right: -32px; }
+        .home .masthead .overlay h3 {
+          font-size: 8px;
+          font-size: 0.5rem;
+          padding-left: 10px;
+          min-width: 180px; }
+          .home .masthead .overlay h3::after {
+            border-top: 34px solid #52abdf;
+            right: -22px; } }
+    @media (max-width: 375px) {
+      .home .masthead .overlay {
+        top: 22%;
+        left: 9%; }
+        .home .masthead .overlay h2 {
+          font-size: 14.4px;
+          font-size: 0.9rem;
+          padding: 7px 10px; }
+          .home .masthead .overlay h2::after {
+            border-top: 56px solid #2a2a2a; }
+        .home .masthead .overlay h3 {
+          font-size: 8px;
+          font-size: 0.5rem;
+          padding-left: 10px;
+          min-width: 180px; }
+          .home .masthead .overlay h3::after {
+            border-top: 34px solid #52abdf; } }
+    @media (max-width: 320px) {
+      .home .masthead .overlay {
+        top: 9%; }
+        .home .masthead .overlay h2 {
+          font-size: 14.4px;
+          font-size: 0.9rem;
+          padding: 7px 10px; }
+          .home .masthead .overlay h2::after {
+            border-top: 78px solid #2a2a2a; }
+        .home .masthead .overlay h3 {
+          font-size: 8px;
+          font-size: 0.5rem;
+          padding-left: 10px;
+          min-width: 180px; }
+          .home .masthead .overlay h3::after {
+            border-top: 34px solid #52abdf; } }
 
 .booking-console {
   background: white;
@@ -3459,6 +3546,14 @@ body.home #content.site-content {
   padding-bottom: 10%;
   padding-top: 0%;
   padding-bottom: 10%; }
+  @media (max-width: 768px) {
+    body.home #content.site-content {
+      padding-top: 13%;
+      padding-bottom: 10%; } }
+  @media (max-width: 736px) {
+    body.home #content.site-content {
+      padding-top: 0%;
+      padding-bottom: 10%; } }
 
 a {
   transition: all 0.3s; }
