@@ -32,6 +32,7 @@ h1.site-title {
 
 	@include iphone6Plus667R {
 		text-align: center;
+		@include font-size(1.1);
 	}
 }
 
@@ -59,6 +60,8 @@ div.logoLine {
 
 	@include iphone6Plus667R {
 		bottom: -19%;
+		bottom: -38%;
+		left: 32%;
 	}
 
 	@include iphone6Minus568R {
@@ -76,6 +79,7 @@ div.logoLine {
 
 	@include iphone6Plus375R {
 		left: 33%;
+		left: 31%;
 		bottom: -39%;
 	}
 
@@ -102,6 +106,11 @@ div.logoLine {
 	height: 12px;
 	z-index: 11;
 
+	@include iphone6Plus667R {
+		width: 4.8em;
+		left: 30%;
+	}
+	
 	@include iphone6Minus568R {
 		left: 28.5%;
 	}
@@ -116,6 +125,7 @@ div.logoLine {
 
 	@include iphone6Plus375R {
 	  left: 30.5%;
+	  left: 29.5%;
 	}
 
 	@include iphone6Minus320R {

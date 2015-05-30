@@ -78,6 +78,9 @@
 			@include iphone6Plus736R {
 				right: -2px;
 			}
+			@include iphone6Plus667R {
+				top: 7px;
+			}
 			@include iphone6Plus414R {
 			  // @include font-size(0.75);
 			  top: 5px;

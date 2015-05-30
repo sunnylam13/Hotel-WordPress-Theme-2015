@@ -11,6 +11,10 @@ header.site-header {
   // this is a reference...
   // top:-22%;
 
+  @include iphone6Plus736LandR {
+    top: -50em;
+  }
+
   @include iphone6Plus414R {
     // unknown reason... the site-header 
     max-width: 414px;
@@ -31,6 +35,10 @@ header.site-header {
 
     // flexbox parent
     @include flexboxRow1;
+
+    @include iphone6Plus667LandR {
+      //
+    }
   }
 
 }
@@ -61,6 +69,10 @@ header.site-header .container {
   //fall back
   float: left;
   
+  @include iphone6Plus667LandR {
+    margin-left: 13%;
+  }
+
   @include iphone6Plus414R {
     justify-content: center;
     align-content: center;
@@ -92,6 +104,10 @@ nav#site-navigation.main-navigation {
       // setting this fixes the last li item's weird aligning issue at any media resolution
       flex: 1 auto;
 
+      @include iphone6Plus667R {
+        padding: 3% 3%;
+      }
+
       // changing the padding makes the nav menu less bloated vertically and allows us to see the mast head image
       @include iphone6Plus414R {
         // @include font-size(0.75);
@@ -110,6 +126,10 @@ nav#site-navigation.main-navigation {
     }
 
     li a {
+      @include iphone6Plus667R {
+        @include font-size(0.75);
+      }
+
       @include iphone6Plus414R {
         @include font-size(0.75);
       }
@@ -143,7 +163,27 @@ label[for="toggle"] {
 
   // DEFAULT DISPLAY STATUS
   // generally display: none unless changed by media queries or JS
-  display: none;
+  opacity: 0;
+  z-index: -5;
+
+  // STYLING OVERRIDE  ------------------------------------------------
+  @include buttonStyle1;
+  width: 5em;
+  @include marginPaddingReset1;
+  text-align: center;
+  &:hover {
+    outline: none;
+    background: transparent;
+  }
+  // END STYLING OVERRIDE ------------------------------------------------
+
+  @include iphone6Plus736LandR {
+    opacity: 1;
+    z-index: 101;
+    left: 0.9em;
+    top: 0.5em;
+  }
+
 }
 // ----------------------------------------
 // END INPUT LABEL CONTROL  ------------------

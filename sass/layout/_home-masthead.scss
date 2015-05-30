@@ -2,6 +2,30 @@
   .masthead {
     position: relative;
     padding-top: 35px;
+
+    @include iphone6Plus736LandR {
+      // ----------------------------------------
+      // SLIDE OUT FUNCTIONALITY  ------------------
+      // ----------------------------------------
+      padding-top: 0;
+      // ----------------------------------------
+      // END SLIDE OUT FUNCTIONALITY  ------------------
+      // ----------------------------------------
+      
+    }
+
+    @include iphone6Plus414PortR {
+      padding-top: 81px;
+    }
+
+    @include iphone6Plus375PortR {
+      padding-top: 76px;
+    }
+
+    @include iphone6Minus320PortR {
+      padding-top: 73px;
+    }
+
     .overlay {
       position: absolute;
       top: 42%;
