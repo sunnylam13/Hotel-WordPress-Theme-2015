@@ -143,6 +143,7 @@ section.promo {
 
 /*================================================
 MAST HEAD FOR INTERIOR PAGES
+tag:  masthead
 =================================================*/
 
 // Masthead Area for interior pages
@@ -167,6 +168,48 @@ MAST HEAD FOR INTERIOR PAGES
 		  right: -24px;
 		  border-right: 24px solid transparent;
 		  border-top: 48px solid #52abdf;
+		}
+	}
+
+	@include tabletR {
+		h3::after {
+			right: -23px;
+		}
+	}
+
+	@include iphone6Plus736R {
+		h3 {
+			padding-left: 32px;
+		}
+	}
+
+	@include phoneR {
+		h3 {
+			min-width: 223px;
+		}
+	}
+
+	@include iphone6Plus414R {
+		h3 {
+			padding-left: 32px;
+			min-width: 236px;
+		}
+	}
+
+	@include iphone6Plus375R {
+		h3 {
+			min-width: 222px;
+		}
+	}
+
+	@include iphone6Minus320R {
+		h3 {
+			min-width: 206px;
+			@include font-size(1.1);
+			@include sectionPadding041515(5px,10px);
+		}
+		h3::after {
+			border-top: 44px solid #52abdf;
 		}
 	}
 

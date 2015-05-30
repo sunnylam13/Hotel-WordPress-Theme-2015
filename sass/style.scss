@@ -167,6 +167,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 	@include tabletR {
 		@include sectionPadding041515(0,10%);
+		@include sectionPadding041515(13%,10%);
+	}
+
+	@include iphone6Plus736R {
+		@include sectionPadding041515(0%,10%);
 	}
 }
 
