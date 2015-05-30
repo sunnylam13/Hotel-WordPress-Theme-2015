@@ -16,6 +16,16 @@ section.suites.promo {
 	.promobox {
 		// flex child
 		flex: 1 28%;
+
+		@include phoneR {
+			flex: 1 100%;
+			margin-bottom: 5%;
+		}
+	
+		@include iphone6Plus414R {
+			flex: 1 100%;
+			margin-bottom: 5%;
+		}
 	}
 
 	.promobox h2 {
@@ -80,6 +90,16 @@ section.suites.promo {
 
 	.box2 {
 		margin: 0 5% 0 5%;
+
+		@include phoneR {
+			@include marginPaddingReset1;
+			@include sectionMargins041515(10%,10%);
+		}
+
+		@include iphone6Plus414R {
+			@include marginPaddingReset1;
+			@include sectionMargins041515(10%,10%);
+		}
 	}
 }
 

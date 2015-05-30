@@ -54,6 +54,10 @@ template-parts/sidebar-roomAttributes.php
 		@include tabletR {
 			margin-right: 3%;
 		}
+
+		@include iphone6Plus375R {
+			margin-right: 5%;
+		}
 	}
 
 	li div:nth-child(1) {

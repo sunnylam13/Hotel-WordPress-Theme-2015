@@ -349,6 +349,9 @@ template-parts/sidebar-roomAttributes.php
     @media (max-width: 768px) {
       .roomAttributes li:nth-child(3) div span {
         margin-right: 3%; } }
+    @media (max-width: 375px) {
+      .roomAttributes li:nth-child(3) div span {
+        margin-right: 5%; } }
   .roomAttributes li div:nth-child(1) {
     -webkit-flex: 3 75%;
     -ms-flex: 3 75%;
@@ -663,7 +666,7 @@ input[type="search"].search-field {
   padding: 2% 4% 2% 4%; }
   @media (max-width: 768px) {
     input[type="search"].search-field {
-      width: 92%; } }
+      width: 91%; } }
 
 form.search-form {
   position: relative; }
@@ -682,6 +685,12 @@ form.search-form {
       form.search-form::after {
         top: 14px;
         right: 10px; } }
+    @media (max-width: 414px) {
+      form.search-form::after {
+        top: 7px; } }
+    @media (max-width: 320px) {
+      form.search-form::after {
+        top: 5px; } }
 
 .widget li {
   padding-top: 2%;
@@ -1499,6 +1508,18 @@ section.about.promo {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 4%; }
+    @media (max-width: 480px) {
+      section.about.promo .promobox {
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+        margin-bottom: 5%; } }
+    @media (max-width: 414px) {
+      section.about.promo .promobox {
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+        margin-bottom: 5%; } }
   section.about.promo .promobox .imgFrame {
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
@@ -1525,6 +1546,18 @@ section.suites.promo .promobox {
   -webkit-flex: 1 28%;
   -ms-flex: 1 28%;
   flex: 1 28%; }
+  @media (max-width: 480px) {
+    section.suites.promo .promobox {
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      margin-bottom: 5%; } }
+  @media (max-width: 414px) {
+    section.suites.promo .promobox {
+      -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+      flex: 1 100%;
+      margin-bottom: 5%; } }
 
 section.suites.promo .promobox h2 {
   font-size: 19.2px;
@@ -1642,6 +1675,18 @@ section.suites.promo .promobox .playFrame span::before {
 
 section.suites.promo .box2 {
   margin: 0 5% 0 5%; }
+  @media (max-width: 480px) {
+    section.suites.promo .box2 {
+      margin: 0;
+      padding: 0;
+      margin-top: 10%;
+      margin-bottom: 10%; } }
+  @media (max-width: 414px) {
+    section.suites.promo .box2 {
+      margin: 0;
+      padding: 0;
+      margin-top: 10%;
+      margin-bottom: 10%; } }
 
 /*================================================ */
 /*--------------------------------------------------------------
@@ -3351,6 +3396,10 @@ h5 {
   padding-bottom: 10%;
   padding-top: 5%;
   padding-bottom: 10%; }
+  @media (max-width: 768px) {
+    #content.site-content {
+      padding-top: 0;
+      padding-bottom: 10%; } }
 
 body.home #content.site-content {
   padding-top: 0;

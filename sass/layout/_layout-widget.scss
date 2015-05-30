@@ -25,7 +25,7 @@ input[type="search"].search-field {
 	padding: 2% 4% 2% 4%;
 
 	@include tabletR {
-		width: 92%;
+		width: 91%;
 	}
 }
 
@@ -41,6 +41,14 @@ form.search-form {
 		@include tabletR {
 			top: 14px;
 			right: 10px;
+		}
+
+		@include iphone6Plus414R {
+			top: 7px;
+		}
+
+		@include iphone6Minus320R {
+			top: 5px;
 		}
 	}
 	
