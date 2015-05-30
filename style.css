@@ -1513,17 +1513,22 @@ section.about.promo {
         -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
         flex: 1 100%;
-        margin-bottom: 5%; } }
+        margin-bottom: 10%; } }
     @media (max-width: 414px) {
       section.about.promo .promobox {
         -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
         flex: 1 100%;
-        margin-bottom: 5%; } }
+        margin-bottom: 10%; } }
   section.about.promo .promobox .imgFrame {
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
     flex: 1 25%; }
+    @media (max-width: 480px) {
+      section.about.promo .promobox .imgFrame {
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+        flex: 1 100%; } }
   section.about.promo .promobox .copy {
     -webkit-flex: 3 75%;
     -ms-flex: 3 75%;
@@ -1532,6 +1537,12 @@ section.about.promo {
     -ms-flex: 3 70%;
     flex: 3 70%;
     margin-left: 4%; }
+    @media (max-width: 480px) {
+      section.about.promo .promobox .copy {
+        -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+        margin-left: 0; } }
 
 /*================================================
 CONTENT ABOUT

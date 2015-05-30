@@ -25,18 +25,23 @@ section.about.promo {
 
 		@include phoneR {
 			flex: 1 100%;
-			margin-bottom: 5%;
+			margin-bottom: 10%;
 		}
 
 		@include iphone6Plus414R {
 			flex: 1 100%;
-			margin-bottom: 5%;
+			margin-bottom: 10%;
 		}
 	}
 
 	.promobox .imgFrame {
 		//flex child
 		flex: 1 25%;
+
+		@include phoneR {
+			//flex child
+			flex: 1 100%;
+		}
 	}
 
 	.promobox .copy {
@@ -44,6 +49,12 @@ section.about.promo {
 		flex: 3 75%;
 		flex: 3 70%;
 		margin-left: 4%;
+
+		@include phoneR {
+			//flex child
+			flex: 1 100%;
+			margin-left: 0;
+		}
 	}
 
 }
