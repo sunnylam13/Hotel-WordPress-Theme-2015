@@ -23,6 +23,10 @@ input[type="search"].search-field {
 	width: 94%;
 	margin: 0;
 	padding: 2% 4% 2% 4%;
+
+	@include tabletR {
+		width: 91%;
+	}
 }
 
 form.search-form {
@@ -33,6 +37,19 @@ form.search-form {
 		top: 6px;
 		right: -5px;
 		color: $color__page-text;
+
+		@include tabletR {
+			top: 14px;
+			right: 10px;
+		}
+
+		@include iphone6Plus414R {
+			top: 7px;
+		}
+
+		@include iphone6Minus320R {
+			top: 5px;
+		}
 	}
 	
 }

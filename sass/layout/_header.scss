@@ -6,6 +6,15 @@ header.site-header {
   width: 100%;
   z-index: 100;
 
+  // DEFAULT POSITION
+  // for use only with media queries...
+  // this is a reference...
+  // top:-22%;
+
+  @include iphone6Plus736R {
+    top: -50em;
+  }
+
   @include iphone6Plus414R {
     // unknown reason... the site-header 
     max-width: 414px;
@@ -26,6 +35,10 @@ header.site-header {
 
     // flexbox parent
     @include flexboxRow1;
+
+    @include iphone6Plus667LandR {
+      //
+    }
   }
 
 }
@@ -33,9 +46,25 @@ header.site-header {
 // this also wraps everything in the site-header
 header.site-header .container {
 
+  @include iphone6Plus667R {
+    @include flexboxColumn1;
+    // @include flexboxRow1;
+  }
+
   @include iphone6Plus414R {
     // unknown reason... the site-header 
     @include flexboxRow1;
+    @include flexboxColumn1;
+  }
+
+  @include iphone6Plus375R {
+    @include flexboxColumn1;
+    align-items: flex-end;
+  }
+
+  @include iphone6Minus320R {
+    @include flexboxColumn1;
+    align-items: flex-end;
   }
 
 }
@@ -55,10 +84,24 @@ header.site-header .container {
 
   //fall back
   float: left;
-  
-  @include iphone6Plus414R {
+
+  @include iphone6Plus667R {
+    flex-flow: column;
     justify-content: center;
     align-content: center;
+    align-items: flex-end;
+  }
+
+  @include iphone6Plus414R {
+    width: 84%;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+  }
+
+  @include iphone6Plus375R {
+
   }
 }
 
@@ -83,9 +126,29 @@ nav#site-navigation.main-navigation {
     justify-content: space-between;
     align-content: space-between;
 
+    @include iphone6Plus667R {
+      width: 21em;
+    }
+
+    @include iphone6Plus414R {
+      width: 21em;
+    }
+
+    @include iphone6Plus375R {
+      width: 21em;
+    }
+
+    @include iphone6Minus320R {
+      width: 17em;
+    }
+
     li {
       // setting this fixes the last li item's weird aligning issue at any media resolution
       flex: 1 auto;
+
+      @include iphone6Plus667R {
+        padding: 3% 3%;
+      }
 
       // changing the padding makes the nav menu less bloated vertically and allows us to see the mast head image
       @include iphone6Plus414R {
@@ -105,6 +168,10 @@ nav#site-navigation.main-navigation {
     }
 
     li a {
+      @include iphone6Plus667R {
+        @include font-size(0.75);
+      }
+
       @include iphone6Plus414R {
         @include font-size(0.75);
       }
@@ -120,3 +187,69 @@ nav#site-navigation.main-navigation {
     }
   }
 }
+
+////////////////////////////////////////////
+//    SLIDE OUT HEADER
+////////////////////////////////////////////
+// for responsive coding
+
+// ----------------------------------------
+// INPUT LABEL CONTROL  ------------------
+// ----------------------------------------
+label[for="toggle"] {
+  position: fixed;
+  left: 1em;
+  top: 1.5em;
+  z-index: 101;
+  color: white;
+
+  // DEFAULT DISPLAY STATUS
+  // generally display: none unless changed by media queries or JS
+  opacity: 0;
+  z-index: -5;
+
+  // STYLING OVERRIDE  ------------------------------------------------
+  @include buttonStyle1;
+  width: 5em;
+  @include marginPaddingReset1;
+  text-align: center;
+  &:hover {
+    outline: none;
+    background: transparent;
+  }
+  // END STYLING OVERRIDE ------------------------------------------------
+
+  @include iphone6Plus736R {
+    opacity: 1;
+    z-index: 101;
+    left: 0.5em;
+    top: 0.5em;
+  }
+
+}
+// ----------------------------------------
+// END INPUT LABEL CONTROL  ------------------
+// ----------------------------------------
+
+// ----------------------------------------
+// INPUT CHECKBOX CONTROL  ------------------
+// ----------------------------------------
+// make the input checkbox invisible
+input#toggle {
+  display: none;
+
+  &:checked + header#site-header {
+    // when the input is checked
+    // we slide the menu back onto the screen
+    // NOTE:  A media query will have to be written to also change .home .masthead padding or positioning
+    top: 0;
+  }
+}
+// ----------------------------------------
+// END INPUT CHECKBOX CONTROL  ------------------
+// ----------------------------------------
+
+
+////////////////////////////////////////////
+//    END SLIDE OUT HEADER
+////////////////////////////////////////////

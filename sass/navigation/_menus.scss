@@ -52,6 +52,10 @@
 		position: relative;
 		padding: 20px 15px;
 
+		@include iphone6Plus667R {
+			text-align: center;
+		}
+
 		@include iphone6Plus414R {
 		  // @include font-size(0.75);
 		}
@@ -78,22 +82,9 @@
 			@include iphone6Plus736R {
 				right: -2px;
 			}
-			@include iphone6Plus414R {
-			  // @include font-size(0.75);
-			  top: 5px;
-			  right: 1px;
-			}
-
-			@include iphone6Plus375R {
-			  // @include font-size(0.6);
-			  top: 5px;
-			  right: 1px;
-			}
-
-			@include iphone6Minus320R {
-			  // @include font-size(0.6);
-			  top: 3px;
-			  right: -3px;
+			@include iphone6Plus667R {
+				top: 7px;
+				display: none;
 			}
 		}
 		&:last-child {
