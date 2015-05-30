@@ -50,6 +50,10 @@ template-parts/sidebar-roomAttributes.php
 
 	li:nth-child(3) div span {
 		margin-right: 7%;
+
+		@include tabletR {
+			margin-right: 3%;
+		}
 	}
 
 	li div:nth-child(1) {
