@@ -11,7 +11,7 @@ header.site-header {
   // this is a reference...
   // top:-22%;
 
-  @include iphone6Plus736LandR {
+  @include iphone6Plus736R {
     top: -50em;
   }
 
@@ -46,9 +46,25 @@ header.site-header {
 // this also wraps everything in the site-header
 header.site-header .container {
 
+  @include iphone6Plus667R {
+    @include flexboxColumn1;
+    // @include flexboxRow1;
+  }
+
   @include iphone6Plus414R {
     // unknown reason... the site-header 
     @include flexboxRow1;
+    @include flexboxColumn1;
+  }
+
+  @include iphone6Plus375R {
+    @include flexboxColumn1;
+    align-items: flex-end;
+  }
+
+  @include iphone6Minus320R {
+    @include flexboxColumn1;
+    align-items: flex-end;
   }
 
 }
@@ -69,13 +85,37 @@ header.site-header .container {
   //fall back
   float: left;
   
-  @include iphone6Plus667LandR {
-    margin-left: 13%;
+  // @include iphone6Plus667R {
+  //   flex-flow: column;
+  //   justify-content: center;
+  //   align-content: center;
+  // }
+
+  // @include iphone6Plus667LandR {
+  //   margin-left: 13%;
+  // }
+
+  // @include iphone6Minus568LandR {
+  //   margin-left: 15%;
+  // }
+
+  @include iphone6Plus667R {
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
   }
 
   @include iphone6Plus414R {
+    width: 84%;
+    flex-flow: column;
     justify-content: center;
     align-content: center;
+    align-items: flex-end;
+  }
+
+  @include iphone6Plus375R {
+
   }
 }
 
@@ -99,6 +139,22 @@ nav#site-navigation.main-navigation {
     @include flexboxRow1;
     justify-content: space-between;
     align-content: space-between;
+
+    @include iphone6Plus667R {
+      width: 21em;
+    }
+
+    @include iphone6Plus414R {
+      width: 21em;
+    }
+
+    @include iphone6Plus375R {
+      width: 21em;
+    }
+
+    @include iphone6Minus320R {
+      width: 17em;
+    }
 
     li {
       // setting this fixes the last li item's weird aligning issue at any media resolution
@@ -177,10 +233,10 @@ label[for="toggle"] {
   }
   // END STYLING OVERRIDE ------------------------------------------------
 
-  @include iphone6Plus736LandR {
+  @include iphone6Plus736R {
     opacity: 1;
     z-index: 101;
-    left: 0.9em;
+    left: 0.5em;
     top: 0.5em;
   }
 
