@@ -19,8 +19,31 @@ h5 {
       clear: both;
     }
   }
+  label {
+
+    @include desktopRHD1024 {
+      margin-bottom: 2%;
+    }
+
+    @include ipadAir1024R {
+      margin-bottom: 2%;
+    }
+    @include iphone6Plus736R {
+      margin-bottom: 2%;
+    }
+    @include iphone6Plus667R {
+      margin-bottom: 2%;
+    }
+    @include iphone6Minus568R {
+      margin-bottom: 2%; 
+    }
+  }
   label, input {
     display: block;
+
+    @include phoneR {
+      margin-bottom: 5%;
+    }
   }
   input {
     width: 90%;
