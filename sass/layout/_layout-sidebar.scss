@@ -118,6 +118,24 @@ template-parts/sidebar-reservations.php
 		@include sectionMargins041515(2.5%,2.5%);
 	}
 
+	div.selectMenuPH {
+		@include desktopRHD1024 {
+			@include sectionMargins041515(2.5%,2.5%);
+		}
+		@include ipadAir1024R {
+			@include sectionMargins041515(2.5%,2.5%);
+		}
+		@include iphone6Plus667R {
+			@include sectionMargins041515(2.5%,2.5%);
+		}
+		@include iphone6Minus568R {
+			@include sectionMargins041515(2.5%,2.5%);
+		}
+		@include phoneR {
+			@include sectionMargins041515(2.5%,2.5%);
+		}
+	}
+
 	input.selectMenuPH {
 		width: 100%;
 	}

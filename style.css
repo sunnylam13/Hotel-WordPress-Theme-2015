@@ -418,6 +418,26 @@ template-parts/sidebar-reservations.php
     padding: 3% 4% 3% 4%;
     margin-top: 2.5%;
     margin-bottom: 2.5%; }
+  @media (min-width: 1024px) {
+    .reservationBooking div.selectMenuPH {
+      margin-top: 2.5%;
+      margin-bottom: 2.5%; } }
+  @media (max-width: 1024px) {
+    .reservationBooking div.selectMenuPH {
+      margin-top: 2.5%;
+      margin-bottom: 2.5%; } }
+  @media (max-width: 667px) {
+    .reservationBooking div.selectMenuPH {
+      margin-top: 2.5%;
+      margin-bottom: 2.5%; } }
+  @media (max-width: 568px) {
+    .reservationBooking div.selectMenuPH {
+      margin-top: 2.5%;
+      margin-bottom: 2.5%; } }
+  @media (max-width: 480px) {
+    .reservationBooking div.selectMenuPH {
+      margin-top: 2.5%;
+      margin-bottom: 2.5%; } }
   .reservationBooking input.selectMenuPH {
     width: 100%; }
   @media (max-width: 414px) {
@@ -3250,6 +3270,8 @@ footer.site-footer .site-info nav ul {
             padding-left: 1.04167%;
             padding-right: 1.04167%;
             padding-top: 32px; } }
+      .booking-console form.book .field select#roomType {
+        width: 100%; }
       .booking-console form.book .field i {
         position: absolute;
         top: 30px;
@@ -3362,8 +3384,26 @@ h5 {
     padding-top: 15px; }
   .contactUs .field.full {
     clear: both; }
+  @media (min-width: 1024px) {
+    .contactUs label {
+      margin-bottom: 2%; } }
+  @media (max-width: 1024px) {
+    .contactUs label {
+      margin-bottom: 2%; } }
+  @media (max-width: 736px) {
+    .contactUs label {
+      margin-bottom: 2%; } }
+  @media (max-width: 667px) {
+    .contactUs label {
+      margin-bottom: 2%; } }
+  @media (max-width: 568px) {
+    .contactUs label {
+      margin-bottom: 2%; } }
   .contactUs label, .contactUs input {
     display: block; }
+    @media (max-width: 480px) {
+      .contactUs label, .contactUs input {
+        margin-bottom: 5%; } }
   .contactUs input {
     width: 90%;
     padding: 5px; }
@@ -3416,6 +3456,8 @@ body.home #content.site-content {
   padding-top: 0;
   padding-bottom: 10%;
   padding-top: 2%;
+  padding-bottom: 10%;
+  padding-top: 0%;
   padding-bottom: 10%; }
 
 a {
