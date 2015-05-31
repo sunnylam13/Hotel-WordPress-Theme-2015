@@ -25,6 +25,7 @@ this contains both the content and the sidebar
 		// using standard width is apparently enough
 		// flex: 2 75%;
 		// finding that using flex: 1 auto is better in many cases as flexbox figures out how to position it automatically
+		// this is because the initial width of 75% has already been set, so flexbox just works with that
 		flex: 1 auto;
 
 		padding-right: 5%;
@@ -52,6 +53,7 @@ this contains both the content and the sidebar
 		// on Safari desktop and iOS adding this flex here seems to break it
 		// using standard width is apparently enough
 		// flex: 1 25%;
+		// this is because the initial width of 25% has already been set, so flexbox just works with that
 		flex: 1 auto;
 
 		// push the section down from the top
