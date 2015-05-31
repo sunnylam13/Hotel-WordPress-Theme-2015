@@ -22,23 +22,8 @@
 
 <body <?php body_class(); ?>>
 
-<!-- ====================================
-SLIDE OUT NAV CONTROL LABEL 
-==================================== -->
-<!-- the navigation menu or target element can be anywhere on the page... this is placed outside of the header and absolutely positioned... to style see layout/_header.scss -->
-<label for="toggle">☰ Menu</label>
-
-<!-- ====================================== -->
-
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hospitality' ); ?></a>
-
-	<!-- ====================================
-	SLIDE OUT MENU CONTROL TOGGLE 
-	==================================== -->
-	<!-- this must be placed just before the navigation menu/header that it opens... the label (whereever it is) will toggle this from a distance... to style see layout/_header.scss -->
-	<input type="checkbox" id="toggle" name="toggle">
-	<!-- ====================================== -->
 
 	<header id="site-header" class="site-header" role="banner">
 		<div class="container">
@@ -76,7 +61,9 @@ SLIDE OUT NAV CONTROL LABEL
 			==================================== -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hospitality' ); ?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<i class="fa fa-bars"></i>
+					<?php esc_html_e( 'Menu', 'hospitality' ); ?>
 				</button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->

@@ -94,9 +94,12 @@
 
       i {
         position: absolute;
-        top: 30px;
+        top: 32px;
         right: 12px;
         font-size: 1.25rem;
+        @media (max-width: 768px) {
+          top: 28px;
+        }
       }
       @include tabletR {
         @include column(3.2);
@@ -118,6 +121,9 @@
       padding-bottom: 8px;
       @include tabletR {
         padding-bottom: 4px;
+      }
+      @media (max-width: 320px) {
+        font-size: 0.75rem;
       }
     }
     input {
