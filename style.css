@@ -278,12 +278,12 @@ this contains both the content and the sidebar
     float: left;
     width: 75%;
     /*================================================ */
-    -webkit-flex: 2 75%;
-    -ms-flex: 2 75%;
-    flex: 2 75%;
     padding-right: 5%;
     margin-top: 5%; }
     @media (max-width: 940px) {
+      .flexbox #primary {
+        width: 100%; } }
+    @media (max-width: 568px) {
       .flexbox #primary {
         width: 100%; } }
   .flexbox #secondary {
@@ -293,11 +293,14 @@ this contains both the content and the sidebar
     float: right;
     width: 25%;
     /*================================================ */
-    -webkit-flex: 1 25%;
-    -ms-flex: 1 25%;
-    flex: 1 25%;
     margin-top: 5%; }
     @media (max-width: 940px) {
+      .flexbox #secondary {
+        width: 100%; } }
+    @media (max-width: 568px) {
+      .flexbox #secondary {
+        width: 100%; } }
+    @media (max-width: 480px) {
       .flexbox #secondary {
         width: 100%; } }
 
@@ -1549,6 +1552,7 @@ section.about.promo {
     display: block;
     margin-bottom: 5%; }
   section.about.promo .promobox {
+    max-width: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1584,6 +1588,8 @@ section.about.promo {
     -webkit-flex: 1 25%;
     -ms-flex: 1 25%;
     flex: 1 25%; }
+    section.about.promo .promobox .imgFrame img {
+      max-width: 100%; }
     @media (max-width: 480px) {
       section.about.promo .promobox .imgFrame {
         -webkit-flex: 1 100%;
@@ -1614,6 +1620,7 @@ overall layout is found in layout/_layout.scss
 SUITES PROMO
 =================================================*/
 section.suites.promo .promobox {
+  max-width: 100%;
   -webkit-flex: 1 28%;
   -ms-flex: 1 28%;
   flex: 1 28%; }
@@ -1656,6 +1663,8 @@ section.suites.promo .promobox .imgFrame {
   -moz-transition: all 1s ease-in;
   -o-transition: all 1s ease-in;
   -ms-transition: all 1s ease-in; }
+  section.suites.promo .promobox .imgFrame img {
+    max-width: 100%; }
 
 section.suites.promo .promobox .imgFrame:hover > .playFrame {
   display: -webkit-flex;

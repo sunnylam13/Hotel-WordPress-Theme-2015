@@ -21,7 +21,9 @@ this contains both the content and the sidebar
 		width: 75%;
 		/*================================================ */
 		
-		flex: 2 75%;
+		// on Safari desktop and iOS adding this flex here seems to break it
+		// using standard width is apparently enough
+		// flex: 2 75%;
 
 		padding-right: 5%;
 
@@ -29,6 +31,10 @@ this contains both the content and the sidebar
 		margin-top: 5%;
 
 		@include desktopR {
+			width: 100%;
+		}
+
+		@include iphone6Minus568R {
 			width: 100%;
 		}
 	}
@@ -41,13 +47,23 @@ this contains both the content and the sidebar
 		width: 25%;
 		/*================================================ */
 		
-		flex: 1 25%;
+		// on Safari desktop and iOS adding this flex here seems to break it
+		// using standard width is apparently enough
+		// flex: 1 25%;
 
 		// push the section down from the top
 		margin-top: 5%;
 
 		@include desktopR {
 			width: 100%;
+		}
+
+		@include iphone6Minus568R {
+			width: 100%;
+		}
+
+		@include phoneR {
+			width:100%;
 		}
 	}
 }
