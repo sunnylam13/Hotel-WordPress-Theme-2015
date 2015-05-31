@@ -2,12 +2,36 @@
 	display: block;
 	float: right;
 
+	@media (max-width: 767px) {
+		float: left;
+		width: 100%;
+	}
+
+	button {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		background: transparent;
+		color: white;
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		font-size: 1.125rem;
+		@media (max-width: 320px) {
+			top: 8px;
+		}
+	}
+
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 		@include clearfix;
+
+		@media (max-width: 767px) {
+			padding-top: 1rem;
+		}
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -52,46 +76,16 @@
 		position: relative;
 		padding: 20px 15px;
 
-		@include iphone6Plus667R {
-			text-align: center;
-		}
-
-		@include iphone6Plus414R {
-		  // @include font-size(0.75);
-		}
-
-		@include iphone6Plus375R {
-		  // @include font-size(0.6);
-		}
-
-		@include iphone6Minus320R {
-		  // @include font-size(0.6);
-		}
-
 		&:after {
 			content: '|';
 			color: $color__nav-divider;
 			position: absolute;
 			top: 18px;
 			right: -5px;
-			// with flexbox use this
-			right: 5px;
-			@include tabletR {
-				right: 0px;
-			}
-			@include iphone6Plus736R {
-				right: -2px;
-			}
-			@include iphone6Plus667R {
-				top: 7px;
-				display: none;
-			}
+			
 		}
 		&:last-child {
 			padding-right: 0;
-			@include tabletR {
-				//
-			}
 			&:after {
 				content: '';
 			}
@@ -99,6 +93,14 @@
 
 		&:hover > a,
 		&.focus > a {
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			padding: 1rem 0;
+			border-bottom: 1px solid $color__background-body;
+			&:after {
+				content: '';
+			}
 		}
 	}
 	a {
@@ -119,7 +121,7 @@
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 767px) {
 	.menu-toggle {
 		display: none;
 	}

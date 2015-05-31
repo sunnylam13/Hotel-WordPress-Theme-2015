@@ -10,16 +10,18 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
 
-    <section class="masthead gallery js-flickity" 
-      data-flickity-options='
-        { 
-          "imagesLoaded": true,
-          "cellSelector": "img"
-        }
-      '>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow3.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow1.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow2.jpg" alt="">
+    <section class="masthead">
+      <div class= "gallery js-flickity" 
+        data-flickity-options='
+          { 
+            "imagesLoaded": true,
+            "cellSelector": "img"
+          }
+        '>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow3.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow1.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/slideshow2.jpg" alt="">
+      </div>
       <div class="overlay">
         <div class="container">
           <h2>Collaboratively administrate empowered markets</h2>
