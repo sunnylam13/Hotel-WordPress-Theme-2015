@@ -15,18 +15,20 @@ section.suites.promo {
 
 	.promobox {
 
-		max-width: 100%;
+		// max-width: 100%;
 
 		// flex child
 		flex: 1 28%;
 
 		@include phoneR {
 			flex: 1 100%;
+			flex: 1 auto;
 			margin-bottom: 5%;
 		}
 	
 		@include iphone6Plus414R {
 			flex: 1 100%;
+			flex: 1 auto;
 			margin-bottom: 5%;
 		}
 	}
