@@ -1,5 +1,9 @@
 .site-branding {
 	float: left;
+	padding-top: 5px;
+	@media (max-width: 767px) {
+		padding-top: 0;
+	}
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
