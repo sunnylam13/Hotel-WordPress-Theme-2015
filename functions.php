@@ -138,6 +138,41 @@ function hospitality_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'hospitality_scripts' );
 
+// function to get a specific page's specific information
+function grab_specific_page_info($my_id,$wpFunction,$filterTarget)
+{
+	// where
+	// $my_id = 51; (page ID, could be post ID)
+	// $wpFunction = post_title (WordPress target data output field as a string)
+	// $filterTarget = 'the_title' (string)
+	
+	$post_id = get_post($my_id);
+	switch ($wpFunction) {
+		case 'post_title':
+			$content = $post_id->post_title;
+			break;
+		case 'post_link':
+			$content = $post_id->post_link;
+			break;
+		case 'post_content':
+			$content = $post_id->post_content;
+			break;
+		case 'post_content':
+			$content = $post_id->post_content;
+			break;
+		default:
+			echo "Error.  You did not enter the correct WP target field.";
+			break;
+	};
+
+	// $content = $post_id->post_title;
+	
+	$content = apply_filters($filterTarget, $content);
+	$content = str_replace(']]>', ']]>', $content);
+	// return the content
+	echo $content;
+}
+
 /**
  * Implement the Custom Header feature.
  */
