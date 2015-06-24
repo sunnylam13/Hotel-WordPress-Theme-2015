@@ -3,7 +3,11 @@ h5 {
 }
 
 .contactUs {
+
+  margin-bottom: 5em;
+
   @include clearfix;
+
   .field {
     &.third {
       @include column(4);

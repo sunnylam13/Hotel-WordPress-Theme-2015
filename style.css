@@ -1628,6 +1628,13 @@ this is imported at site/_site.scss
 overall layout is found in layout/_layout.scss
 =================================================*/
 /*================================================
+PARENT
+=================================================*/
+.suites.container {
+  padding-bottom: 5em; }
+
+/*================================================ */
+/*================================================
 SUITES PROMO
 =================================================*/
 section.suites.promo .promobox {
@@ -3131,6 +3138,7 @@ h5 {
   font-size: 1.5625rem; }
 
 .contactUs {
+  margin-bottom: 5em;
   *zoom: 1; }
   .contactUs:before,
   .contactUs:after {
