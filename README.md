@@ -17,3 +17,5 @@ file://localhost/Users/sunnyair/Google%20Drive/Programming%20Projects/hotel.sunn
 You want to load up the WordPress installation not the theme here...
 
 http://localhost/hotel.sunny.dallas.2015/
+
+http://localhost/hotel.sunny.dallas.2015/wp-admin/index.php
