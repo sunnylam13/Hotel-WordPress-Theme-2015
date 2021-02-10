@@ -197,3 +197,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/* Force Gravatar https START */
+/* force gravatars for users to use https;
+useful if site has SSL enabled */
+add_filter('get_avatar_url', 'set_https', 10, 3);
+
+function set_https($url, $id_or_email, $args){
+	return set_url_scheme( $url, 'https' );
+}
+
+/* Force Gravatar https END */
