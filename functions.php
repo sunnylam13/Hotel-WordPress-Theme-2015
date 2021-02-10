@@ -112,7 +112,8 @@ function hospitality_scripts() {
 
 	wp_enqueue_script(
 		'jquery',
-		"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+		// "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+		"https://code.jquery.com/jquery-1.12.4.min.js",
 		false, //dependencies
 		null, //version number
 		true //load in footer
