@@ -16,8 +16,8 @@
 
 	<div class="promobox box1">
 		<div class="imgFrame">
-			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
-			<img src="http://lorempixel.com/396/300" alt="">
+			<!-- <img src="https://picsum.photos/198/150" alt=""> -->
+			<img src="https://picsum.photos/396/300" alt="">
 			<a href="#" class="playFrame"><span></span></a>
 		</div>
 		<h5>Room</h5>
@@ -25,8 +25,8 @@
 	</div>
 	<div class="promobox box2">
 		<div class="imgFrame">
-			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
-			<img src="http://lorempixel.com/396/300" alt="">
+			<!-- <img src="https://picsum.photos/198/150" alt=""> -->
+			<img src="https://picsum.photos/396/300" alt="">
 			<a href="#" class="playFrame"><span></span></a>
 		</div>
 		<h5>Suites</h5>
@@ -34,8 +34,8 @@
 	</div>
 	<div class="promobox box3">
 		<div class="imgFrame">
-			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
-			<img src="http://lorempixel.com/396/300" alt="">
+			<!-- <img src="https://picsum.photos/198/150" alt=""> -->
+			<img src="https://picsum.photos/396/300" alt="">
 			<a href="#" class="playFrame"><span></span></a>
 		</div>
 		<h5>Presidential Suites</h5>

@@ -18,8 +18,8 @@
 	
 	<div class="promobox box1">
 		<div class="imgFrame">
-			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
-			<img src="http://lorempixel.com/396/300" alt="">
+			<!-- <img src="https://picsum.photos/198/150" alt=""> -->
+			<img src="https://picsum.photos/396/300" alt="">
 		</div>
 		<div class="copy">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>
@@ -27,8 +27,8 @@
 	</div>
 	<div class="promobox box2">
 		<div class="imgFrame">
-			<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
-			<img src="http://lorempixel.com/396/300" alt="">
+			<!-- <img src="https://picsum.photos/198/150" alt=""> -->
+			<img src="https://picsum.photos/396/300" alt="">
 		</div>
 		<div class="copy">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae et architecto aperiam, nisi, perferendis.</p>

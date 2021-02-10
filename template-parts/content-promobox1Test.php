@@ -11,7 +11,7 @@ THE ORIGINAL STATIC BASE
 ==================================== -->
 <!-- <div class="promobox box1">
 	<div class="imgFrame">
-		<img src="http://lorempixel.com/396/300" alt="">
+		<img src="https://picsum.photos/396/300" alt="">
 		<a href="#" class="playFrame"><span></span></a>
 	</div>
 	<h5>Room</h5>
@@ -21,8 +21,8 @@ THE ORIGINAL STATIC BASE
 
 <div class="promobox box1">
 	<div class="imgFrame">
-		<!-- <img src="http://lorempixel.com/198/150" alt=""> -->
-		<!-- <img src="http://lorempixel.com/396/300" alt=""> -->
+		<!-- <img src="https://picsum.photos/198/150" alt=""> -->
+		<!-- <img src="https://picsum.photos/396/300" alt=""> -->
 		<!-- the WP method of get_the_post_thumbnail already returns an <img> so we don't have to put this in src=""  -->
 		<?php echo get_the_post_thumbnail( '51', 'full' ); ?>
 		<a href="#" class="playFrame"><span></span></a>
