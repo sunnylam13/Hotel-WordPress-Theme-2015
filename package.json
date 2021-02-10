@@ -1,5 +1,5 @@
 {
-  "name": "wp-hotel-theme",
+  "name": "wp-hotel-theme-2015",
   "version": "1.0.0",
   "description": "A WordPress theme for the hospitality industry",
   "main": "index.js",
@@ -10,17 +10,36 @@
     "type": "git",
     "url": "git+https://github.com/dallaskoncir/Hotel-WordPress-Theme-2015.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "html5",
+    "css3",
+    "html",
+    "css",
+    "jquery",
+    "javascript"
+  ],
+  "author": "Sunny Lam, Dallas Koncir",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dallaskoncir/Hotel-WordPress-Theme-2015/issues"
   },
   "homepage": "https://github.com/dallaskoncir/Hotel-WordPress-Theme-2015#readme",
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.3.0",
-    "gulp-concat": "^2.5.2",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.0.1"
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/register": "^7.12.13",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
   }
 }
