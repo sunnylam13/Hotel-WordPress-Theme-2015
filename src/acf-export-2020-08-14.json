@@ -1,0 +1,1756 @@
+[
+    {
+        "key": "group_5f36feffa98a3",
+        "title": "Contact Info Alt1",
+        "fields": [
+            {
+                "key": "field_55a8144cb7802",
+                "label": "Business Address",
+                "name": "business_address",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81461b7803",
+                "label": "Business Phone",
+                "name": "business_phone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a8146bb7804",
+                "label": "Business Fax",
+                "name": "business_fax",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a8147db7805",
+                "label": "Business Web Site",
+                "name": "business_web_site",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55aac7ed3c99f",
+                "label": "Contact Form Contact Person",
+                "name": "contact_form_contact_person",
+                "type": "text",
+                "instructions": "This is the person that any contact form emails will go to.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Enter the contact person's name...",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55aac8163c9a0",
+                "label": "Contact Form Contact Email",
+                "name": "contact_form_contact_email",
+                "type": "email",
+                "instructions": "This is the email of the designated contact person set for the contact form.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Enter the designated person's contact email...",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36feffbf533",
+        "title": "Footer Set1",
+        "fields": [
+            {
+                "key": "field_55a8197395889",
+                "label": "Company Name",
+                "name": "company_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a819839588a",
+                "label": "Developer Name",
+                "name": "developer_name",
+                "type": "text",
+                "instructions": "This could be the developer company or the developer themselves.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a819a59588b",
+                "label": "CMS Used",
+                "name": "cms_used",
+                "type": "text",
+                "instructions": "This is an optional field.  Totally un-necessary.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Powered By WordPress",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81ae9b431a",
+                "label": "Date of Web Site Creation",
+                "name": "date_of_web_site_creation",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81b57a733e",
+                "label": "Company Social Media",
+                "name": "company_social_media",
+                "type": "repeater",
+                "instructions": "Provide the social media links for the business in question.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55a81bbaa733f",
+                        "label": "Twitter",
+                        "name": "twitter",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a81bc4a7340",
+                        "label": "Facebook",
+                        "name": "facebook",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a81bcca7341",
+                        "label": "Google Plus",
+                        "name": "google_plus",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a81bdaa7342",
+                        "label": "RSS",
+                        "name": "rss",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a81be1a7343",
+                        "label": "Dribble",
+                        "name": "dribble",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_55a81e7b79ac2",
+                "label": "Company Twitter",
+                "name": "company_twitter",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81e9879ac3",
+                "label": "Company Facebook",
+                "name": "company_facebook",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81ea179ac4",
+                "label": "Company Google Plus",
+                "name": "company_google_plus",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81eaa79ac5",
+                "label": "Company RSS Feed",
+                "name": "company_rss_feed",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55a81eb479ac6",
+                "label": "Company Dribble",
+                "name": "company_dribble",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36feffe3d4a",
+        "title": "Front Page Specific",
+        "fields": [
+            {
+                "key": "field_5593207aef318",
+                "label": "Services Front Page",
+                "name": "services_front_page",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_559320c1ef319",
+                        "label": "Service Subheadline",
+                        "name": "service_subheadline",
+                        "type": "text",
+                        "instructions": "This is for the subheadline that appears right after the Service section title and the line.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "You Benefit From These Services",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_55932114ef31a",
+                "label": "About Front Page",
+                "name": "about_front_page",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55932124ef31b",
+                        "label": "About Us Subheadline",
+                        "name": "about_us_subheadline",
+                        "type": "text",
+                        "instructions": "This is the subheadline that appears under the About title and line.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Your Personal Health and Wellness Team",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5595e82bcd0cf",
+                        "label": "About Extra Text",
+                        "name": "about_extra_text",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    },
+                    {
+                        "key": "field_5596e7ee45e35",
+                        "label": "Skills Subheadline",
+                        "name": "skills_subheadline",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Our Specialties",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    },
+                    {
+                        "key": "field_5596fcdce67db",
+                        "label": "Testimonials Subheadline",
+                        "name": "testimonials_subheadline",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "What our clients say!",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    }
+                ]
+            },
+            {
+                "key": "field_5593214aef31c",
+                "label": "Newsletter Front Page",
+                "name": "newsletter_front_page",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55932158ef31d",
+                        "label": "Newsletter Headline",
+                        "name": "newsletter_headline",
+                        "type": "textarea",
+                        "instructions": "This can be a headline or straight call to action.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "GET ALL THE LATEST HOT TIPS ON NATURE MARKETING AND STAY UP TO DATE ABOUT WHAT WE'RE UP TO.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    },
+                    {
+                        "key": "field_5593219cef31e",
+                        "label": "Newsletter Extra Text",
+                        "name": "newsletter_extra_text",
+                        "type": "textarea",
+                        "instructions": "This could be a one two punch benefit or simply a statement about privacy protection.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "WE RESPECT YOUR EMAIL PRIVACY AND YOU'RE ADDRESS WILL NEVER BE GIVEN TO 3RD PARTIES WITHOUT YOUR PERMISSION.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    }
+                ]
+            },
+            {
+                "key": "field_55932007ef317",
+                "label": "Product Front Page",
+                "name": "product_front_page",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_559321fdef31f",
+                        "label": "Product Subheadline",
+                        "name": "product_subheadline",
+                        "type": "textarea",
+                        "instructions": "An optional subheadline of sorts.  You might mention a USP benefit or focus on benefits.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Products that help you feel amazing again.",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    },
+                    {
+                        "key": "field_55932230ef320",
+                        "label": "Product Extra Text",
+                        "name": "product_extra_text",
+                        "type": "textarea",
+                        "instructions": "This area goes right after the subheadline.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Our products are manufactured to meet the stricted GMP standards.",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    }
+                ]
+            },
+            {
+                "key": "field_5595a66e01a7e",
+                "label": "Contact Front Page",
+                "name": "contact_front_page",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5595a68d01a7f",
+                        "label": "Contact Subheadline",
+                        "name": "contact_subheadline",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5595a69c01a80",
+                        "label": "Contact Extra Text",
+                        "name": "contact_extra_text",
+                        "type": "textarea",
+                        "instructions": "This is the extra copy text under the sub headline.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "br"
+                    },
+                    {
+                        "key": "field_5595a6bb01a81",
+                        "label": "Form",
+                        "name": "form",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "row_min": "",
+                        "row_limit": "",
+                        "layout": "table",
+                        "button_label": "Add Row",
+                        "min": 0,
+                        "max": 0,
+                        "collapsed": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_5595a7c401a88",
+                                "label": "Headline",
+                                "name": "headline",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Send Us A Message",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": "br"
+                            },
+                            {
+                                "key": "field_5595a7cf01a89",
+                                "label": "Extra Copy",
+                                "name": "extra_copy",
+                                "type": "text",
+                                "instructions": "This could be used for additional benefit copy for example... to reinforce the decision to contact you.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "formatting": "html",
+                                "maxlength": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_55a6d4114048a",
+                        "label": "Contact Address",
+                        "name": "contact_address",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a6d4a42c9c8",
+                        "label": "Contact Work Phone",
+                        "name": "contact_work_phone",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a6d4b82c9c9",
+                        "label": "Contact Fax",
+                        "name": "contact_fax",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a6d4c12c9ca",
+                        "label": "Contact Web Address",
+                        "name": "contact_web_address",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55a6d6701c6d5",
+                        "label": "Contact Information",
+                        "name": "contact_information",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "row_min": "",
+                        "row_limit": "",
+                        "layout": "table",
+                        "button_label": "Add Row",
+                        "min": 0,
+                        "max": 0,
+                        "collapsed": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_55a6d6821c6d6",
+                                "label": "Address",
+                                "name": "address",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "formatting": "html",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_55a6d6891c6d7",
+                                "label": "Work Phone",
+                                "name": "work_phone",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "formatting": "html",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_55a6d6931c6d8",
+                                "label": "Work Fax",
+                                "name": "work_fax",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "formatting": "html",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_55a6d69c1c6d9",
+                                "label": "Work Web Site",
+                                "name": "work_web_site",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "formatting": "html",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36ff00375f9",
+        "title": "Member Fields",
+        "fields": [
+            {
+                "key": "field_5592fcd24c4fc",
+                "label": "Member Social Media Links",
+                "name": "member_social_media_links",
+                "type": "repeater",
+                "instructions": "This repeater field stores references to all of that member's social media links.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5592fd3d4c4fe",
+                        "label": "Twitter",
+                        "name": "twitter",
+                        "type": "text",
+                        "instructions": "Provide the link to the member's Twitter profile.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "http:\/\/twitter.com\/USERNAME",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5592fd744c4ff",
+                        "label": "Facebook",
+                        "name": "facebook",
+                        "type": "text",
+                        "instructions": "Insert the link to the member's Facebook profile.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "https:\/\/www.facebook.com\/USERNAME",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5592fd9f4c500",
+                        "label": "RSS",
+                        "name": "rss",
+                        "type": "text",
+                        "instructions": "Insert the link to the member's RSS feed either on this site or another one of theirs.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5592fdc24c501",
+                        "label": "Dribble",
+                        "name": "dribble",
+                        "type": "text",
+                        "instructions": "Insert the member's Dribble link.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5592fddd4c502",
+                        "label": "LinkedIn",
+                        "name": "linkedin",
+                        "type": "text",
+                        "instructions": "Insert the member's link to their LinkedIn profile.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "https:\/\/ca.linkedin.com\/in\/USERNAME",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5592fe034c503",
+                        "label": "GitHub",
+                        "name": "github",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "https:\/\/github.com\/USERNAME",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5592fe1b4c504",
+                        "label": "Google Plus",
+                        "name": "google_plus",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "http:\/\/google.com\/USERNAME",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5592fd094c4fd",
+                "label": "Member Role",
+                "name": "member_role",
+                "type": "text",
+                "instructions": "This is the title, position or role of the member in the organization.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5593025be506c",
+                "label": "Member Personal Web Site",
+                "name": "member_personal_web_site",
+                "type": "text",
+                "instructions": "This is the member's personal web site or other web site.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "member"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36ff0053e51",
+        "title": "Product Fields",
+        "fields": [
+            {
+                "key": "field_55931a03aeb55",
+                "label": "Base Price",
+                "name": "base_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_55931a12aeb56",
+                "label": "Amazon",
+                "name": "amazon",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55931a86aeb59",
+                        "label": "Price USD",
+                        "name": "price_usd",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_55931aa8aeb5a",
+                        "label": "Product Page",
+                        "name": "product_page",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55931b6a16496",
+                        "label": "Product ID",
+                        "name": "product_id",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_55931a3daeb57",
+                "label": "ClickBank",
+                "name": "clickbank",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55931ac9aeb5b",
+                        "label": "Price USD",
+                        "name": "price_usd",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_55931ad9aeb5c",
+                        "label": "Product Page",
+                        "name": "product_page",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55931b7816497",
+                        "label": "Product ID",
+                        "name": "product_id",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_55931a4caeb58",
+                "label": "Google Store",
+                "name": "google_store",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "row_min": "",
+                "row_limit": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "min": 0,
+                "max": 0,
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55931b0daeb5d",
+                        "label": "Price USD",
+                        "name": "price_usd",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_55931b31aeb5e",
+                        "label": "Product Page",
+                        "name": "product_page",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_55931b8516498",
+                        "label": "Product ID",
+                        "name": "product_id",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "formatting": "html",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36ff007576a",
+        "title": "Service Fields",
+        "fields": [
+            {
+                "key": "field_5592f93bb65be",
+                "label": "Service Icon",
+                "name": "service_icon",
+                "type": "text",
+                "instructions": "This is the Font Awesome service icon name that you will use in the php to display the correct icon.  If you're using another icon set you may need to customize things.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "fa-flask",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "service"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36ff007a831",
+        "title": "Skills Fields",
+        "fields": [
+            {
+                "key": "field_5593171ee136a",
+                "label": "Skill Value",
+                "name": "skill_value",
+                "type": "number",
+                "instructions": "This is the approximate measured skill value as a percentage out of 100%.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 44,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "skill"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f36ff007f3ef",
+        "title": "Testimonial Fields",
+        "fields": [
+            {
+                "key": "field_559300ece3274",
+                "label": "Testimonial Person Role",
+                "name": "testimonial_person_role",
+                "type": "text",
+                "instructions": "This is the role of the person giving the testimonial.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Manager",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5593010ce3275",
+                "label": "Testimonial Person Company",
+                "name": "testimonial_person_company",
+                "type": "text",
+                "instructions": "This is the company name that the person giving the testimonial works for.  Not always required especially if the person is a sole proprietor.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_55930235efdd1",
+                "label": "Testimonial Person Web Site",
+                "name": "testimonial_person_web_site",
+                "type": "text",
+                "instructions": "This is the testimonial giver's company web site.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "testimonial"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    }
+]
