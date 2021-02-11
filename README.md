@@ -33,3 +33,19 @@ Go to Settings > Reading
 	* This ensures that you land on the correct front page.
 
 * Posts page:  Blog
+
+## WordPress Import
+
+You can modify `functions.php` to temporarily allow bigger file sizes for importing *while the theme you put this code in is active*.
+
+Otherwise the standard `php.ini` enforced limit is like 2MB.
+
+So if an exported wp file is larger you can't use it during migrations or backups.
+
+```
+@ini_set( 'upload_max_size' , '128M' );
+
+@ini_set( 'post_max_size', '128M');
+
+@ini_set( 'max_execution_time', '300' );
+```
