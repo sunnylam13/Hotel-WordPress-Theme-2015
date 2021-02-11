@@ -23,7 +23,9 @@ services:
       - ./:/var/www/html/wp-content/themes/hotelSD052515
       - ../../plugins_docker/hotelSD_052515_1/:/var/www/html/wp-content/plugins
       - ../../Search-Replace-DB:/var/www/html/Search-Replace-DB
+      - ../../../docker_custom/php_ini/:/usr/local/etc/php/custom.d
     environment:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: XjzURxGh8cbJ68f7NwyB0KsgAnqu0z
+      PHP_INI_SCAN_DIR: "/usr/local/etc/php/custom.d:/usr/local/etc/php/conf.d"
